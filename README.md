@@ -136,6 +136,19 @@ java -jar -Xms512m -Xmx512m -Xmn200m -Xss256k  activity.jar
 1.  本系统支持邮件、短信发送系统运营状态
 2.  系统通知/报警支持：用户注册、用户认证、用户充值/提现、币种RPC运行状态、系统资源使用监控等24种监控
 
+#### 关于数据库脚本的问题
+
+有朋友反映没有完整的SQL文件，这是因为编译成功的Jar，首次运行后会自动将Entity映射成数据库结构，项目中的SQL只是完成一些Springcloud无法完成的数据库结构。
+数据库自动生成配置位于application.properties配置文件：
+
+> #jpa
+> spring.jpa.show-sql=true
+> spring.data.jpa.repositories.enabled=true
+> spring.jpa.hibernate.ddl-auto=update
+
+spring.jpa.hibernate.ddl-auto=update
+这个配置会自动更新数据库结构。
+
 #### 核心功能说明（用户端）
 
 1.  注册/登录/实名认证/审核（目前仅支持手机，二次开发可加入邮件，很简单）

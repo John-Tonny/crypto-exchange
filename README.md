@@ -104,19 +104,20 @@
 2.  准备redis缓存数据库
 3.  准备kafka流式处理环境（先配置运行zookper，接着配置运行kafka）
 4.  准备mongodb数据库环境，创建用户admin、xxxx，创建bitrade数据库
-5.  准备nginx，修改配置文件（可选，正式上线需配置）
-6.  修改framework代码中的配置文件为准备环境配置参数
-7.  编译生成jar可执行文件
-8.  运行cloud.jar（微服务注册中心）
-9.  运行market.jar（行情中心）
-10. 运行exchange.jar（交易中心）
-11. 运行ucenter.jar（用户中心）
-12. 运行其他模块
-13. 打开mysql，导入framework代码中的sql文件夹中xxxxxxx.sql文件，注意，trigger的sql如果报错，需要针对wallet表添加trigger
-14. 运行前端vue项目
-15. 运行后端vue项目
-16. 运行钱包RPC
-17. 运行自动交易机器人程序（本部分代码未上传，但不影响）
+5.  准备阿里云OSS（修改项目中需要配置的地方）
+6.  准备nginx，修改配置文件（可选，正式上线需配置）
+7.  修改framework代码中的配置文件为准备环境配置参数
+8.  编译生成jar可执行文件
+9.  运行cloud.jar（微服务注册中心）
+10.  运行market.jar（行情中心）
+11. 运行exchange.jar（交易中心）
+12. 运行ucenter.jar（用户中心）
+13. 运行其他模块
+14. 打开mysql，导入framework代码中的sql文件夹中xxxxxxx.sql文件，注意，trigger的sql如果报错，需要针对wallet表添加trigger
+15. 运行前端vue项目
+16. 运行后端vue项目
+17. 运行钱包RPC
+18. 运行自动交易机器人程序（本部分代码未上传，但不影响）
 
 #### 注意事项
 

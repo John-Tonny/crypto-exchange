@@ -267,3 +267,11 @@ spring.jpa.hibernate.ddl-auto=update
 
 另，本人提供有偿技术帮助及部分核心代码!
 QQ：877070886
+
+#### 一般问题记录
+
+1、缺少以Q开头的文件
+请先编译一下对应的core、exchange-core模块，会自动生成QXXXXX.java文件
+
+2、部分类缺少get/set方法
+为开发工具安装Lombok插件

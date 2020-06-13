@@ -14,6 +14,7 @@ import java.net.URL;
 import java.security.MessageDigest;
 import java.util.Date;
 
+@SuppressWarnings("restriction")
 public class AliyunUtil {
 
 

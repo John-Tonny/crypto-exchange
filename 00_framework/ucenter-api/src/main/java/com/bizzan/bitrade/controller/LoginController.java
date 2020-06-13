@@ -112,7 +112,29 @@ public class LoginController extends BaseController {
     }
 
 
-    private LoginInfo getLoginInfo(String username, String password, String ip, HttpServletRequest request) throws Exception {
+	public static String getRemoteIp(HttpServletRequest request) {
+		String ip = request.getHeader("x-forwarded-for");
+		if (ip == null || ip.length() == 0 || "unknown".equalsIgnoreCase(ip)) {
+			ip = request.getHeader("Proxy-Client-IP");
+		}
+		if (ip == null || ip.length() == 0 || "unknown".equalsIgnoreCase(ip)) {
+			ip = request.getHeader("WL-Proxy-Client-IP");
+		}
+		if (ip == null || ip.length() == 0 || "unknown".equalsIgnoreCase(ip)) {
+			ip = request.getRemoteAddr();
+		}
+		final String[] arr = ip.split(",");
+		for (final String str : arr) {
+			if (!"unknown".equalsIgnoreCase(str)) {
+				ip = str;
+				break;
+			}
+		}
+		return ip;
+	}
+
+
+	private LoginInfo getLoginInfo(String username, String password, String ip, HttpServletRequest request) throws Exception {
         Member member = memberService.login(username, password);
         memberEvent.onLoginSuccess(member, ip);
         request.getSession().setAttribute(SysConstant.SESSION_MEMBER, AuthMember.toAuthMember(member));

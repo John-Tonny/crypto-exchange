@@ -123,7 +123,8 @@ public class EmployeeController extends BaseAdminController {
     @AccessLog(module = AdminModule.SYSTEM, operation = "提交登录信息Admin")
     public MessageResult doLogin(@SessionAttribute("username")String username,
                                  @SessionAttribute("password")String password,
-                                 @SessionAttribute("phone")String phone,String code,
+                                 @SessionAttribute("phone")String phone,
+                                 String code,
                                  @RequestParam(value="rememberMe",defaultValue = "true")boolean rememberMe,
                                  HttpServletRequest request) {
         Assert.notNull(code,"请输入验证码");
@@ -168,28 +169,7 @@ public class EmployeeController extends BaseAdminController {
         }
     }
 
-	public static String getRemoteIp(HttpServletRequest request) {
-		String ip = request.getHeader("x-forwarded-for");
-		if (ip == null || ip.length() == 0 || "unknown".equalsIgnoreCase(ip)) {
-			ip = request.getHeader("Proxy-Client-IP");
-		}
-		if (ip == null || ip.length() == 0 || "unknown".equalsIgnoreCase(ip)) {
-			ip = request.getHeader("WL-Proxy-Client-IP");
-		}
-		if (ip == null || ip.length() == 0 || "unknown".equalsIgnoreCase(ip)) {
-			ip = request.getRemoteAddr();
-		}
-		final String[] arr = ip.split(",");
-		for (final String str : arr) {
-			if (!"unknown".equalsIgnoreCase(str)) {
-				ip = str;
-				break;
-			}
-		}
-		return ip;
-	}
-
-	/**
+    /**
      * 发送邮件
      * @param email
      * @param msg

@@ -48,10 +48,12 @@ public class DiyiSMSProvider implements SMSProvider {
 	@Override
 	public MessageResult sendSingleMessage(String mobile, String content) throws Exception {
 		SmsDTO smsDTO = smsService.getByStatus();
-        if("diyi".equals(smsDTO.getSmsName())){
+		System.out.println(content);
+		return  new MessageResult(0,"");
+       /* if("diyi".equals(smsDTO.getSmsName())){
         	return sendMessage(mobile,content,smsDTO);
         }
-        return null;
+        return null;*/
 	}
 
 	@Override

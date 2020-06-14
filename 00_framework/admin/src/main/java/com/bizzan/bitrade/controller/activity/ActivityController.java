@@ -134,10 +134,10 @@ public class ActivityController extends BaseAdminController {
 		Activity result = activityService.findOne(id);
 		notNull(result, "validate activity!");
 		
-		if(result.getProgress().intValue() > progress.intValue()) {
+		if(result.getProgress() > progress.intValue()) {
 			return error("新进度数值小于当前数值");
 		}
-		result.setProgress(progress.intValue());
+		result.setProgress(progress);
 		
 		activityService.save(result);
 		

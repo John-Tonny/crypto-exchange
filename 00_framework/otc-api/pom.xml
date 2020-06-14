@@ -150,7 +150,7 @@
 			<build>
 				<resources>
 					<resource>
-						<directory>src/main/resources/test</directory>
+						<directory>src/main/resources/dev</directory>
 					</resource>
 				</resources>
 			</build>

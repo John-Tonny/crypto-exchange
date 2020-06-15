@@ -1,5 +1,5 @@
 export default {
-    host: 'http://127.0.0.1:6010',
+    host: 'http://8.210.107.163:6010',
     common: {
         login: '/admin/system/employee/sign/in'
     },

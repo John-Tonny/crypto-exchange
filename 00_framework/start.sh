@@ -1,0 +1,1 @@
+nohup java  -server -Xms200m -Xmx300m  -jar   cloud/target/cloud.jar   &  tail -f nohup.out

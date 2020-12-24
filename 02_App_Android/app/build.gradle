@@ -13,10 +13,10 @@ android {
     }
     signingConfigs {
         rccx {
-            storeFile file('E:/10_Exchange/04_Keystore/bizzan.jks')
-            storePassword 'shaoxianjun95'
-            keyAlias 'bizzan'
-            keyPassword 'shaoxianjun95'
+            storeFile file('/mnt/ethereum/crypto-exchange/app.keystore')
+            storePassword 'jlw9900'
+            keyAlias 'jlw'
+            keyPassword 'jlw9900'
         }
     }
 

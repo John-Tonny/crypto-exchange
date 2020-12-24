@@ -138,7 +138,7 @@
     <string name="jiaoyishouxufei_guize">返还规则</string>
     <string name="jiaoyishouxufei_guize_1" formatted="false">“交易即挖矿”个人交易手续费返还机制的具体方式为：自每日（GMT+8，以下同）0点开始，每小时都会将用户所产生交易手续费，100%折算成BHB进行积累，这算价格按该小时BHB的均价计算（均价计算方式为总成交金额/总成交量）。每小时返还一次，返还24小时前、同一小时区间的挖矿产出。比如，某天7：00-8：00这个区间，返还的就是前一天7：00-8：00这区间的挖矿产出。</string>
     <string name="login_view">登录后可查看</string>
-    <string name="login_assets">总资产约(折合USDT)</string>
+    <string name="login_assets">总资产约(折合CNY)</string>
 
     <string name="jiaoyi_riqi">日期</string>
     <string name="jiaoyi_junjia">当日BHB均价(ETH)</string>
@@ -164,7 +164,7 @@
 
     <!--我的-->
     <string name="not_logged_in">未登录</string>
-    <string name="welcome_to">欢迎来到币严BIZZAN.COM</string>
+    <string name="welcome_to">欢迎来到链分通</string>
     <string name="my_order">我的订单</string>
     <string name="my_ads">我的广告</string>
     <string name="my_message">平台消息</string>

@@ -245,7 +245,7 @@
                     </LinearLayout>
                 </LinearLayout>
 
-                <LinearLayout
+                <!--LinearLayout
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_marginLeft="5dp"
@@ -401,7 +401,7 @@
                                 android:textSize="12sp" />
                         </LinearLayout>
                     </LinearLayout>
-                </LinearLayout>
+                </LinearLayout-->
 
                 <LinearLayout
                     android:id="@+id/line_ctc"

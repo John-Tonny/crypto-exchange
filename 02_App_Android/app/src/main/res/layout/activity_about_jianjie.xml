@@ -80,7 +80,7 @@
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="\n关于BIZZAN\n"
+                    android:text="\n关于链分通\n"
                     android:textColor="@color/colorPrimary"
                     android:textSize="20sp"
                     android:textStyle="bold" />
@@ -116,7 +116,7 @@
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="\nBIZZAN理念\n"
+                    android:text="\n链分通理念\n"
                     android:textColor="@color/colorPrimary"
                     android:textSize="20sp"
                     android:textStyle="bold" />
@@ -150,7 +150,7 @@
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="\nBIZZAN目标\n"
+                    android:text="\n链分通目标\n"
                     android:textColor="@color/colorPrimary"
                     android:textSize="20sp"
                     android:textStyle="bold" />

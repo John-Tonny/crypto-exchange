@@ -1,7 +1,7 @@
 # compiler: R8
-# compiler_version: 1.5.59
+# compiler_version: 1.5.64
 # min_api: 21
-# pg_map_id: b461a2d
+# pg_map_id: ef2fdfa
 android.arch.core.internal.FastSafeIterableMap -> a.a.a.a.a:
     java.util.HashMap mHashMap -> e
     35:37:void <init>() -> <init>
@@ -18205,8 +18205,8 @@ butterknife.internal.Utils -> butterknife.internal.Utils:
     25:28:android.graphics.drawable.Drawable getTintedDrawable(android.content.Context,int,int) -> getTintedDrawable
     59:59:java.util.List listOf(java.lang.Object[]) -> listOf
 cn.bizzan.R$styleable -> b.a.a:
-    7719:20259:void <clinit>() -> <clinit>
-    7651:7651:void <init>() -> <init>
+    7728:20275:void <clinit>() -> <clinit>
+    7660:7660:void <init>() -> <init>
 cn.bizzan.adapter.AddressAdapter -> cn.bizzan.adapter.AddressAdapter:
     19:20:void <init>(int,java.util.List) -> <init>
     24:25:void convert(com.chad.library.adapter.base.BaseViewHolder,cn.bizzan.entity.Address) -> a
@@ -24951,103 +24951,98 @@ cn.bizzan.ui.home.FiveFragment -> cn.bizzan.ui.home.FiveFragment:
     android.widget.PopupWindow loadingPopup -> m
     double sumCny -> i
     cn.bizzan.entity.SafeSetting safeSetting -> l
-    60:107:void <clinit>() -> <clinit>
-    59:523:void <init>() -> <init>
+    60:109:void <clinit>() -> <clinit>
+    59:532:void <init>() -> <init>
     59:59:void access$000(cn.bizzan.ui.home.FiveFragment) -> a
-    152:323:void initViews(android.os.Bundle) -> a
-    431:449:java.lang.String getPartnerNameByCount(int) -> a
-    454:455:void setPresenter(cn.bizzan.ui.home.MainContract$FivePresenter) -> a
-    459:469:void myPromotionSuccess(org.json.JSONObject) -> a
+    154:326:void initViews(android.os.Bundle) -> a
+    461:462:void setPresenter(cn.bizzan.ui.home.MainContract$FivePresenter) -> a
+    466:478:void myPromotionSuccess(org.json.JSONObject) -> a
     59:59:void access$100(cn.bizzan.ui.home.FiveFragment) -> b
-    353:353:void fillWidget() -> d
-    137:138:void displayLoadingPopup() -> displayLoadingPopup
-    118:118:int getLayoutId() -> f
-    483:489:void calcuTotal(java.util.List) -> f
-    472:473:void myPromotionFail(java.lang.Integer,java.lang.String) -> g
-    366:371:void initImmersionBar() -> h
-    145:148:void hideLoadingPopup() -> hideLoadingPopup
-    357:362:void loadData() -> j
-    349:349:void obtainData() -> k
-    561:561:java.lang.String getmTag() -> l
-    518:521:void jyPwdClick() -> m
-    494:504:void myWalletFail(java.lang.Integer,java.lang.String) -> myWalletFail
-    476:480:void myWalletSuccess(java.util.List) -> myWalletSuccess
-    507:516:void accountClick() -> n
-    125:130:void initLoadingPopup() -> o
-    381:391:void onActivityResult(int,int,android.content.Intent) -> onActivityResult
-    566:568:android.view.View onCreateView(android.view.LayoutInflater,android.view.ViewGroup,android.os.Bundle) -> onCreateView
-    327:330:void onDestroy() -> onDestroy
-    573:575:void onDestroyView() -> onDestroyView
-    375:377:void onResume() -> onResume
-    334:336:void onStart() -> onStart
-    410:429:void loginingViewText() -> p
-    395:406:void notLoginViewText() -> q
-    340:345:void toLoginOrCenter() -> r
-    550:557:void safeSettingFail(java.lang.Integer,java.lang.String) -> safeSettingFail
-    527:546:void safeSettingSuccess(cn.bizzan.entity.SafeSetting) -> safeSettingSuccess
+    356:356:void fillWidget() -> d
+    139:140:void displayLoadingPopup() -> displayLoadingPopup
+    120:120:int getLayoutId() -> f
+    492:498:void calcuTotal(java.util.List) -> f
+    482:482:void myPromotionFail(java.lang.Integer,java.lang.String) -> g
+    369:374:void initImmersionBar() -> h
+    147:150:void hideLoadingPopup() -> hideLoadingPopup
+    360:365:void loadData() -> j
+    352:352:void obtainData() -> k
+    570:570:java.lang.String getmTag() -> l
+    527:530:void jyPwdClick() -> m
+    503:513:void myWalletFail(java.lang.Integer,java.lang.String) -> myWalletFail
+    485:489:void myWalletSuccess(java.util.List) -> myWalletSuccess
+    516:525:void accountClick() -> n
+    127:132:void initLoadingPopup() -> o
+    384:394:void onActivityResult(int,int,android.content.Intent) -> onActivityResult
+    575:577:android.view.View onCreateView(android.view.LayoutInflater,android.view.ViewGroup,android.os.Bundle) -> onCreateView
+    330:333:void onDestroy() -> onDestroy
+    582:584:void onDestroyView() -> onDestroyView
+    378:380:void onResume() -> onResume
+    337:339:void onStart() -> onStart
+    415:436:void loginingViewText() -> p
+    398:411:void notLoginViewText() -> q
+    343:348:void toLoginOrCenter() -> r
+    559:566:void safeSettingFail(java.lang.Integer,java.lang.String) -> safeSettingFail
+    536:555:void safeSettingSuccess(cn.bizzan.entity.SafeSetting) -> safeSettingSuccess
     59:59:void setPresenter(java.lang.Object) -> setPresenter
-cn.bizzan.ui.home.FiveFragment$1 -> cn.bizzan.ui.home.FiveFragment$e:
+cn.bizzan.ui.home.FiveFragment$1 -> cn.bizzan.ui.home.FiveFragment$d:
     cn.bizzan.ui.home.FiveFragment this$0 -> a
-    155:155:void <init>(cn.bizzan.ui.home.FiveFragment) -> <init>
-    158:165:void onClick(android.view.View) -> onClick
+    157:157:void <init>(cn.bizzan.ui.home.FiveFragment) -> <init>
+    160:167:void onClick(android.view.View) -> onClick
 cn.bizzan.ui.home.FiveFragment$10 -> cn.bizzan.ui.home.FiveFragment$a:
     cn.bizzan.ui.home.FiveFragment this$0 -> a
-    250:250:void <init>(cn.bizzan.ui.home.FiveFragment) -> <init>
-    253:290:void onClick(android.view.View) -> onClick
+    252:252:void <init>(cn.bizzan.ui.home.FiveFragment) -> <init>
+    255:292:void onClick(android.view.View) -> onClick
 cn.bizzan.ui.home.FiveFragment$10$1 -> cn.bizzan.ui.home.FiveFragment$a$a:
     cn.bizzan.ui.home.FiveFragment$10 this$1 -> c
-    257:257:void <init>(cn.bizzan.ui.home.FiveFragment$10) -> <init>
-    257:257:void onResponse(java.lang.Object) -> a
-    261:261:void onError(okhttp3.Request,java.lang.Exception) -> a
-    265:284:void onResponse(java.lang.String) -> a
+    259:259:void <init>(cn.bizzan.ui.home.FiveFragment$10) -> <init>
+    259:259:void onResponse(java.lang.Object) -> a
+    263:263:void onError(okhttp3.Request,java.lang.Exception) -> a
+    267:286:void onResponse(java.lang.String) -> a
 cn.bizzan.ui.home.FiveFragment$11 -> cn.bizzan.ui.home.FiveFragment$b:
     cn.bizzan.ui.home.FiveFragment this$0 -> a
-    292:292:void <init>(cn.bizzan.ui.home.FiveFragment) -> <init>
-    295:296:void onClick(android.view.View) -> onClick
+    294:294:void <init>(cn.bizzan.ui.home.FiveFragment) -> <init>
+    297:298:void onClick(android.view.View) -> onClick
 cn.bizzan.ui.home.FiveFragment$12 -> cn.bizzan.ui.home.FiveFragment$c:
     cn.bizzan.ui.home.FiveFragment this$0 -> a
-    298:298:void <init>(cn.bizzan.ui.home.FiveFragment) -> <init>
-    301:307:void onClick(android.view.View) -> onClick
-cn.bizzan.ui.home.FiveFragment$13 -> cn.bizzan.ui.home.FiveFragment$d:
+    300:300:void <init>(cn.bizzan.ui.home.FiveFragment) -> <init>
+    303:309:void onClick(android.view.View) -> onClick
+cn.bizzan.ui.home.FiveFragment$2 -> cn.bizzan.ui.home.FiveFragment$e:
     cn.bizzan.ui.home.FiveFragment this$0 -> a
-    310:310:void <init>(cn.bizzan.ui.home.FiveFragment) -> <init>
-    313:321:void onClick(android.view.View) -> onClick
-cn.bizzan.ui.home.FiveFragment$2 -> cn.bizzan.ui.home.FiveFragment$f:
+    170:170:void <init>(cn.bizzan.ui.home.FiveFragment) -> <init>
+    173:179:void onClick(android.view.View) -> onClick
+cn.bizzan.ui.home.FiveFragment$3 -> cn.bizzan.ui.home.FiveFragment$f:
     cn.bizzan.ui.home.FiveFragment this$0 -> a
-    168:168:void <init>(cn.bizzan.ui.home.FiveFragment) -> <init>
-    171:177:void onClick(android.view.View) -> onClick
-cn.bizzan.ui.home.FiveFragment$3 -> cn.bizzan.ui.home.FiveFragment$g:
+    181:181:void <init>(cn.bizzan.ui.home.FiveFragment) -> <init>
+    184:190:void onClick(android.view.View) -> onClick
+cn.bizzan.ui.home.FiveFragment$4 -> cn.bizzan.ui.home.FiveFragment$g:
     cn.bizzan.ui.home.FiveFragment this$0 -> a
-    179:179:void <init>(cn.bizzan.ui.home.FiveFragment) -> <init>
-    182:188:void onClick(android.view.View) -> onClick
-cn.bizzan.ui.home.FiveFragment$4 -> cn.bizzan.ui.home.FiveFragment$h:
+    192:192:void <init>(cn.bizzan.ui.home.FiveFragment) -> <init>
+    195:202:void onClick(android.view.View) -> onClick
+cn.bizzan.ui.home.FiveFragment$5 -> cn.bizzan.ui.home.FiveFragment$h:
     cn.bizzan.ui.home.FiveFragment this$0 -> a
-    190:190:void <init>(cn.bizzan.ui.home.FiveFragment) -> <init>
-    193:200:void onClick(android.view.View) -> onClick
-cn.bizzan.ui.home.FiveFragment$5 -> cn.bizzan.ui.home.FiveFragment$i:
+    205:205:void <init>(cn.bizzan.ui.home.FiveFragment) -> <init>
+    208:214:void onClick(android.view.View) -> onClick
+cn.bizzan.ui.home.FiveFragment$6 -> cn.bizzan.ui.home.FiveFragment$i:
     cn.bizzan.ui.home.FiveFragment this$0 -> a
-    203:203:void <init>(cn.bizzan.ui.home.FiveFragment) -> <init>
-    206:212:void onClick(android.view.View) -> onClick
-cn.bizzan.ui.home.FiveFragment$6 -> cn.bizzan.ui.home.FiveFragment$j:
+    217:217:void <init>(cn.bizzan.ui.home.FiveFragment) -> <init>
+    220:221:void onClick(android.view.View) -> onClick
+cn.bizzan.ui.home.FiveFragment$7 -> cn.bizzan.ui.home.FiveFragment$j:
     cn.bizzan.ui.home.FiveFragment this$0 -> a
-    215:215:void <init>(cn.bizzan.ui.home.FiveFragment) -> <init>
-    218:219:void onClick(android.view.View) -> onClick
-cn.bizzan.ui.home.FiveFragment$7 -> cn.bizzan.ui.home.FiveFragment$k:
+    224:224:void <init>(cn.bizzan.ui.home.FiveFragment) -> <init>
+    227:233:void onClick(android.view.View) -> onClick
+cn.bizzan.ui.home.FiveFragment$8 -> cn.bizzan.ui.home.FiveFragment$k:
     cn.bizzan.ui.home.FiveFragment this$0 -> a
-    222:222:void <init>(cn.bizzan.ui.home.FiveFragment) -> <init>
-    225:231:void onClick(android.view.View) -> onClick
-cn.bizzan.ui.home.FiveFragment$8 -> cn.bizzan.ui.home.FiveFragment$l:
+    235:235:void <init>(cn.bizzan.ui.home.FiveFragment) -> <init>
+    238:239:void onClick(android.view.View) -> onClick
+cn.bizzan.ui.home.FiveFragment$9 -> cn.bizzan.ui.home.FiveFragment$l:
     cn.bizzan.ui.home.FiveFragment this$0 -> a
-    233:233:void <init>(cn.bizzan.ui.home.FiveFragment) -> <init>
-    236:237:void onClick(android.view.View) -> onClick
-cn.bizzan.ui.home.FiveFragment$9 -> cn.bizzan.ui.home.FiveFragment$m:
-    cn.bizzan.ui.home.FiveFragment this$0 -> a
-    239:239:void <init>(cn.bizzan.ui.home.FiveFragment) -> <init>
-    242:248:void onClick(android.view.View) -> onClick
+    241:241:void <init>(cn.bizzan.ui.home.FiveFragment) -> <init>
+    244:250:void onClick(android.view.View) -> onClick
 cn.bizzan.ui.home.FiveFragment_ViewBinding -> cn.bizzan.ui.home.FiveFragment_ViewBinding:
     cn.bizzan.ui.home.FiveFragment target -> a
-    20:46:void <init>(cn.bizzan.ui.home.FiveFragment,android.view.View) -> <init>
-    51:52:void unbind() -> unbind
+    20:41:void <init>(cn.bizzan.ui.home.FiveFragment,android.view.View) -> <init>
+    46:47:void unbind() -> unbind
 cn.bizzan.ui.home.FourFragment -> cn.bizzan.ui.home.FourFragment:
     java.util.ArrayList tabs -> m
     butterknife.Unbinder unbinder -> i
@@ -25357,160 +25352,151 @@ cn.bizzan.ui.home.OneFragment -> cn.bizzan.ui.home.OneFragment:
     java.util.List coins -> r
     android.widget.PopupWindow loadingPopup -> u
     cn.bizzan.ui.home.OneFragment$MyAdapter adapter2 -> v
-    java.util.List infoss -> z
     cn.bizzan.adapter.HomeAdapter mHomeAdapter -> i
     double sumUsd -> s
-    java.util.List info -> y
+    java.util.List infoss -> y
     java.lang.String sysAdvertiseLocation -> q
     double sumCny -> t
-    java.util.List messageList -> x
+    java.util.List info -> x
+    java.util.List messageList -> w
     cn.bizzan.adapter.HomeOneAdapter adapter -> o
     butterknife.Unbinder unbinder -> j
     cn.bizzan.ui.home.MainContract$OnePresenter presenter -> p
-    java.util.regex.Pattern p -> B
-    int mNum -> w
-    java.lang.String TAG -> A
+    java.lang.String TAG -> z
+    java.util.regex.Pattern p -> A
     java.util.List currenciesTwo -> n
     java.util.List currencies -> m
     java.util.List localImageUrls -> l
     java.util.List imageUrls -> k
-    91:840:void <clinit>() -> <clinit>
-    90:805:void <init>() -> <init>
-    90:90:java.util.List access$000(cn.bizzan.ui.home.OneFragment) -> a
-    90:90:int access$202(cn.bizzan.ui.home.OneFragment,int) -> a
-    90:90:void access$400(cn.bizzan.ui.home.OneFragment,java.util.List) -> a
-    269:321:void initViews(android.os.Bundle) -> a
-    561:562:void setPresenter(cn.bizzan.ui.home.MainContract$OnePresenter) -> a
-    566:567:void setPresenter(cn.bizzan.ui.home.presenter.CommonPresenter) -> a
-    623:628:void setChatTip(boolean) -> a
-    90:90:cn.bizzan.adapter.HomeAdapter access$100(cn.bizzan.ui.home.OneFragment) -> b
-    572:618:void dataLoaded(java.util.List,java.util.List) -> b
-    90:90:int access$200(cn.bizzan.ui.home.OneFragment) -> c
-    678:720:void bannersSuccess(java.util.List) -> c
-    90:90:java.util.List access$300(cn.bizzan.ui.home.OneFragment) -> d
-    329:331:void fillWidget() -> d
-    725:725:void bannersFail(java.lang.Integer,java.lang.String) -> d
-    90:90:java.util.List access$500(cn.bizzan.ui.home.OneFragment) -> e
-    161:161:int getLayoutId() -> f
-    808:838:void setMarqueeView(java.util.List) -> f
-    552:557:void initImmersionBar() -> h
-    188:191:void hideLoadingPopup() -> hideLoadingPopup
-    843:844:boolean isContainChinese(java.lang.String) -> i
-    515:525:void loadData() -> j
-    325:325:void obtainData() -> k
-    221:221:java.lang.String getmTag() -> l
-    667:674:void notifyData() -> m
-    537:538:void myWalletFail(java.lang.Integer,java.lang.String) -> myWalletFail
-    529:533:void myWalletSuccess(java.util.List) -> myWalletSuccess
-    728:738:void tcpNotify() -> n
-    541:549:void calcuTotal() -> o
-    156:157:android.view.View onCreateView(android.view.LayoutInflater,android.view.ViewGroup,android.os.Bundle) -> onCreateView
-    742:746:void onDestroyView() -> onDestroyView
-    756:768:void onHiddenChanged(boolean) -> onHiddenChanged
-    226:228:void onPause() -> onPause
-    194:197:void onResume() -> onResume
-    750:752:void onStart() -> onStart
-    231:264:void dialogShow2() -> p
-    771:801:void getMessage() -> q
-    168:173:void initLoadingPopup() -> r
-    497:511:void initRvContent() -> s
-    90:90:void setPresenter(java.lang.Object) -> setPresenter
-    201:208:void loginingViewText() -> t
-    211:217:void notLoginViewText() -> u
-cn.bizzan.ui.home.OneFragment$1 -> cn.bizzan.ui.home.OneFragment$f:
-    137:139:void <init>(cn.bizzan.ui.home.OneFragment) -> <init>
+    93:848:void <clinit>() -> <clinit>
+    92:813:void <init>() -> <init>
+    92:92:java.util.List access$000(cn.bizzan.ui.home.OneFragment) -> a
+    92:92:void access$300(cn.bizzan.ui.home.OneFragment,java.util.List) -> a
+    273:325:void initViews(android.os.Bundle) -> a
+    565:566:void setPresenter(cn.bizzan.ui.home.MainContract$OnePresenter) -> a
+    570:571:void setPresenter(cn.bizzan.ui.home.presenter.CommonPresenter) -> a
+    631:636:void setChatTip(boolean) -> a
+    92:92:cn.bizzan.adapter.HomeAdapter access$100(cn.bizzan.ui.home.OneFragment) -> b
+    576:626:void dataLoaded(java.util.List,java.util.List) -> b
+    92:92:java.util.List access$200(cn.bizzan.ui.home.OneFragment) -> c
+    686:728:void bannersSuccess(java.util.List) -> c
+    92:92:java.util.List access$400(cn.bizzan.ui.home.OneFragment) -> d
+    333:335:void fillWidget() -> d
+    733:733:void bannersFail(java.lang.Integer,java.lang.String) -> d
+    165:165:int getLayoutId() -> f
+    816:846:void setMarqueeView(java.util.List) -> f
+    556:561:void initImmersionBar() -> h
+    192:195:void hideLoadingPopup() -> hideLoadingPopup
+    851:852:boolean isContainChinese(java.lang.String) -> i
+    519:529:void loadData() -> j
+    329:329:void obtainData() -> k
+    225:225:java.lang.String getmTag() -> l
+    675:682:void notifyData() -> m
+    541:542:void myWalletFail(java.lang.Integer,java.lang.String) -> myWalletFail
+    533:537:void myWalletSuccess(java.util.List) -> myWalletSuccess
+    736:746:void tcpNotify() -> n
+    545:553:void calcuTotal() -> o
+    160:161:android.view.View onCreateView(android.view.LayoutInflater,android.view.ViewGroup,android.os.Bundle) -> onCreateView
+    750:754:void onDestroyView() -> onDestroyView
+    764:776:void onHiddenChanged(boolean) -> onHiddenChanged
+    230:232:void onPause() -> onPause
+    198:201:void onResume() -> onResume
+    758:760:void onStart() -> onStart
+    235:268:void dialogShow2() -> p
+    779:809:void getMessage() -> q
+    172:177:void initLoadingPopup() -> r
+    501:515:void initRvContent() -> s
+    92:92:void setPresenter(java.lang.Object) -> setPresenter
+    205:212:void loginingViewText() -> t
+    215:221:void notLoginViewText() -> u
+cn.bizzan.ui.home.OneFragment$1 -> cn.bizzan.ui.home.OneFragment$e:
+    141:143:void <init>(cn.bizzan.ui.home.OneFragment) -> <init>
 cn.bizzan.ui.home.OneFragment$10 -> cn.bizzan.ui.home.OneFragment$a:
     cn.bizzan.ui.home.OneFragment this$0 -> a
-    505:505:void <init>(cn.bizzan.ui.home.OneFragment) -> <init>
-    508:509:void onItemClick(com.chad.library.adapter.base.BaseQuickAdapter,android.view.View,int) -> onItemClick
+    509:509:void <init>(cn.bizzan.ui.home.OneFragment) -> <init>
+    512:513:void onItemClick(com.chad.library.adapter.base.BaseQuickAdapter,android.view.View,int) -> onItemClick
 cn.bizzan.ui.home.OneFragment$11 -> cn.bizzan.ui.home.OneFragment$b:
-    cn.bizzan.ui.home.OneFragment this$0 -> a
-    600:600:void <init>(cn.bizzan.ui.home.OneFragment) -> <init>
-    616:616:void onPageScrollStateChanged(int) -> onPageScrollStateChanged
-    604:604:void onPageScrolled(int,float,int) -> onPageScrolled
-    608:611:void onPageSelected(int) -> onPageSelected
-cn.bizzan.ui.home.OneFragment$12 -> cn.bizzan.ui.home.OneFragment$c:
     java.util.List val$obj -> a
     cn.bizzan.ui.home.OneFragment this$0 -> b
-    702:702:void <init>(cn.bizzan.ui.home.OneFragment,java.util.List) -> <init>
-    705:714:void OnBannerClick(int) -> OnBannerClick
+    710:710:void <init>(cn.bizzan.ui.home.OneFragment,java.util.List) -> <init>
+    713:722:void OnBannerClick(int) -> OnBannerClick
+cn.bizzan.ui.home.OneFragment$12 -> cn.bizzan.ui.home.OneFragment$c:
+    cn.bizzan.ui.home.OneFragment this$0 -> c
+    781:781:void <init>(cn.bizzan.ui.home.OneFragment) -> <init>
+    781:781:void onResponse(java.lang.Object) -> a
+    785:785:void onError(okhttp3.Request,java.lang.Exception) -> a
+    790:801:void onResponse(java.lang.String) -> a
+cn.bizzan.ui.home.OneFragment$12$1 -> cn.bizzan.ui.home.OneFragment$c$a:
+    792:792:void <init>(cn.bizzan.ui.home.OneFragment$12) -> <init>
 cn.bizzan.ui.home.OneFragment$13 -> cn.bizzan.ui.home.OneFragment$d:
-    cn.bizzan.ui.home.OneFragment this$0 -> c
-    773:773:void <init>(cn.bizzan.ui.home.OneFragment) -> <init>
-    773:773:void onResponse(java.lang.Object) -> a
-    777:777:void onError(okhttp3.Request,java.lang.Exception) -> a
-    782:793:void onResponse(java.lang.String) -> a
-cn.bizzan.ui.home.OneFragment$13$1 -> cn.bizzan.ui.home.OneFragment$d$a:
-    784:784:void <init>(cn.bizzan.ui.home.OneFragment$13) -> <init>
-cn.bizzan.ui.home.OneFragment$14 -> cn.bizzan.ui.home.OneFragment$e:
     cn.bizzan.ui.home.OneFragment this$0 -> a
-    795:795:void <init>(cn.bizzan.ui.home.OneFragment) -> <init>
-    798:799:void onItemClick(int,android.widget.TextView) -> a
-cn.bizzan.ui.home.OneFragment$2 -> cn.bizzan.ui.home.OneFragment$g:
+    803:803:void <init>(cn.bizzan.ui.home.OneFragment) -> <init>
+    806:807:void onItemClick(int,android.widget.TextView) -> a
+cn.bizzan.ui.home.OneFragment$2 -> cn.bizzan.ui.home.OneFragment$f:
     android.widget.CheckBox val$checkbox -> a
     android.app.Dialog val$dialog -> b
-    239:239:void <init>(cn.bizzan.ui.home.OneFragment,android.widget.CheckBox,android.app.Dialog) -> <init>
-    242:246:void onClick(android.view.View) -> onClick
-cn.bizzan.ui.home.OneFragment$3 -> cn.bizzan.ui.home.OneFragment$h:
+    243:243:void <init>(cn.bizzan.ui.home.OneFragment,android.widget.CheckBox,android.app.Dialog) -> <init>
+    246:250:void onClick(android.view.View) -> onClick
+cn.bizzan.ui.home.OneFragment$3 -> cn.bizzan.ui.home.OneFragment$g:
     android.widget.CheckBox val$checkbox -> a
     cn.bizzan.ui.home.OneFragment this$0 -> c
     android.app.Dialog val$dialog -> b
-    249:249:void <init>(cn.bizzan.ui.home.OneFragment,android.widget.CheckBox,android.app.Dialog) -> <init>
-    252:261:void onClick(android.view.View) -> onClick
-cn.bizzan.ui.home.OneFragment$4 -> cn.bizzan.ui.home.OneFragment$i:
+    253:253:void <init>(cn.bizzan.ui.home.OneFragment,android.widget.CheckBox,android.app.Dialog) -> <init>
+    256:265:void onClick(android.view.View) -> onClick
+cn.bizzan.ui.home.OneFragment$4 -> cn.bizzan.ui.home.OneFragment$h:
     cn.bizzan.ui.home.OneFragment this$0 -> a
-    272:272:void <init>(cn.bizzan.ui.home.OneFragment) -> <init>
-    275:280:void onClick(android.view.View) -> onClick
-cn.bizzan.ui.home.OneFragment$5 -> cn.bizzan.ui.home.OneFragment$j:
+    276:276:void <init>(cn.bizzan.ui.home.OneFragment) -> <init>
+    279:284:void onClick(android.view.View) -> onClick
+cn.bizzan.ui.home.OneFragment$5 -> cn.bizzan.ui.home.OneFragment$i:
     cn.bizzan.ui.home.OneFragment this$0 -> a
-    282:282:void <init>(cn.bizzan.ui.home.OneFragment) -> <init>
-    285:286:void onClick(android.view.View) -> onClick
-cn.bizzan.ui.home.OneFragment$6 -> cn.bizzan.ui.home.OneFragment$k:
+    286:286:void <init>(cn.bizzan.ui.home.OneFragment) -> <init>
+    289:290:void onClick(android.view.View) -> onClick
+cn.bizzan.ui.home.OneFragment$6 -> cn.bizzan.ui.home.OneFragment$j:
     cn.bizzan.ui.home.OneFragment this$0 -> a
-    288:288:void <init>(cn.bizzan.ui.home.OneFragment) -> <init>
-    291:292:void onClick(android.view.View) -> onClick
-cn.bizzan.ui.home.OneFragment$7 -> cn.bizzan.ui.home.OneFragment$l:
+    292:292:void <init>(cn.bizzan.ui.home.OneFragment) -> <init>
+    295:296:void onClick(android.view.View) -> onClick
+cn.bizzan.ui.home.OneFragment$7 -> cn.bizzan.ui.home.OneFragment$k:
     cn.bizzan.ui.home.OneFragment this$0 -> a
-    294:294:void <init>(cn.bizzan.ui.home.OneFragment) -> <init>
-    297:298:void onClick(android.view.View) -> onClick
-cn.bizzan.ui.home.OneFragment$8 -> cn.bizzan.ui.home.OneFragment$m:
+    298:298:void <init>(cn.bizzan.ui.home.OneFragment) -> <init>
+    301:302:void onClick(android.view.View) -> onClick
+cn.bizzan.ui.home.OneFragment$8 -> cn.bizzan.ui.home.OneFragment$l:
     cn.bizzan.ui.home.OneFragment this$0 -> a
-    300:300:void <init>(cn.bizzan.ui.home.OneFragment) -> <init>
-    303:304:void onClick(android.view.View) -> onClick
-cn.bizzan.ui.home.OneFragment$9 -> cn.bizzan.ui.home.OneFragment$n:
+    304:304:void <init>(cn.bizzan.ui.home.OneFragment) -> <init>
+    307:308:void onClick(android.view.View) -> onClick
+cn.bizzan.ui.home.OneFragment$9 -> cn.bizzan.ui.home.OneFragment$m:
     cn.bizzan.ui.home.OneFragment this$0 -> a
-    306:306:void <init>(cn.bizzan.ui.home.OneFragment) -> <init>
-    309:311:void onClick(android.view.View) -> onClick
-cn.bizzan.ui.home.OneFragment$MyAdapter -> cn.bizzan.ui.home.OneFragment$o:
+    310:310:void <init>(cn.bizzan.ui.home.OneFragment) -> <init>
+    313:315:void onClick(android.view.View) -> onClick
+cn.bizzan.ui.home.OneFragment$MyAdapter -> cn.bizzan.ui.home.OneFragment$n:
     java.util.List lists -> a
     cn.bizzan.ui.home.OneFragment this$0 -> d
     int colorA -> b
     int colorC -> c
-    333:337:void <init>(cn.bizzan.ui.home.OneFragment) -> <init>
-    360:361:void destroyItem(android.view.ViewGroup,int,java.lang.Object) -> destroyItem
-    341:350:int getCount() -> getCount
-    365:365:int getItemPosition(java.lang.Object) -> getItemPosition
-    370:490:java.lang.Object instantiateItem(android.view.ViewGroup,int) -> instantiateItem
-    355:355:boolean isViewFromObject(android.view.View,java.lang.Object) -> isViewFromObject
-cn.bizzan.ui.home.OneFragment$MyAdapter$1 -> cn.bizzan.ui.home.OneFragment$o$a:
+    337:341:void <init>(cn.bizzan.ui.home.OneFragment) -> <init>
+    364:365:void destroyItem(android.view.ViewGroup,int,java.lang.Object) -> destroyItem
+    345:354:int getCount() -> getCount
+    369:369:int getItemPosition(java.lang.Object) -> getItemPosition
+    374:494:java.lang.Object instantiateItem(android.view.ViewGroup,int) -> instantiateItem
+    359:359:boolean isViewFromObject(android.view.View,java.lang.Object) -> isViewFromObject
+cn.bizzan.ui.home.OneFragment$MyAdapter$1 -> cn.bizzan.ui.home.OneFragment$n$a:
     cn.bizzan.ui.home.OneFragment$MyAdapter this$1 -> b
     cn.bizzan.entity.Currency val$currency -> a
-    426:426:void <init>(cn.bizzan.ui.home.OneFragment$MyAdapter,cn.bizzan.entity.Currency) -> <init>
-    429:430:void onClick(android.view.View) -> onClick
-cn.bizzan.ui.home.OneFragment$MyAdapter$2 -> cn.bizzan.ui.home.OneFragment$o$b:
+    430:430:void <init>(cn.bizzan.ui.home.OneFragment$MyAdapter,cn.bizzan.entity.Currency) -> <init>
+    433:434:void onClick(android.view.View) -> onClick
+cn.bizzan.ui.home.OneFragment$MyAdapter$2 -> cn.bizzan.ui.home.OneFragment$n$b:
     cn.bizzan.ui.home.OneFragment$MyAdapter this$1 -> b
     cn.bizzan.entity.Currency val$currency -> a
-    453:453:void <init>(cn.bizzan.ui.home.OneFragment$MyAdapter,cn.bizzan.entity.Currency) -> <init>
-    456:457:void onClick(android.view.View) -> onClick
-cn.bizzan.ui.home.OneFragment$MyAdapter$3 -> cn.bizzan.ui.home.OneFragment$o$c:
+    457:457:void <init>(cn.bizzan.ui.home.OneFragment$MyAdapter,cn.bizzan.entity.Currency) -> <init>
+    460:461:void onClick(android.view.View) -> onClick
+cn.bizzan.ui.home.OneFragment$MyAdapter$3 -> cn.bizzan.ui.home.OneFragment$n$c:
     cn.bizzan.ui.home.OneFragment$MyAdapter this$1 -> b
     cn.bizzan.entity.Currency val$currency -> a
-    480:480:void <init>(cn.bizzan.ui.home.OneFragment$MyAdapter,cn.bizzan.entity.Currency) -> <init>
-    483:484:void onClick(android.view.View) -> onClick
+    484:484:void <init>(cn.bizzan.ui.home.OneFragment$MyAdapter,cn.bizzan.entity.Currency) -> <init>
+    487:488:void onClick(android.view.View) -> onClick
 cn.bizzan.ui.home.OneFragment_ViewBinding -> cn.bizzan.ui.home.OneFragment_ViewBinding:
     cn.bizzan.ui.home.OneFragment target -> a
-    26:46:void <init>(cn.bizzan.ui.home.OneFragment,android.view.View) -> <init>
-    51:52:void unbind() -> unbind
+    25:44:void <init>(cn.bizzan.ui.home.OneFragment,android.view.View) -> <init>
+    49:50:void unbind() -> unbind
 cn.bizzan.ui.home.ThreeTextFragment -> cn.bizzan.ui.home.ThreeTextFragment:
     int historyPage -> l
     java.util.List mOne -> p
@@ -26235,12 +26221,12 @@ cn.bizzan.ui.kline.KlineActivity$8 -> cn.bizzan.ui.kline.KlineActivity$h:
     883:883:void <init>(cn.bizzan.ui.kline.KlineActivity) -> <init>
     886:888:void onSelectedChanged(com.github.tifezh.kchartlib.chart.BaseKChartView,java.lang.Object,int) -> a
 cn.bizzan.ui.kline.KlineActivity_ViewBinding -> cn.bizzan.ui.kline.KlineActivity_ViewBinding:
-    android.view.View view2131297117 -> h
+    android.view.View view2131297115 -> h
     cn.bizzan.ui.kline.KlineActivity target -> a
     android.view.View view2131296481 -> c
-    android.view.View view2131297218 -> b
-    android.view.View view2131297177 -> e
-    android.view.View view2131297139 -> d
+    android.view.View view2131297213 -> b
+    android.view.View view2131297172 -> e
+    android.view.View view2131297135 -> d
     android.view.View view2131296528 -> g
     android.view.View view2131297053 -> f
     46:138:void <init>(cn.bizzan.ui.kline.KlineActivity,android.view.View) -> <init>
@@ -34527,7 +34513,7 @@ com.github.mikephil.charting.charts.Chart -> com.github.mikephil.charting.charts
     499:499:boolean isHighlightPerTapEnabled() -> i
     1204:1204:boolean isLogEnabled() -> j
     void notifyDataSetChanged() -> k
-    521:520:boolean valuesToHighlight() -> l
+    520:520:boolean valuesToHighlight() -> l
     1751:1757:void onDetachedFromWindow() -> onDetachedFromWindow
     413:447:void onDraw(android.graphics.Canvas) -> onDraw
     1687:1690:void onLayout(boolean,int,int,int,int) -> onLayout

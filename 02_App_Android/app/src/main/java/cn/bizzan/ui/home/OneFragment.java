@@ -10,7 +10,9 @@ import android.net.Uri;
 import android.os.Bundle;
 import android.support.v4.content.ContextCompat;
 import android.support.v4.view.PagerAdapter;
+/* john
 import android.support.v4.view.ViewPager;
+ */
 import android.support.v7.app.AlertDialog;
 import android.support.v7.widget.LinearLayoutManager;
 import android.support.v7.widget.RecyclerView;
@@ -101,8 +103,10 @@ public class OneFragment extends BaseTransFragment implements cn.bizzan.ui.home.
     MarqueeView marqueeView;
     @BindView(R.id.llTitle)
     LinearLayout llTitle;
+    /* john
     @BindView(R.id.viewPager)
     ViewPager viewPager;
+     */
     @BindView(R.id.main_linear)
     LinearLayout main_linear;
     @BindView(R.id.line_help)
@@ -574,7 +578,9 @@ public class OneFragment extends BaseTransFragment implements cn.bizzan.ui.home.
         this.currenciesTwo.clear();
         this.currenciesTwo.addAll(tow);
         adapter2 = new MyAdapter();
+        /* john
         viewPager.setAdapter(adapter2);
+         */
         int size = currenciesTwo.size();
         int i1 = size % 3;
         int a = size / 3;
@@ -597,6 +603,7 @@ public class OneFragment extends BaseTransFragment implements cn.bizzan.ui.home.
             main_linear.addView(view, layoutParams);
         }
         mHomeAdapter.notifyDataSetChanged();
+        /*
         viewPager.addOnPageChangeListener(new ViewPager.OnPageChangeListener() {
             @Override
             public void onPageScrolled(int position, float positionOffset, int positionOffsetPixels) {
@@ -615,6 +622,7 @@ public class OneFragment extends BaseTransFragment implements cn.bizzan.ui.home.
 
             }
         });
+         */
     }
 
     private int mNum = 0;

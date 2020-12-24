@@ -89,7 +89,7 @@
                     <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:text="\n关于BIZZAN\n"
+                        android:text="\n关于链分通\n"
                         android:textColor="@color/primaryText"
                         android:textSize="20sp"
                         android:textStyle="bold" />
@@ -128,7 +128,7 @@
                     <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:text="\nBIZZAN理念\n"
+                        android:text="\n链分通理念\n"
                         android:textColor="@color/primaryText"
                         android:textSize="20sp"
                         android:textStyle="bold" />
@@ -166,7 +166,7 @@
                     <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:text="\nBIZZAN目标\n"
+                        android:text="\n链分通目标\n"
                         android:textColor="@color/primaryText"
                         android:textSize="20sp"
                         android:textStyle="bold" />
@@ -214,7 +214,7 @@
                         android:layout_marginLeft="20dp"
                         android:layout_marginRight="20dp"
                         android:lineSpacingMultiplier="1.2"
-                        android:text="BIZZAN邮箱：service@bizzan.com"
+                        android:text="链分通邮箱：service@jlw.com"
                         android:textColor="@color/primaryText"
                         android:textSize="16sp" />
                 </LinearLayout>
@@ -238,7 +238,7 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_marginTop="5dp"
-                    android:text="BIZZAN官方社群"
+                    android:text="链分通官方社群"
                     android:textColor="@color/primaryText"
                     android:textSize="18sp" />
             </LinearLayout>

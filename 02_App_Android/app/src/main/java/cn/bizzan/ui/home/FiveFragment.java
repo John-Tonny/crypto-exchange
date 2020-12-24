@@ -91,6 +91,7 @@ public class FiveFragment extends BaseTransFragment implements MainContract.Five
     @BindView(R.id.tvAccount)
     TextView tvAccount;
 
+    /* john
     @BindView(R.id.tvLevelOneCount)
     TextView tvLevelOneCount;
     @BindView(R.id.tvLevelTwoCount)
@@ -101,6 +102,7 @@ public class FiveFragment extends BaseTransFragment implements MainContract.Five
     TextView tvCurrentLevel;
     @BindView(R.id.tvMyPromotionCode)
     TextView tvMyPromotionCode;
+     */
 
     @BindView(R.id.ivHeader)
     ImageView ivHeader;
@@ -306,7 +308,7 @@ public class FiveFragment extends BaseTransFragment implements MainContract.Five
                 }
             }
         });
-
+        /* john
         tvMyPromotionCode.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -320,6 +322,7 @@ public class FiveFragment extends BaseTransFragment implements MainContract.Five
                 }
             }
         });
+         */
     }
 
     @Override
@@ -395,10 +398,12 @@ public class FiveFragment extends BaseTransFragment implements MainContract.Five
             sumCny = 0.00;
             sumUsd = 0.000000;
             tvNickName.setText(WonderfulToastUtils.getString(R.string.not_logged_in));
+            /* john
             tvLevelOneCount.setText("—");
             tvLevelTwoCount.setText("—");
             tvEstimatedReward.setText("—");
             tvCurrentLevel.setText("—");
+             */
             Glide.with(getActivity().getApplicationContext()).load(R.mipmap.icon_default_header).into(ivHeader);
         } catch (Exception e) {
 
@@ -411,10 +416,12 @@ public class FiveFragment extends BaseTransFragment implements MainContract.Five
             presenter.safeSetting(getmActivity().getToken());
             User user = MyApplication.getApp().getCurrentUser();
             tvNickName.setText(user.getUsername());
+            /* john
             tvLevelOneCount.setText(String.valueOf(user.getFirstLevel()));
             tvLevelTwoCount.setText(String.valueOf(user.getSecondLevel()));
             tvCurrentLevel.setText(this.getPartnerNameByCount(user.getFirstLevel()));
             tvEstimatedReward.setText("0");
+             */
             if (!WonderfulStringUtils.isEmpty(user.getAvatar())) {
                 Glide.with(getActivity().getApplicationContext()).load(user.getAvatar()).into(ivHeader);
             } else {
@@ -459,6 +466,7 @@ public class FiveFragment extends BaseTransFragment implements MainContract.Five
         if(ret == null) {
             return;
         }
+        /* john
         try{
             tvEstimatedReward.setText(ret.getString("estimatedReward"));
             tvLevelOneCount.setText(ret.getString("levelOne"));
@@ -466,10 +474,11 @@ public class FiveFragment extends BaseTransFragment implements MainContract.Five
         } catch (JSONException e) {
             tvEstimatedReward.setText("—");
         }
+         */
     }
     @Override
     public void myPromotionFail(Integer code, String toastMessage){
-        tvEstimatedReward.setText("-");
+        // tvEstimatedReward.setText("-");
     }
     @Override
     public void myWalletSuccess(List<Coin> obj) {

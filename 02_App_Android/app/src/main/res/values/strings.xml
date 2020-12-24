@@ -1,6 +1,6 @@
 <resources>
 
-    <string name="app_name">币严</string>
+    <string name="app_name">链分通</string>
     <string name="cancle">取消</string>
     <string name="confirm">确定</string>
     <string name="back">返回</string>
@@ -176,7 +176,7 @@
     <string name="my_version">版本更新</string>
     <string name="has_new_version">发现新版本</string>
     <string name="my_setting">设置中心</string>
-    <string name="balance">总资产约(合USDT)</string>
+    <string name="balance">总资产约(合CNY)</string>
     <string name="balance_1">资产管理</string>
     <string name="balance_2">我的资产</string>
     <string name="balance_3">资产流水</string>
@@ -209,7 +209,7 @@
     <string name="currency">币种</string>
     <string name="remarks">备注</string>
     <string name="remark">备注(Memo)</string>
-    <string name="invite">邀请您加入币严(BIZZAN)</string>
+    <string name="invite">邀请您加入久零(链分通)</string>
     <string name="inviteTip">邀请好友，赚取佣金\n和朋友一起赚钱\n
     </string>
     <string name="inviteTip2">专属推广链接:</string>
@@ -576,8 +576,8 @@
     <string name="forgot_password">忘记密码？</string>
     <string name="goto_regist">立即注册</string>
     <string name="goto_login">立即登录</string>
-    <string name="no_zhanghao">没有BIZZAN帐号？</string>
-    <string name="yes_zhanghao">已有BIZZAN帐号</string>
+    <string name="no_zhanghao">没有链分通帐号？</string>
+    <string name="yes_zhanghao">已有链分通帐号</string>
 
     <!--注册-->
     <string name="email_sign_up">邮箱注册</string>
@@ -610,11 +610,11 @@
     <string name="copy_success">已复制到剪贴板!</string>
     <!--关于我们-->
     <string name="about_1">
-BIZZAN国际数字加密资产交易平台是一个综合数字资产交易平台,我们拥有领先的技术实力、优质的客户服务和良好的用户体验,为广大数字货币爱好者提供一个自由的网上交换的平台。\n\n
-BIZZAN国际数字加密资产交易平台同时还提供数字货币白皮书规划、加密算法调整、数字货币研发、交易平台上架一条龙的区块链服务。\n\n
-BIZZAN国际数字加密资产交易平台海外运营中心分别设立在新加坡、柬埔寨、马绍尔。国内北京、正州、深圳三大办事处；中国总部设立在海南陵水清水湾国际信息产业园。\n</string>
-    <string name="about_2">当下数字资产发展如火如荼，良莠不齐。BIZZAN会筛选优质数字资产，重视项目的透明度和治理结构，在自有评级体系形成的筛选标准之上，参考市场投资者的决策，共同发掘优质数字资产价值。\n我们的理念是：与每一位自由汇集于此的成员共同塑造一方价值流通、合抱共耕的优质生态土壤。\n</string>
-    <string name="about_3">BIZZAN的目标是建立一个相对去中心化的交易平台。平台的运营环境安全、公平而良性的发展，有创新、可迭代，符合社会进步和发展的趋势。</string>
+        链分通国际数字加密资产交易平台是一个综合数字资产交易平台,我们拥有领先的技术实力、优质的客户服务和良好的用户体验,为广大数字货币爱好者提供一个自由的网上交换的平台。\n\n
+链分通国际数字加密资产交易平台同时还提供数字货币白皮书规划、加密算法调整、数字货币研发、交易平台上架一条龙的区块链服务。\n\n
+链分通国际数字加密资产交易平台海外运营中心分别设立在新加坡、柬埔寨、马绍尔。国内北京、正州、深圳三大办事处；中国总部设立在海南陵水清水湾国际信息产业园。\n</string>
+    <string name="about_2">当下数字资产发展如火如荼，良莠不齐。链分通会筛选优质数字资产，重视项目的透明度和治理结构，在自有评级体系形成的筛选标准之上，参考市场投资者的决策，共同发掘优质数字资产价值。\n我们的理念是：与每一位自由汇集于此的成员共同塑造一方价值流通、合抱共耕的优质生态土壤。\n</string>
+    <string name="about_3">链分通的目标是建立一个相对去中心化的交易平台。平台的运营环境安全、公平而良性的发展，有创新、可迭代，符合社会进步和发展的趋势。</string>
 
     <string-array name="home_two_top_tab">
         <item>自选</item>

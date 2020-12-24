@@ -75,7 +75,7 @@ public class MessageDetailActivity extends BaseActivity implements MessageDetail
             public void onClick(View v) {
                 Intent textIntent = new Intent(Intent.ACTION_SEND);
                 textIntent.setType("text/plain");
-                textIntent.putExtra(Intent.EXTRA_TEXT, title + "(详情：https://www.bizzan.com/notice/index?id=" + id + ") - BIZZAN.COM | 币严 | 全球比特币交易平台 | 全球数字资产交易平台");
+                textIntent.putExtra(Intent.EXTRA_TEXT, title + "(详情：https://www.okman.info/notice/index?id=" + id + ") - OKMAN.INFO | 久零 | 全球比特币交易平台 | 全球数字资产交易平台");
                 startActivity(Intent.createChooser(textIntent, "分享"));
             }
         });

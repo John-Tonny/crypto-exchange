@@ -61,13 +61,17 @@ public class CTCActivity  extends BaseActivity implements CTCContract.View{
     LinearLayout llTitle;
     @BindView(R.id.llBuy)
     LinearLayout llBuy;
+    /* john
     @BindView(R.id.llSell)
     LinearLayout llSell;
+     */
 
     @BindView(R.id.tabBuy)
     LinearLayout tabBuy;
+    /* john
     @BindView(R.id.tabSell)
     LinearLayout tabSell;
+     */
 
     @BindView(R.id.buyPrice)
     TextView buyPrice;
@@ -86,6 +90,7 @@ public class CTCActivity  extends BaseActivity implements CTCContract.View{
     @BindView(R.id.buy_tab_underline)
     View buy_tab_underline;
 
+    /* john
     @BindView(R.id.sellPrice)
     TextView sellPrice;
     @BindView(R.id.sellAmount)
@@ -102,6 +107,7 @@ public class CTCActivity  extends BaseActivity implements CTCContract.View{
     TextView tv_sell_tab;
     @BindView(R.id.sell_tab_underline)
     View sell_tab_underline;
+     */
 
     @BindView(R.id.rvDetail)
     RecyclerView rvDetail;
@@ -168,7 +174,7 @@ public class CTCActivity  extends BaseActivity implements CTCContract.View{
         });
 
         llBuy.setVisibility(View.VISIBLE);
-        llSell.setVisibility(View.GONE);
+        // llSell.setVisibility(View.GONE);  // john
 
         payTypeArr = getResources().getStringArray(R.array.ctc_payType);
         for (int i = 0; i < payTypeArr.length; i++) {
@@ -189,16 +195,18 @@ public class CTCActivity  extends BaseActivity implements CTCContract.View{
             name.setPayName(payTypeBankArr[i]);
             payTypeBankList.add(name.getPayName());
         }
+        /* john
         llPayTypeSell.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 showDialogPayTypeSell();
             }
         });
+         */
 
         // 初始化付款/收款方式
         tvPayTypeBuy.setText(payTypeList.get(0));
-        tvPayTypeSell.setText(payTypeBankList.get(0));
+        // tvPayTypeSell.setText(payTypeBankList.get(0));  // john
 
         // Tab 切换
         tabBuy.setOnClickListener(new View.OnClickListener() {
@@ -207,19 +215,21 @@ public class CTCActivity  extends BaseActivity implements CTCContract.View{
                 switchBuySell(0);
             }
         });
+        /* john
         tabSell.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 switchBuySell(1);
             }
         });
+         */
 
         // 设置Hint文字字体
         SpannableString ss = new SpannableString("请输入50~50000之间的数字");//定义hint的值
         AbsoluteSizeSpan ass = new AbsoluteSizeSpan(13,true);//设置字体大小 true表示单位是sp
         ss.setSpan(ass, 0, ss.length(), Spanned.SPAN_EXCLUSIVE_EXCLUSIVE);
         buyAmount.setHint(new SpannedString(ss));
-        sellAmount.setHint(new SpannedString(ss));
+        // sellAmount.setHint(new SpannedString(ss));  // john
 
         btnBuy.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -227,13 +237,14 @@ public class CTCActivity  extends BaseActivity implements CTCContract.View{
                 btnBuyClick();
             }
         });
-
+        /* john
         btnSell.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 btnSellClick();
             }
         });
+         */
 
         buyAmount.addTextChangedListener(new IMyTextChange() {
             @Override
@@ -248,7 +259,7 @@ public class CTCActivity  extends BaseActivity implements CTCContract.View{
                 }
             }
         });
-
+        /* john
         sellAmount.addTextChangedListener(new IMyTextChange() {
             @Override
             public void afterTextChanged(Editable editable) {
@@ -263,6 +274,7 @@ public class CTCActivity  extends BaseActivity implements CTCContract.View{
                 }
             }
         });
+         */
 
         // 交易须知
         tvTradeKnow.setOnClickListener(new View.OnClickListener() {
@@ -309,6 +321,7 @@ public class CTCActivity  extends BaseActivity implements CTCContract.View{
     /**
      * 卖出按钮点击事件
      */
+    /* john
     private void btnSellClick(){
         if (!MyApplication.getApp().isLogin()) {
             startActivityForResult(new Intent(this, LoginActivity.class), LoginActivity.RETURN_LOGIN);
@@ -333,6 +346,7 @@ public class CTCActivity  extends BaseActivity implements CTCContract.View{
 
         showConfirmDialog();
     }
+     */
 
     /**
      * 短信验证码与资金密码输入确认弹出框
@@ -458,14 +472,14 @@ public class CTCActivity  extends BaseActivity implements CTCContract.View{
     }
     private void notLoginViewText() {
         btnBuy.setText("请先登录");
-        btnSell.setText("请先登录");
+        // btnSell.setText("请先登录");  // john
 
         adapter.setEnableLoadMore(false);
         refreshLayout.setEnabled(false);
     }
     private void loginingViewText() {
-        btnBuy.setText("买入USDT");
-        btnSell.setText("卖出USDT");
+        btnBuy.setText("买入JLQ");
+        // btnSell.setText("卖出JLQ");  // john
 
         // 加载数据
         presenter.safeSetting(getToken()); // 用户安全设定
@@ -482,9 +496,14 @@ public class CTCActivity  extends BaseActivity implements CTCContract.View{
     }
 
     private void newCtcOrder(){
+        /* john
         BigDecimal nPrice = direction == 0 ? new BigDecimal(buyPrice.getText().toString()) : new BigDecimal(sellPrice.getText().toString());
         BigDecimal nAmount = direction == 0 ? new BigDecimal(buyAmount.getText().toString()) : new BigDecimal(sellAmount.getText().toString());
         String nPayType = direction == 0 ? buyPayType : sellPayType;
+         */
+        BigDecimal nPrice = new BigDecimal(buyPrice.getText().toString());
+        BigDecimal nAmount = new BigDecimal(buyAmount.getText().toString());
+        String nPayType = buyPayType ;
         presenter.ctcNewOrder(getToken(), nPrice, nAmount, nPayType, direction, "USDT", fundpwd, phoneCode);
     }
 
@@ -492,21 +511,23 @@ public class CTCActivity  extends BaseActivity implements CTCContract.View{
         if(side == 0) {
             direction = 0;
             llBuy.setVisibility(View.VISIBLE);
-            llSell.setVisibility(View.GONE);
+            // llSell.setVisibility(View.GONE);
             tv_buy_tab.setSelected(true);
             buy_tab_underline.setVisibility(View.VISIBLE);
-
+            /* john
             tv_sell_tab.setSelected(false);
             sell_tab_underline.setVisibility(View.GONE);
+             */
         }else{
             direction = 1;
             llBuy.setVisibility(View.GONE);
-            llSell.setVisibility(View.VISIBLE);
+            // llSell.setVisibility(View.VISIBLE);  // john
             tv_buy_tab.setSelected(false);
             buy_tab_underline.setVisibility(View.GONE);
-
+            /* john
             tv_sell_tab.setSelected(true);
             sell_tab_underline.setVisibility(View.VISIBLE);
+             */
         }
     }
 
@@ -543,6 +564,7 @@ public class CTCActivity  extends BaseActivity implements CTCContract.View{
     /**
      * 选择卖出时的收款方式
      */
+    /* john
     private void showDialogPayTypeSell() {
         //条件选择器
         OptionsPickerView pvOptions = new OptionsPickerBuilder(CTCActivity.this, new OnOptionsSelectListener() {
@@ -569,6 +591,7 @@ public class CTCActivity  extends BaseActivity implements CTCContract.View{
         pvOptions.setPicker(payTypeBankList);//取消按钮文字颜色;
         pvOptions.show();
     }
+     */
     @Override
     public void setPresenter(CTCContract.Presenter presenter) {
         this.presenter = presenter;
@@ -650,8 +673,11 @@ public class CTCActivity  extends BaseActivity implements CTCContract.View{
 
     @Override
     public void ctcPriceSuccess(CTCPrice obj) {
+        /* john
         buyPrice.setText(obj.getBuy().setScale(2).toString());
         sellPrice.setText(obj.getSell().setScale(2).toString());
+         */
+        buyPrice.setText("1.00");
     }
 
     @Override

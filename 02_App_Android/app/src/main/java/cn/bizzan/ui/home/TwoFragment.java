@@ -59,11 +59,13 @@ public class TwoFragment extends BaseNestingTransFragment implements MainContrac
     @Override
     protected void initViews(Bundle savedInstanceState) {
         if (savedInstanceState != null) recoveryFragments();
-        vpPager.setOffscreenPageLimit(3);
+        vpPager.setOffscreenPageLimit(1);   // john
+        // vpPager.setOffscreenPageLimit(3);
         List<String> tabs = Arrays.asList(this.tabs);
         vpPager.setAdapter(new PagerAdapter(getChildFragmentManager(), fragments, tabs));
         tab.setupWithViewPager(vpPager, true);
-        tab.getTabAt(1).select();
+        tab.getTabAt(0).select();   //  john
+        // tab.getTabAt(1).select();
         ibMessage.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
@@ -74,31 +76,37 @@ public class TwoFragment extends BaseNestingTransFragment implements MainContrac
     private boolean isLoad = false;
     private void changeLoad(boolean isLoads){
         isLoad = !isLoads;
+        /* john
         if(usdtMarketFragment !=null) usdtMarketFragment.isChange(isLoad);
         if(btcMarketFragment != null) btcMarketFragment.isChange(isLoad);
+        */
         if(favoriteFragment != null) favoriteFragment.isChange(isLoad);
     }
     @Override
     protected void addFragments() {
         int type = MarketBaseFragment.MarketOperateCallback.TYPE_TO_KLINE;
         if (favoriteFragment == null) fragments.add(favoriteFragment = FavoriteFragment.getInstance(type));
+        /*
         if (usdtMarketFragment == null) fragments.add(usdtMarketFragment = USDTMarketFragment.getInstance(type));
         if (btcMarketFragment == null) fragments.add(btcMarketFragment = BTCMarketFragment.getInstance(type));
         if (ethMarketFragment == null) fragments.add(ethMarketFragment = ETHMarketFragment.getInstance(type));
+         */
     }
 
     @Override
     protected void recoveryFragments() {
         favoriteFragment = (FavoriteFragment) getChildFragmentManager().findFragmentByTag(makeFragmentName(vpPager.getId(), 0));
+        /*
         usdtMarketFragment = (USDTMarketFragment) getChildFragmentManager().findFragmentByTag(makeFragmentName(vpPager.getId(), 1));
         btcMarketFragment = (BTCMarketFragment) getChildFragmentManager().findFragmentByTag(makeFragmentName(vpPager.getId(), 2));
         ethMarketFragment = (ETHMarketFragment) getChildFragmentManager().findFragmentByTag(makeFragmentName(vpPager.getId(), 3));
-
+        */
         fragments.add(favoriteFragment);
+        /*
         fragments.add(usdtMarketFragment);
         fragments.add(btcMarketFragment);
         fragments.add(ethMarketFragment);
-
+         */
     }
 
     @Override
@@ -111,9 +119,11 @@ public class TwoFragment extends BaseNestingTransFragment implements MainContrac
 
     @Override
     protected void loadData() {
+        /*
         usdtMarketFragment.dataLoaded(baseUsdt);
         btcMarketFragment.dataLoaded(baseBtc);
         ethMarketFragment.dataLoaded(baseEth);
+         */
         favoriteFragment.dataLoaded(favoriteCoin);
     }
 
@@ -133,13 +143,13 @@ public class TwoFragment extends BaseNestingTransFragment implements MainContrac
 
     public void dataLoaded(final List<Currency> baseUsdt, final List<Currency> baseBtc, final List<Currency> baseEth, final List<Currency> favoriteCoin) {
         this.baseUsdt.clear();
-        this.baseUsdt.addAll(baseUsdt);
+        // this.baseUsdt.addAll(baseUsdt);
 
         this.baseBtc.clear();
-        this.baseBtc.addAll(baseBtc);
+        // this.baseBtc.addAll(baseBtc);
 
         this.baseEth.clear();
-        this.baseEth.addAll(baseEth);
+        // this.baseEth.addAll(baseEth);
 
         this.favoriteCoin.clear();
         this.favoriteCoin.addAll(favoriteCoin);
@@ -148,6 +158,7 @@ public class TwoFragment extends BaseNestingTransFragment implements MainContrac
 //            Log.d("jiejie","-------" + this.favoriteCoin.size());
             favoriteFragment.dataLoaded(this.favoriteCoin);
         }catch (Exception e){}
+        /* john
         try {
             usdtMarketFragment.dataLoaded(baseUsdt);
             btcMarketFragment.dataLoaded(baseBtc);
@@ -156,6 +167,7 @@ public class TwoFragment extends BaseNestingTransFragment implements MainContrac
         } catch (NullPointerException ex) {
             //do nothing
         }
+         */
     }
 
     @Override
@@ -164,10 +176,12 @@ public class TwoFragment extends BaseNestingTransFragment implements MainContrac
     }
 
     public void tcpNotify() {
+        /* john
         if (usdtMarketFragment == null) return;
         usdtMarketFragment.tcpNotify();
         btcMarketFragment.tcpNotify();
         ethMarketFragment.tcpNotify();
+         */
         favoriteFragment.tcpNotify();
     }
 }

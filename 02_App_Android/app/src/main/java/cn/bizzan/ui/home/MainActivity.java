@@ -152,13 +152,17 @@ public class MainActivity extends BaseTransFragmentActivity implements MainContr
         oneFragment.tcpNotify();
         twoFragment.tcpNotify();
         threeFragment.tcpNotify();
+        /* john
         usdtMarketFragment.tcpNotify();
         btcMarketFragment.tcpNotify();
         ethMarketFragment.tcpNotify();
+         */
         favoriteFragment.tcpNotify();
+        /* john
         usdtMarketFragment2.tcpNotify();
         btcMarketFragment2.tcpNotify();
         ethMarketFragment2.tcpNotify();
+         */
         favoriteFragment2.tcpNotify();
     }
 
@@ -360,8 +364,8 @@ public class MainActivity extends BaseTransFragmentActivity implements MainContr
         dlRoot.addDrawerListener(new DrawerListener() {
             @Override
             public void onDrawerOpened(View drawerView) {
-                usdtMarketFragment.notifyData();
-                usdtMarketFragment2.notifyData();
+                // usdtMarketFragment.notifyData();
+                // usdtMarketFragment2.notifyData();
             }
 
             @Override
@@ -386,7 +390,8 @@ public class MainActivity extends BaseTransFragmentActivity implements MainContr
         List<String> titles = Arrays.asList(this.titles);
         vpMenu.setAdapter(new PagerAdapter(getSupportFragmentManager(), menusFragments2, titles));
         tab.setupWithViewPager(vpMenu);
-        tab.getTabAt(1).select();
+        tab.getTabAt(0).select(); // john
+        // tab.getTabAt(1).select();
         new OnePresenter(Injection.provideTasksRepository(getApplicationContext()), oneFragment);
         new TwoPresenter(Injection.provideTasksRepository(getApplicationContext()), twoFragment);
         new ThreePresenter(Injection.provideTasksRepository(getApplicationContext()), threeFragment);
@@ -408,22 +413,32 @@ public class MainActivity extends BaseTransFragmentActivity implements MainContr
 
     private void recoverMenuFragment() {
         favoriteFragment = (FavoriteFragment) getSupportFragmentManager().findFragmentByTag(BaseFragment.makeFragmentName(vpMenu.getId(), 0));
+        /* john
         usdtMarketFragment = (USDTMarketFragment) getSupportFragmentManager().findFragmentByTag(BaseFragment.makeFragmentName(vpMenu.getId(), 1));
         btcMarketFragment = (BTCMarketFragment) getSupportFragmentManager().findFragmentByTag(BaseFragment.makeFragmentName(vpMenu.getId(), 2));
         ethMarketFragment = (ETHMarketFragment) getSupportFragmentManager().findFragmentByTag(BaseFragment.makeFragmentName(vpMenu.getId(), 3));
+        */
+
         menusFragments.add(favoriteFragment);
+        /*
         menusFragments.add(usdtMarketFragment);
         menusFragments.add(btcMarketFragment);
         menusFragments.add(ethMarketFragment);
+        */
 
         favoriteFragment2 = (Favorite2Fragment) getSupportFragmentManager().findFragmentByTag(BaseFragment.makeFragmentName(vpMenu.getId(), 0));
+        /* john
         usdtMarketFragment2 = (USDTMarket2Fragment) getSupportFragmentManager().findFragmentByTag(BaseFragment.makeFragmentName(vpMenu.getId(), 1));
         btcMarketFragment2 = (BTCMarket2Fragment) getSupportFragmentManager().findFragmentByTag(BaseFragment.makeFragmentName(vpMenu.getId(), 2));
         ethMarketFragment2 = (ETHMarket2Fragment) getSupportFragmentManager().findFragmentByTag(BaseFragment.makeFragmentName(vpMenu.getId(), 3));
+         */
+
         menusFragments2.add(favoriteFragment2);
+        /* john
         menusFragments2.add(usdtMarketFragment2);
         menusFragments2.add(btcMarketFragment2);
         menusFragments2.add(ethMarketFragment2);
+         */
     }
 
     private void addFragments() {
@@ -433,6 +448,7 @@ public class MainActivity extends BaseTransFragmentActivity implements MainContr
             menusFragments.add(favoriteFragment = FavoriteFragment.getInstance(type));
             menusFragments2.add(favoriteFragment2 = Favorite2Fragment.getInstance(type));
         }
+        /* john
         if (usdtMarketFragment == null) {
             menusFragments.add(usdtMarketFragment = USDTMarketFragment.getInstance(type));
             menusFragments2.add(usdtMarketFragment2 = USDTMarket2Fragment.getInstance(type));
@@ -445,6 +461,7 @@ public class MainActivity extends BaseTransFragmentActivity implements MainContr
             menusFragments.add(ethMarketFragment = ETHMarketFragment.getInstance(type));
             menusFragments2.add(ethMarketFragment2 = ETHMarket2Fragment.getInstance(type));
         }
+         */
     }
 
     public void selecte(View v, int page) {
@@ -655,9 +672,11 @@ public class MainActivity extends BaseTransFragmentActivity implements MainContr
         this.currencyListAll.addAll(currencies);
         MyApplication.list.clear();
         MyApplication.list.addAll(currencies);
+        /* john
         baseUsdt = Currency.baseCurrencies(currencyListAll, "USDT");
         baseBtc = Currency.baseCurrencies(currencyListAll, "BTC");
         baseEth = Currency.baseCurrencies(currencyListAll, "ETH");
+         */
         WonderfulLogUtils.logi("miao", "baseUsdt:" + baseUsdt.size());
         if (MyApplication.getApp().isLogin()) {
             presenter.find(getToken());
@@ -717,14 +736,20 @@ public class MainActivity extends BaseTransFragmentActivity implements MainContr
     private void setData() {
         oneFragment.dataLoaded(currencies, currenciesTwo);
         twoFragment.dataLoaded(baseUsdt, baseBtc, baseEth, currencyListAll);
+        /* john
         usdtMarketFragment.dataLoaded(baseUsdt);
         usdtMarketFragment2.dataLoaded(baseUsdt);
+         */
         WonderfulLogUtils.logi("miao", "11baseUsdt:" + baseUsdt.size());
+        /* john
         btcMarketFragment.dataLoaded(baseBtc);
         ethMarketFragment.dataLoaded(baseEth);
+        */
         favoriteFragment.dataLoaded(currencyListAll);
+        /*
         btcMarketFragment2.dataLoaded(baseBtc);
         ethMarketFragment2.dataLoaded(baseEth);
+         */
         favoriteFragment2.dataLoaded(currencyListAll);
     }
 

@@ -109,6 +109,7 @@ public class OneFragment extends BaseTransFragment implements cn.bizzan.ui.home.
      */
     @BindView(R.id.main_linear)
     LinearLayout main_linear;
+
     @BindView(R.id.line_help)
     LinearLayout line_help;
     @BindView(R.id.text_gengduo)

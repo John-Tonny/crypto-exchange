@@ -1,7 +1,7 @@
 # compiler: R8
 # compiler_version: 1.5.64
 # min_api: 21
-# pg_map_id: ef2fdfa
+# pg_map_id: 3298a95
 android.arch.core.internal.FastSafeIterableMap -> a.a.a.a.a:
     java.util.HashMap mHashMap -> e
     35:37:void <init>() -> <init>
@@ -18205,8 +18205,8 @@ butterknife.internal.Utils -> butterknife.internal.Utils:
     25:28:android.graphics.drawable.Drawable getTintedDrawable(android.content.Context,int,int) -> getTintedDrawable
     59:59:java.util.List listOf(java.lang.Object[]) -> listOf
 cn.bizzan.R$styleable -> b.a.a:
-    7728:20275:void <clinit>() -> <clinit>
-    7660:7660:void <init>() -> <init>
+    7718:20265:void <clinit>() -> <clinit>
+    7650:7650:void <init>() -> <init>
 cn.bizzan.adapter.AddressAdapter -> cn.bizzan.adapter.AddressAdapter:
     19:20:void <init>(int,java.util.List) -> <init>
     24:25:void convert(com.chad.library.adapter.base.BaseViewHolder,cn.bizzan.entity.Address) -> a
@@ -22173,7 +22173,7 @@ cn.bizzan.ui.aboutus.AddUrlActivity -> cn.bizzan.ui.aboutus.AddUrlActivity:
     29:37:void show(android.app.Activity,java.lang.String,java.lang.String) -> show
 cn.bizzan.ui.aboutus.AddUrlActivity_ViewBinding -> cn.bizzan.ui.aboutus.AddUrlActivity_ViewBinding:
     cn.bizzan.ui.aboutus.AddUrlActivity target -> a
-    android.view.View view2131296481 -> b
+    android.view.View view2131296480 -> b
     28:43:void <init>(cn.bizzan.ui.aboutus.AddUrlActivity,android.view.View) -> <init>
     48:49:void unbind() -> unbind
 cn.bizzan.ui.aboutus.AddUrlActivity_ViewBinding$1 -> cn.bizzan.ui.aboutus.AddUrlActivity_ViewBinding$a:
@@ -23575,171 +23575,144 @@ cn.bizzan.ui.credit.CreditPresenter$1 -> cn.bizzan.ui.credit.f$a:
 cn.bizzan.ui.ctc.CTCActivity -> cn.bizzan.ui.ctc.CTCActivity:
     android.widget.TextView tvSendCode -> o
     java.util.List orderDetailList -> r
-    cn.bizzan.ui.ctc.CTCContract$Presenter presenter -> F
     java.util.List payTypeList -> v
+    cn.bizzan.ui.ctc.CTCContract$Presenter presenter -> E
     android.os.CountDownTimer timer -> t
-    java.lang.String[] payTypeBankArr -> D
     cn.bizzan.adapter.CTCOrderAdapter adapter -> s
     android.widget.EditText etAssetPwd -> q
     android.widget.EditText etPhoneCode -> p
-    int direction -> A
+    java.lang.String[] payTypeBankArr -> C
     java.lang.String buyPayType -> y
-    java.lang.String sellPayType -> z
-    java.util.List payTypeBankList -> E
+    int direction -> z
     int pageSize -> x
+    java.util.List payTypeBankList -> D
     java.lang.String[] payTypeArr -> u
     int pageNo -> w
-    java.lang.String phoneCode -> C
-    java.lang.String fundpwd -> B
-    55:135:void <init>() -> <init>
+    java.lang.String fundpwd -> A
+    java.lang.String phoneCode -> B
+    55:141:void <init>() -> <init>
     55:55:void access$000(cn.bizzan.ui.ctc.CTCActivity) -> a
-    55:55:java.lang.String access$1202(cn.bizzan.ui.ctc.CTCActivity,java.lang.String) -> a
-    55:55:android.os.CountDownTimer access$1502(cn.bizzan.ui.ctc.CTCActivity,android.os.CountDownTimer) -> a
-    55:55:void access$200(cn.bizzan.ui.ctc.CTCActivity,int) -> a
-    156:274:void initViews(android.os.Bundle) -> a
-    391:392:void fillWidget() -> a
-    492:511:void switchBuySell(int) -> a
-    577:597:void fillCodeView(long) -> a
-    145:147:void actionStart(android.content.Context) -> actionStart
-    55:55:void access$100(cn.bizzan.ui.ctc.CTCActivity) -> b
-    55:55:java.lang.String access$1402(cn.bizzan.ui.ctc.CTCActivity,java.lang.String) -> b
-    151:151:int getActivityLayoutId() -> b
-    55:55:void access$1000(cn.bizzan.ui.ctc.CTCActivity) -> c
-    55:55:java.lang.String access$602(cn.bizzan.ui.ctc.CTCActivity,java.lang.String) -> c
-    677:678:void ctcNewOrderFail(java.lang.Integer,java.lang.String) -> ctcNewOrderFail
-    659:662:void ctcNewOrderSuccess(cn.bizzan.entity.CTCOrderDetail) -> ctcNewOrderSuccess
-    685:686:void ctcOrderCancelFail(java.lang.Integer,java.lang.String) -> ctcOrderCancelFail
-    649:649:void ctcOrderCancelSuccess(cn.bizzan.entity.CTCOrderDetail) -> ctcOrderCancelSuccess
-    693:694:void ctcOrderDetailFail(java.lang.Integer,java.lang.String) -> ctcOrderDetailFail
-    637:637:void ctcOrderDetailSuccess(cn.bizzan.entity.CTCOrderDetail) -> ctcOrderDetailSuccess
-    697:704:void ctcOrderListFail(java.lang.Integer,java.lang.String) -> ctcOrderListFail
-    606:631:void ctcOrderListSuccess(cn.bizzan.entity.CTCOrder) -> ctcOrderListSuccess
-    689:690:void ctcOrderPayFail(java.lang.Integer,java.lang.String) -> ctcOrderPayFail
-    643:643:void ctcOrderPaySuccess(cn.bizzan.entity.CTCOrderDetail) -> ctcOrderPaySuccess
-    681:682:void ctcPriceFail(java.lang.Integer,java.lang.String) -> ctcPriceFail
-    653:655:void ctcPriceSuccess(cn.bizzan.entity.CTCPrice) -> ctcPriceSuccess
-    672:674:void ctcSendNewOrderPhoneCodeFail(java.lang.Integer,java.lang.String) -> ctcSendNewOrderPhoneCodeFail
-    666:667:void ctcSendNewOrderPhoneCodeSuccess(java.lang.String) -> ctcSendNewOrderPhoneCodeSuccess
-    55:55:java.util.List access$1100(cn.bizzan.ui.ctc.CTCActivity) -> d
-    55:55:java.lang.String access$702(cn.bizzan.ui.ctc.CTCActivity,java.lang.String) -> d
-    430:435:void initImmersionBar() -> d
-    55:55:java.util.List access$1300(cn.bizzan.ui.ctc.CTCActivity) -> e
-    55:55:android.os.CountDownTimer access$1500(cn.bizzan.ui.ctc.CTCActivity) -> f
-    55:55:java.util.List access$1600(cn.bizzan.ui.ctc.CTCActivity) -> g
-    419:426:void loadData() -> g
-    55:55:void access$300(cn.bizzan.ui.ctc.CTCActivity) -> h
-    384:384:void obtainData() -> h
-    55:55:void access$400(cn.bizzan.ui.ctc.CTCActivity) -> i
-    55:55:void access$500(cn.bizzan.ui.ctc.CTCActivity) -> j
-    285:307:void btnBuyClick() -> j
-    55:55:java.lang.String access$600(cn.bizzan.ui.ctc.CTCActivity) -> k
-    313:335:void btnSellClick() -> k
-    55:55:java.lang.String access$700(cn.bizzan.ui.ctc.CTCActivity) -> l
-    395:408:void initRvDetail() -> l
-    55:55:void access$800(cn.bizzan.ui.ctc.CTCActivity) -> m
-    410:416:void loadMore() -> m
-    55:55:void access$900(cn.bizzan.ui.ctc.CTCActivity) -> n
-    467:482:void loginingViewText() -> n
-    485:489:void newCtcOrder() -> o
-    448:458:void onActivityResult(int,int,android.content.Intent) -> onActivityResult
-    439:444:void onDestroy() -> onDestroy
-    460:465:void notLoginViewText() -> p
-    276:280:void refresh() -> q
-    386:388:void sendCode() -> r
-    341:380:void showConfirmDialog() -> s
-    707:708:void safeSettingFail(java.lang.Integer,java.lang.String) -> safeSettingFail
-    601:601:void safeSettingSuccess(cn.bizzan.entity.SafeSetting) -> safeSettingSuccess
+    55:55:void access$100(cn.bizzan.ui.ctc.CTCActivity,int) -> a
+    55:55:java.lang.String access$1002(cn.bizzan.ui.ctc.CTCActivity,java.lang.String) -> a
+    55:55:android.os.CountDownTimer access$1102(cn.bizzan.ui.ctc.CTCActivity,android.os.CountDownTimer) -> a
+    162:286:void initViews(android.os.Bundle) -> a
+    405:406:void fillWidget() -> a
+    511:532:void switchBuySell(int) -> a
+    600:620:void fillCodeView(long) -> a
+    151:153:void actionStart(android.content.Context) -> actionStart
+    55:55:android.os.CountDownTimer access$1100(cn.bizzan.ui.ctc.CTCActivity) -> b
+    55:55:java.lang.String access$402(cn.bizzan.ui.ctc.CTCActivity,java.lang.String) -> b
+    157:157:int getActivityLayoutId() -> b
+    55:55:java.util.List access$1200(cn.bizzan.ui.ctc.CTCActivity) -> c
+    55:55:java.lang.String access$502(cn.bizzan.ui.ctc.CTCActivity,java.lang.String) -> c
+    703:704:void ctcNewOrderFail(java.lang.Integer,java.lang.String) -> ctcNewOrderFail
+    685:688:void ctcNewOrderSuccess(cn.bizzan.entity.CTCOrderDetail) -> ctcNewOrderSuccess
+    711:712:void ctcOrderCancelFail(java.lang.Integer,java.lang.String) -> ctcOrderCancelFail
+    672:672:void ctcOrderCancelSuccess(cn.bizzan.entity.CTCOrderDetail) -> ctcOrderCancelSuccess
+    719:720:void ctcOrderDetailFail(java.lang.Integer,java.lang.String) -> ctcOrderDetailFail
+    660:660:void ctcOrderDetailSuccess(cn.bizzan.entity.CTCOrderDetail) -> ctcOrderDetailSuccess
+    723:730:void ctcOrderListFail(java.lang.Integer,java.lang.String) -> ctcOrderListFail
+    629:654:void ctcOrderListSuccess(cn.bizzan.entity.CTCOrder) -> ctcOrderListSuccess
+    715:716:void ctcOrderPayFail(java.lang.Integer,java.lang.String) -> ctcOrderPayFail
+    666:666:void ctcOrderPaySuccess(cn.bizzan.entity.CTCOrderDetail) -> ctcOrderPaySuccess
+    707:708:void ctcPriceFail(java.lang.Integer,java.lang.String) -> ctcPriceFail
+    680:681:void ctcPriceSuccess(cn.bizzan.entity.CTCPrice) -> ctcPriceSuccess
+    698:700:void ctcSendNewOrderPhoneCodeFail(java.lang.Integer,java.lang.String) -> ctcSendNewOrderPhoneCodeFail
+    692:693:void ctcSendNewOrderPhoneCodeSuccess(java.lang.String) -> ctcSendNewOrderPhoneCodeSuccess
+    55:55:void access$200(cn.bizzan.ui.ctc.CTCActivity) -> d
+    444:449:void initImmersionBar() -> d
+    55:55:void access$300(cn.bizzan.ui.ctc.CTCActivity) -> e
+    55:55:java.lang.String access$400(cn.bizzan.ui.ctc.CTCActivity) -> f
+    55:55:java.lang.String access$500(cn.bizzan.ui.ctc.CTCActivity) -> g
+    433:440:void loadData() -> g
+    55:55:void access$600(cn.bizzan.ui.ctc.CTCActivity) -> h
+    398:398:void obtainData() -> h
+    55:55:void access$700(cn.bizzan.ui.ctc.CTCActivity) -> i
+    55:55:void access$800(cn.bizzan.ui.ctc.CTCActivity) -> j
+    297:319:void btnBuyClick() -> j
+    55:55:java.util.List access$900(cn.bizzan.ui.ctc.CTCActivity) -> k
+    409:422:void initRvDetail() -> k
+    424:430:void loadMore() -> l
+    481:496:void loginingViewText() -> m
+    504:508:void newCtcOrder() -> n
+    474:479:void notLoginViewText() -> o
+    462:472:void onActivityResult(int,int,android.content.Intent) -> onActivityResult
+    453:458:void onDestroy() -> onDestroy
+    288:292:void refresh() -> p
+    400:402:void sendCode() -> q
+    355:394:void showConfirmDialog() -> r
+    539:562:void showDialogPayTypeBuy() -> s
+    733:734:void safeSettingFail(java.lang.Integer,java.lang.String) -> safeSettingFail
+    624:624:void safeSettingSuccess(cn.bizzan.entity.SafeSetting) -> safeSettingSuccess
     55:55:void setPresenter(java.lang.Object) -> setPresenter
-    574:575:void setPresenter(cn.bizzan.ui.ctc.CTCContract$Presenter) -> setPresenter
-    140:142:void show(android.app.Activity) -> show
-    518:541:void showDialogPayTypeBuy() -> t
-    548:571:void showDialogPayTypeSell() -> u
-cn.bizzan.ui.ctc.CTCActivity$1 -> cn.bizzan.ui.ctc.CTCActivity$k:
-    cn.bizzan.ui.ctc.CTCActivity this$0 -> a
-    157:157:void <init>(cn.bizzan.ui.ctc.CTCActivity) -> <init>
-    160:161:void onClick(android.view.View) -> onClick
-cn.bizzan.ui.ctc.CTCActivity$10 -> cn.bizzan.ui.ctc.CTCActivity$a:
-    cn.bizzan.ui.ctc.CTCActivity this$0 -> a
-    252:252:void <init>(cn.bizzan.ui.ctc.CTCActivity) -> <init>
-    255:264:void afterTextChanged(android.text.Editable) -> afterTextChanged
-cn.bizzan.ui.ctc.CTCActivity$11 -> cn.bizzan.ui.ctc.CTCActivity$b:
-    cn.bizzan.ui.ctc.CTCActivity this$0 -> a
-    268:268:void <init>(cn.bizzan.ui.ctc.CTCActivity) -> <init>
-    271:272:void onClick(android.view.View) -> onClick
-cn.bizzan.ui.ctc.CTCActivity$12 -> cn.bizzan.ui.ctc.CTCActivity$c:
-    cn.bizzan.ui.ctc.CTCActivity this$0 -> a
-    351:351:void <init>(cn.bizzan.ui.ctc.CTCActivity) -> <init>
-    354:355:void onClick(android.view.View) -> onClick
-cn.bizzan.ui.ctc.CTCActivity$13 -> cn.bizzan.ui.ctc.CTCActivity$d:
-    cn.bizzan.ui.ctc.CTCActivity this$0 -> b
-    android.support.v7.app.AlertDialog val$dialog -> a
-    357:357:void <init>(cn.bizzan.ui.ctc.CTCActivity,android.support.v7.app.AlertDialog) -> <init>
-    360:372:void onClick(android.view.View) -> onClick
-cn.bizzan.ui.ctc.CTCActivity$14 -> cn.bizzan.ui.ctc.CTCActivity$e:
-    android.support.v7.app.AlertDialog val$dialog -> a
-    374:374:void <init>(cn.bizzan.ui.ctc.CTCActivity,android.support.v7.app.AlertDialog) -> <init>
-    377:378:void onClick(android.view.View) -> onClick
-cn.bizzan.ui.ctc.CTCActivity$15 -> cn.bizzan.ui.ctc.CTCActivity$f:
-    cn.bizzan.ui.ctc.CTCActivity this$0 -> a
-    401:401:void <init>(cn.bizzan.ui.ctc.CTCActivity) -> <init>
-    404:405:void onLoadMoreRequested() -> onLoadMoreRequested
-cn.bizzan.ui.ctc.CTCActivity$16 -> cn.bizzan.ui.ctc.CTCActivity$g:
-    cn.bizzan.ui.ctc.CTCActivity this$0 -> a
-    476:476:void <init>(cn.bizzan.ui.ctc.CTCActivity) -> <init>
-    479:480:void onRefresh() -> onRefresh
-cn.bizzan.ui.ctc.CTCActivity$17 -> cn.bizzan.ui.ctc.CTCActivity$h:
-    cn.bizzan.ui.ctc.CTCActivity this$0 -> a
-    518:518:void <init>(cn.bizzan.ui.ctc.CTCActivity) -> <init>
-    521:531:void onOptionsSelect(int,int,int,android.view.View) -> a
-cn.bizzan.ui.ctc.CTCActivity$18 -> cn.bizzan.ui.ctc.CTCActivity$i:
-    cn.bizzan.ui.ctc.CTCActivity this$0 -> a
-    548:548:void <init>(cn.bizzan.ui.ctc.CTCActivity) -> <init>
-    551:561:void onOptionsSelect(int,int,int,android.view.View) -> a
-cn.bizzan.ui.ctc.CTCActivity$19 -> cn.bizzan.ui.ctc.CTCActivity$j:
-    cn.bizzan.ui.ctc.CTCActivity this$0 -> a
-    581:581:void <init>(cn.bizzan.ui.ctc.CTCActivity,long,long) -> <init>
-    590:594:void onFinish() -> onFinish
-    584:586:void onTick(long) -> onTick
-cn.bizzan.ui.ctc.CTCActivity$2 -> cn.bizzan.ui.ctc.CTCActivity$m:
+    597:598:void setPresenter(cn.bizzan.ui.ctc.CTCContract$Presenter) -> setPresenter
+    146:148:void show(android.app.Activity) -> show
+cn.bizzan.ui.ctc.CTCActivity$1 -> cn.bizzan.ui.ctc.CTCActivity$g:
     cn.bizzan.ui.ctc.CTCActivity this$0 -> a
     163:163:void <init>(cn.bizzan.ui.ctc.CTCActivity) -> <init>
     166:167:void onClick(android.view.View) -> onClick
-cn.bizzan.ui.ctc.CTCActivity$20 -> cn.bizzan.ui.ctc.CTCActivity$l:
+cn.bizzan.ui.ctc.CTCActivity$10 -> cn.bizzan.ui.ctc.CTCActivity$a:
+    android.support.v7.app.AlertDialog val$dialog -> a
+    388:388:void <init>(cn.bizzan.ui.ctc.CTCActivity,android.support.v7.app.AlertDialog) -> <init>
+    391:392:void onClick(android.view.View) -> onClick
+cn.bizzan.ui.ctc.CTCActivity$11 -> cn.bizzan.ui.ctc.CTCActivity$b:
     cn.bizzan.ui.ctc.CTCActivity this$0 -> a
-    625:625:void <init>(cn.bizzan.ui.ctc.CTCActivity) -> <init>
-    628:629:void onItemClick(com.chad.library.adapter.base.BaseQuickAdapter,android.view.View,int) -> onItemClick
-cn.bizzan.ui.ctc.CTCActivity$3 -> cn.bizzan.ui.ctc.CTCActivity$n:
+    415:415:void <init>(cn.bizzan.ui.ctc.CTCActivity) -> <init>
+    418:419:void onLoadMoreRequested() -> onLoadMoreRequested
+cn.bizzan.ui.ctc.CTCActivity$12 -> cn.bizzan.ui.ctc.CTCActivity$c:
     cn.bizzan.ui.ctc.CTCActivity this$0 -> a
-    179:179:void <init>(cn.bizzan.ui.ctc.CTCActivity) -> <init>
-    182:183:void onClick(android.view.View) -> onClick
-cn.bizzan.ui.ctc.CTCActivity$4 -> cn.bizzan.ui.ctc.CTCActivity$o:
+    490:490:void <init>(cn.bizzan.ui.ctc.CTCActivity) -> <init>
+    493:494:void onRefresh() -> onRefresh
+cn.bizzan.ui.ctc.CTCActivity$13 -> cn.bizzan.ui.ctc.CTCActivity$d:
     cn.bizzan.ui.ctc.CTCActivity this$0 -> a
-    192:192:void <init>(cn.bizzan.ui.ctc.CTCActivity) -> <init>
-    195:196:void onClick(android.view.View) -> onClick
-cn.bizzan.ui.ctc.CTCActivity$5 -> cn.bizzan.ui.ctc.CTCActivity$p:
+    539:539:void <init>(cn.bizzan.ui.ctc.CTCActivity) -> <init>
+    542:552:void onOptionsSelect(int,int,int,android.view.View) -> a
+cn.bizzan.ui.ctc.CTCActivity$14 -> cn.bizzan.ui.ctc.CTCActivity$e:
     cn.bizzan.ui.ctc.CTCActivity this$0 -> a
-    204:204:void <init>(cn.bizzan.ui.ctc.CTCActivity) -> <init>
-    207:208:void onClick(android.view.View) -> onClick
-cn.bizzan.ui.ctc.CTCActivity$6 -> cn.bizzan.ui.ctc.CTCActivity$q:
+    604:604:void <init>(cn.bizzan.ui.ctc.CTCActivity,long,long) -> <init>
+    613:617:void onFinish() -> onFinish
+    607:609:void onTick(long) -> onTick
+cn.bizzan.ui.ctc.CTCActivity$15 -> cn.bizzan.ui.ctc.CTCActivity$f:
     cn.bizzan.ui.ctc.CTCActivity this$0 -> a
-    210:210:void <init>(cn.bizzan.ui.ctc.CTCActivity) -> <init>
-    213:214:void onClick(android.view.View) -> onClick
-cn.bizzan.ui.ctc.CTCActivity$7 -> cn.bizzan.ui.ctc.CTCActivity$r:
+    648:648:void <init>(cn.bizzan.ui.ctc.CTCActivity) -> <init>
+    651:652:void onItemClick(com.chad.library.adapter.base.BaseQuickAdapter,android.view.View,int) -> onItemClick
+cn.bizzan.ui.ctc.CTCActivity$2 -> cn.bizzan.ui.ctc.CTCActivity$h:
     cn.bizzan.ui.ctc.CTCActivity this$0 -> a
-    224:224:void <init>(cn.bizzan.ui.ctc.CTCActivity) -> <init>
-    227:228:void onClick(android.view.View) -> onClick
-cn.bizzan.ui.ctc.CTCActivity$8 -> cn.bizzan.ui.ctc.CTCActivity$s:
+    169:169:void <init>(cn.bizzan.ui.ctc.CTCActivity) -> <init>
+    172:173:void onClick(android.view.View) -> onClick
+cn.bizzan.ui.ctc.CTCActivity$3 -> cn.bizzan.ui.ctc.CTCActivity$i:
     cn.bizzan.ui.ctc.CTCActivity this$0 -> a
-    231:231:void <init>(cn.bizzan.ui.ctc.CTCActivity) -> <init>
-    234:235:void onClick(android.view.View) -> onClick
-cn.bizzan.ui.ctc.CTCActivity$9 -> cn.bizzan.ui.ctc.CTCActivity$t:
+    185:185:void <init>(cn.bizzan.ui.ctc.CTCActivity) -> <init>
+    188:189:void onClick(android.view.View) -> onClick
+cn.bizzan.ui.ctc.CTCActivity$4 -> cn.bizzan.ui.ctc.CTCActivity$j:
     cn.bizzan.ui.ctc.CTCActivity this$0 -> a
-    238:238:void <init>(cn.bizzan.ui.ctc.CTCActivity) -> <init>
-    241:249:void afterTextChanged(android.text.Editable) -> afterTextChanged
+    212:212:void <init>(cn.bizzan.ui.ctc.CTCActivity) -> <init>
+    215:216:void onClick(android.view.View) -> onClick
+cn.bizzan.ui.ctc.CTCActivity$5 -> cn.bizzan.ui.ctc.CTCActivity$k:
+    cn.bizzan.ui.ctc.CTCActivity this$0 -> a
+    234:234:void <init>(cn.bizzan.ui.ctc.CTCActivity) -> <init>
+    237:238:void onClick(android.view.View) -> onClick
+cn.bizzan.ui.ctc.CTCActivity$6 -> cn.bizzan.ui.ctc.CTCActivity$l:
+    cn.bizzan.ui.ctc.CTCActivity this$0 -> a
+    249:249:void <init>(cn.bizzan.ui.ctc.CTCActivity) -> <init>
+    252:260:void afterTextChanged(android.text.Editable) -> afterTextChanged
+cn.bizzan.ui.ctc.CTCActivity$7 -> cn.bizzan.ui.ctc.CTCActivity$m:
+    cn.bizzan.ui.ctc.CTCActivity this$0 -> a
+    280:280:void <init>(cn.bizzan.ui.ctc.CTCActivity) -> <init>
+    283:284:void onClick(android.view.View) -> onClick
+cn.bizzan.ui.ctc.CTCActivity$8 -> cn.bizzan.ui.ctc.CTCActivity$n:
+    cn.bizzan.ui.ctc.CTCActivity this$0 -> a
+    365:365:void <init>(cn.bizzan.ui.ctc.CTCActivity) -> <init>
+    368:369:void onClick(android.view.View) -> onClick
+cn.bizzan.ui.ctc.CTCActivity$9 -> cn.bizzan.ui.ctc.CTCActivity$o:
+    cn.bizzan.ui.ctc.CTCActivity this$0 -> b
+    android.support.v7.app.AlertDialog val$dialog -> a
+    371:371:void <init>(cn.bizzan.ui.ctc.CTCActivity,android.support.v7.app.AlertDialog) -> <init>
+    374:386:void onClick(android.view.View) -> onClick
 cn.bizzan.ui.ctc.CTCActivity_ViewBinding -> cn.bizzan.ui.ctc.CTCActivity_ViewBinding:
     cn.bizzan.ui.ctc.CTCActivity target -> a
-    29:58:void <init>(cn.bizzan.ui.ctc.CTCActivity,android.view.View) -> <init>
-    63:64:void unbind() -> unbind
+    29:48:void <init>(cn.bizzan.ui.ctc.CTCActivity,android.view.View) -> <init>
+    53:54:void unbind() -> unbind
 cn.bizzan.ui.ctc.CTCContract$Presenter -> cn.bizzan.ui.ctc.a:
     void ctcNewOrder(java.lang.String,java.math.BigDecimal,java.math.BigDecimal,java.lang.String,int,java.lang.String,java.lang.String,java.lang.String) -> a
     void ctcOrderDetail(java.lang.String,java.lang.Long) -> a
@@ -24698,18 +24671,15 @@ cn.bizzan.ui.home.BTCMarket2Fragment -> cn.bizzan.ui.home.BTCMarket2Fragment:
     java.util.List currencies -> i
     30:35:void <init>() -> <init>
     30:30:cn.bizzan.adapter.Homes2Adapter access$000(cn.bizzan.ui.home.BTCMarket2Fragment) -> a
-    40:44:cn.bizzan.ui.home.BTCMarket2Fragment getInstance(int) -> a
     54:56:void initViews(android.os.Bundle) -> a
     123:124:void setPresenter(cn.bizzan.ui.home.presenter.CommonPresenter) -> a
     30:30:int access$100(cn.bizzan.ui.home.BTCMarket2Fragment) -> b
     65:66:void fillWidget() -> d
     49:49:int getLayoutId() -> f
-    116:119:void dataLoaded(java.util.List) -> f
     112:112:boolean isImmersionBarEnabled() -> i
     107:108:void loadData() -> j
     61:61:void obtainData() -> k
-    157:158:void tcpNotify() -> m
-    69:88:void initRvContent() -> n
+    69:88:void initRvContent() -> m
     152:154:void onSaveInstanceState(android.os.Bundle) -> onSaveInstanceState
 cn.bizzan.ui.home.BTCMarket2Fragment$1 -> cn.bizzan.ui.home.BTCMarket2Fragment$a:
     cn.bizzan.ui.home.BTCMarket2Fragment this$0 -> a
@@ -24725,19 +24695,15 @@ cn.bizzan.ui.home.BTCMarketFragment -> cn.bizzan.ui.home.BTCMarketFragment:
     cn.bizzan.adapter.HomesAdapter adapter -> h
     30:35:void <init>() -> <init>
     30:30:cn.bizzan.adapter.HomesAdapter access$000(cn.bizzan.ui.home.BTCMarketFragment) -> a
-    40:44:cn.bizzan.ui.home.BTCMarketFragment getInstance(int) -> a
     54:56:void initViews(android.os.Bundle) -> a
-    90:94:void isChange(boolean) -> a
     123:124:void setPresenter(cn.bizzan.ui.home.presenter.CommonPresenter) -> a
     30:30:int access$100(cn.bizzan.ui.home.BTCMarketFragment) -> b
     65:66:void fillWidget() -> d
     49:49:int getLayoutId() -> f
-    116:119:void dataLoaded(java.util.List) -> f
     112:112:boolean isImmersionBarEnabled() -> i
     107:108:void loadData() -> j
     61:61:void obtainData() -> k
-    157:158:void tcpNotify() -> m
-    69:88:void initRvContent() -> n
+    69:88:void initRvContent() -> m
     152:154:void onSaveInstanceState(android.os.Bundle) -> onSaveInstanceState
 cn.bizzan.ui.home.BTCMarketFragment$1 -> cn.bizzan.ui.home.BTCMarketFragment$a:
     cn.bizzan.ui.home.BTCMarketFragment this$0 -> a
@@ -24792,18 +24758,15 @@ cn.bizzan.ui.home.ETHMarket2Fragment -> cn.bizzan.ui.home.ETHMarket2Fragment:
     java.util.List currencies -> i
     30:35:void <init>() -> <init>
     30:30:cn.bizzan.adapter.Homes2Adapter access$000(cn.bizzan.ui.home.ETHMarket2Fragment) -> a
-    40:44:cn.bizzan.ui.home.ETHMarket2Fragment getInstance(int) -> a
     54:56:void initViews(android.os.Bundle) -> a
     117:118:void setPresenter(cn.bizzan.ui.home.presenter.CommonPresenter) -> a
     30:30:int access$100(cn.bizzan.ui.home.ETHMarket2Fragment) -> b
     65:66:void fillWidget() -> d
     49:49:int getLayoutId() -> f
-    110:113:void dataLoaded(java.util.List) -> f
     106:106:boolean isImmersionBarEnabled() -> i
     101:102:void loadData() -> j
     61:61:void obtainData() -> k
-    152:153:void tcpNotify() -> m
-    69:87:void initRvContent() -> n
+    69:87:void initRvContent() -> m
     147:149:void onSaveInstanceState(android.os.Bundle) -> onSaveInstanceState
 cn.bizzan.ui.home.ETHMarket2Fragment$1 -> cn.bizzan.ui.home.ETHMarket2Fragment$a:
     cn.bizzan.ui.home.ETHMarket2Fragment this$0 -> a
@@ -24819,18 +24782,15 @@ cn.bizzan.ui.home.ETHMarketFragment -> cn.bizzan.ui.home.ETHMarketFragment:
     cn.bizzan.adapter.HomesAdapter adapter -> h
     30:35:void <init>() -> <init>
     30:30:cn.bizzan.adapter.HomesAdapter access$000(cn.bizzan.ui.home.ETHMarketFragment) -> a
-    40:44:cn.bizzan.ui.home.ETHMarketFragment getInstance(int) -> a
     54:56:void initViews(android.os.Bundle) -> a
     117:118:void setPresenter(cn.bizzan.ui.home.presenter.CommonPresenter) -> a
     30:30:int access$100(cn.bizzan.ui.home.ETHMarketFragment) -> b
     65:66:void fillWidget() -> d
     49:49:int getLayoutId() -> f
-    110:113:void dataLoaded(java.util.List) -> f
     106:106:boolean isImmersionBarEnabled() -> i
     101:102:void loadData() -> j
     61:61:void obtainData() -> k
-    152:153:void tcpNotify() -> m
-    69:87:void initRvContent() -> n
+    69:87:void initRvContent() -> m
     147:149:void onSaveInstanceState(android.os.Bundle) -> onSaveInstanceState
 cn.bizzan.ui.home.ETHMarketFragment$1 -> cn.bizzan.ui.home.ETHMarketFragment$a:
     cn.bizzan.ui.home.ETHMarketFragment this$0 -> a
@@ -25142,167 +25102,159 @@ cn.bizzan.ui.home.IThreeTextContract$View -> cn.bizzan.ui.home.c:
     void getDataLoaded(java.util.List) -> e
 cn.bizzan.ui.home.MainActivity -> cn.bizzan.ui.home.MainActivity:
     java.util.List currencies -> r
-    int type -> O
-    cn.bizzan.entity.Vision vision -> S
-    cn.bizzan.ui.home.BTCMarket2Fragment btcMarketFragment2 -> J
+    cn.bizzan.ui.home.FavoriteFragment favoriteFragment -> E
     java.util.List baseBtc -> v
-    com.google.gson.Gson gson -> Q
-    android.app.ProgressDialog progressDialog -> T
+    cn.bizzan.entity.Vision vision -> M
     java.util.List currencyListAll -> t
+    long lastPressTime -> H
+    int type -> I
+    boolean hasNew -> L
     cn.bizzan.ui.home.TwoFragment twoFragment -> A
     java.util.List menusFragments -> x
-    cn.bizzan.ui.home.ETHMarket2Fragment ethMarketFragment2 -> K
-    cn.bizzan.ui.home.MainContract$Presenter presenter -> M
-    boolean hasNew -> R
-    android.widget.LinearLayout[] lls -> P
-    cn.bizzan.ui.home.USDTMarketFragment usdtMarketFragment -> E
+    com.google.gson.Gson gson -> K
+    android.widget.LinearLayout[] lls -> J
+    cn.bizzan.ui.home.MainContract$Presenter presenter -> G
+    android.app.ProgressDialog progressDialog -> N
     cn.bizzan.ui.home.FiveFragment fiveFragment -> D
-    long lastPressTime -> N
     cn.bizzan.ui.home.OneFragment oneFragment -> z
     int currentPage -> q
-    cn.bizzan.ui.home.FavoriteFragment favoriteFragment -> H
-    cn.bizzan.ui.home.Favorite2Fragment favoriteFragment2 -> L
     java.util.List baseUsdt -> u
     java.util.List currenciesTwo -> s
     java.util.List menusFragments2 -> y
     java.util.List baseEth -> w
-    cn.bizzan.ui.home.BTCMarketFragment btcMarketFragment -> F
-    java.lang.String versionName -> V
-    cn.bizzan.ui.home.ETHMarketFragment ethMarketFragment -> G
+    java.lang.String versionName -> P
+    com.yanzhenjie.permission.PermissionListener permissionListener -> O
     cn.bizzan.ui.home.ThreeTextFragment threeFragment -> B
+    cn.bizzan.ui.home.Favorite2Fragment favoriteFragment2 -> F
     cn.bizzan.ui.home.FourFragment fourFragment -> C
-    cn.bizzan.ui.home.USDTMarket2Fragment usdtMarketFragment2 -> I
-    com.yanzhenjie.permission.PermissionListener permissionListener -> U
-    519:798:void <clinit>() -> <clinit>
-    83:850:void <init>() -> <init>
-    739:740:void Find() -> Find
+    536:823:void <clinit>() -> <clinit>
+    83:875:void <init>() -> <init>
+    764:765:void Find() -> Find
     83:83:void access$000(cn.bizzan.ui.home.MainActivity) -> a
     83:83:void access$100(cn.bizzan.ui.home.MainActivity,java.util.List) -> a
-    83:83:cn.bizzan.entity.Vision access$602(cn.bizzan.ui.home.MainActivity,cn.bizzan.entity.Vision) -> a
-    83:83:void access$700(cn.bizzan.ui.home.MainActivity,int,java.lang.String[]) -> a
-    321:395:void initViews(android.os.Bundle) -> a
-    474:474:void fillWidget() -> a
-    653:653:void setCurrency(java.util.List) -> a
-    847:848:void checkPermission(int,java.lang.String[]) -> a
-    886:915:void showUpDialog(cn.bizzan.entity.Vision) -> a
-    248:250:void actionStart(android.content.Context) -> actionStart
-    254:258:void actionStart(android.content.Context,int,java.lang.String) -> actionStart
-    733:734:void allCurrencyFail(java.lang.Integer,java.lang.String) -> allCurrencyFail
-    679:713:void allCurrencySuccess(java.lang.Object) -> allCurrencySuccess
-    83:83:cn.bizzan.ui.home.USDTMarketFragment access$200(cn.bizzan.ui.home.MainActivity) -> b
-    83:83:void access$800(cn.bizzan.ui.home.MainActivity,cn.bizzan.entity.Vision) -> b
-    315:315:int getActivityLayoutId() -> b
-    83:83:cn.bizzan.ui.home.USDTMarket2Fragment access$300(cn.bizzan.ui.home.MainActivity) -> c
-    83:83:cn.bizzan.ui.home.OneFragment access$400(cn.bizzan.ui.home.MainActivity) -> d
-    83:83:java.lang.String access$500(cn.bizzan.ui.home.MainActivity) -> e
-    83:83:cn.bizzan.entity.Vision access$600(cn.bizzan.ui.home.MainActivity) -> f
-    873:879:boolean fileIsExists(java.lang.String) -> fileIsExists
-    768:768:void findFail(java.lang.Integer,java.lang.String) -> findFail
-    745:763:void findSuccess(java.util.List) -> findSuccess
-    478:479:void loadData() -> g
-    989:1003:java.lang.String getAppVersionName(android.content.Context) -> getAppVersionName
-    512:512:int getContainerId() -> getContainerId
-    516:516:android.support.v4.widget.DrawerLayout getDlRoot() -> getDlRoot
-    244:245:void getGroupChatEvent(cn.bizzan.entity.ChatTipEvent) -> getGroupChatEvent
-    467:469:void obtainData() -> h
-    569:592:void isRenZheng() -> isRenZheng
-    774:780:void itemClick(cn.bizzan.entity.Currency,int) -> itemClick
-    483:488:void initFragments() -> k
-    492:508:void recoverFragment() -> l
-    430:448:void addFragments() -> m
-    289:311:void getHttpCode() -> n
-    820:844:void getNewVision() -> o
-    262:268:void onBackPressed() -> onBackPressed
-    612:617:void onDestroy() -> onDestroy
-    272:274:void onNewIntent(android.content.Intent) -> onNewIntent
-    597:600:void onRestart() -> onRestart
-    784:787:void onRestoreInstanceState(android.os.Bundle) -> onRestoreInstanceState
-    523:566:void onResume() -> onResume
-    791:793:void onSaveInstanceState(android.os.Bundle) -> onSaveInstanceState
-    170:198:void onSocketMessage(cn.bizzan.serivce.SocketResponse) -> onSocketMessage
-    604:608:void onStart() -> onStart
-    621:627:void onStop() -> onStop
-    801:816:void getRate() -> p
-    286:286:void hideDialog() -> q
-    399:407:void initProgressDialog() -> r
-    642:645:void notLoginCurrencies() -> s
-    451:463:void selecte(android.view.View,int) -> selecte
+    83:83:cn.bizzan.entity.Vision access$402(cn.bizzan.ui.home.MainActivity,cn.bizzan.entity.Vision) -> a
+    83:83:void access$500(cn.bizzan.ui.home.MainActivity,int,java.lang.String[]) -> a
+    325:400:void initViews(android.os.Bundle) -> a
+    491:491:void fillWidget() -> a
+    670:670:void setCurrency(java.util.List) -> a
+    872:873:void checkPermission(int,java.lang.String[]) -> a
+    911:940:void showUpDialog(cn.bizzan.entity.Vision) -> a
+    252:254:void actionStart(android.content.Context) -> actionStart
+    258:262:void actionStart(android.content.Context,int,java.lang.String) -> actionStart
+    758:759:void allCurrencyFail(java.lang.Integer,java.lang.String) -> allCurrencyFail
+    698:732:void allCurrencySuccess(java.lang.Object) -> allCurrencySuccess
+    83:83:cn.bizzan.ui.home.OneFragment access$200(cn.bizzan.ui.home.MainActivity) -> b
+    83:83:void access$600(cn.bizzan.ui.home.MainActivity,cn.bizzan.entity.Vision) -> b
+    319:319:int getActivityLayoutId() -> b
+    83:83:java.lang.String access$300(cn.bizzan.ui.home.MainActivity) -> c
+    83:83:cn.bizzan.entity.Vision access$400(cn.bizzan.ui.home.MainActivity) -> d
+    898:904:boolean fileIsExists(java.lang.String) -> fileIsExists
+    793:793:void findFail(java.lang.Integer,java.lang.String) -> findFail
+    770:788:void findSuccess(java.util.List) -> findSuccess
+    495:496:void loadData() -> g
+    1014:1028:java.lang.String getAppVersionName(android.content.Context) -> getAppVersionName
+    529:529:int getContainerId() -> getContainerId
+    533:533:android.support.v4.widget.DrawerLayout getDlRoot() -> getDlRoot
+    248:249:void getGroupChatEvent(cn.bizzan.entity.ChatTipEvent) -> getGroupChatEvent
+    484:486:void obtainData() -> h
+    586:609:void isRenZheng() -> isRenZheng
+    799:805:void itemClick(cn.bizzan.entity.Currency,int) -> itemClick
+    500:505:void initFragments() -> k
+    509:525:void recoverFragment() -> l
+    445:465:void addFragments() -> m
+    293:315:void getHttpCode() -> n
+    845:869:void getNewVision() -> o
+    266:272:void onBackPressed() -> onBackPressed
+    629:634:void onDestroy() -> onDestroy
+    276:278:void onNewIntent(android.content.Intent) -> onNewIntent
+    614:617:void onRestart() -> onRestart
+    809:812:void onRestoreInstanceState(android.os.Bundle) -> onRestoreInstanceState
+    540:583:void onResume() -> onResume
+    816:818:void onSaveInstanceState(android.os.Bundle) -> onSaveInstanceState
+    174:202:void onSocketMessage(cn.bizzan.serivce.SocketResponse) -> onSocketMessage
+    621:625:void onStart() -> onStart
+    638:644:void onStop() -> onStop
+    826:841:void getRate() -> p
+    290:290:void hideDialog() -> q
+    404:412:void initProgressDialog() -> r
+    659:662:void notLoginCurrencies() -> s
+    468:480:void selecte(android.view.View,int) -> selecte
     83:83:void setPresenter(java.lang.Object) -> setPresenter
-    649:650:void setPresenter(cn.bizzan.ui.home.MainContract$Presenter) -> setPresenter
-    410:427:void recoverMenuFragment() -> t
-    718:729:void setData() -> u
-    282:282:void show() -> v
-    715:716:void startTCP() -> w
-    152:163:void tcpNotify() -> x
+    666:667:void setPresenter(cn.bizzan.ui.home.MainContract$Presenter) -> setPresenter
+    415:442:void recoverMenuFragment() -> t
+    737:754:void setData() -> u
+    286:286:void show() -> v
+    734:735:void startTCP() -> w
+    152:167:void tcpNotify() -> x
 cn.bizzan.ui.home.MainActivity$1 -> cn.bizzan.ui.home.MainActivity$a:
     cn.bizzan.ui.home.MainActivity this$0 -> c
-    291:291:void <init>(cn.bizzan.ui.home.MainActivity) -> <init>
-    291:291:void onResponse(java.lang.Object) -> a
-    294:296:void onError(okhttp3.Request,java.lang.Exception) -> a
-    300:309:void onResponse(java.lang.String) -> a
+    295:295:void <init>(cn.bizzan.ui.home.MainActivity) -> <init>
+    295:295:void onResponse(java.lang.Object) -> a
+    298:300:void onError(okhttp3.Request,java.lang.Exception) -> a
+    304:313:void onResponse(java.lang.String) -> a
 cn.bizzan.ui.home.MainActivity$1$1 -> cn.bizzan.ui.home.MainActivity$a$a:
-    304:304:void <init>(cn.bizzan.ui.home.MainActivity$1) -> <init>
+    308:308:void <init>(cn.bizzan.ui.home.MainActivity$1) -> <init>
 cn.bizzan.ui.home.MainActivity$10 -> cn.bizzan.ui.home.MainActivity$b:
-    685:685:void <init>(cn.bizzan.ui.home.MainActivity) -> <init>
+    704:704:void <init>(cn.bizzan.ui.home.MainActivity) -> <init>
 cn.bizzan.ui.home.MainActivity$11 -> cn.bizzan.ui.home.MainActivity$c:
-    802:802:void <init>(cn.bizzan.ui.home.MainActivity) -> <init>
-    802:802:void onResponse(java.lang.Object) -> a
-    805:807:void onError(okhttp3.Request,java.lang.Exception) -> a
-    811:814:void onResponse(java.lang.String) -> a
+    827:827:void <init>(cn.bizzan.ui.home.MainActivity) -> <init>
+    827:827:void onResponse(java.lang.Object) -> a
+    830:832:void onError(okhttp3.Request,java.lang.Exception) -> a
+    836:839:void onResponse(java.lang.String) -> a
 cn.bizzan.ui.home.MainActivity$12 -> cn.bizzan.ui.home.MainActivity$d:
     cn.bizzan.ui.home.MainActivity this$0 -> c
-    821:821:void <init>(cn.bizzan.ui.home.MainActivity) -> <init>
-    821:821:void onResponse(java.lang.Object) -> a
-    824:825:void onError(okhttp3.Request,java.lang.Exception) -> a
-    829:842:void onResponse(java.lang.String) -> a
+    846:846:void <init>(cn.bizzan.ui.home.MainActivity) -> <init>
+    846:846:void onResponse(java.lang.Object) -> a
+    849:850:void onError(okhttp3.Request,java.lang.Exception) -> a
+    854:867:void onResponse(java.lang.String) -> a
 cn.bizzan.ui.home.MainActivity$12$1 -> cn.bizzan.ui.home.MainActivity$d$a:
-    833:833:void <init>(cn.bizzan.ui.home.MainActivity$12) -> <init>
+    858:858:void <init>(cn.bizzan.ui.home.MainActivity$12) -> <init>
 cn.bizzan.ui.home.MainActivity$13 -> cn.bizzan.ui.home.MainActivity$e:
     cn.bizzan.ui.home.MainActivity this$0 -> a
-    850:850:void <init>(cn.bizzan.ui.home.MainActivity) -> <init>
-    853:858:void onSucceed(int,java.util.List) -> a
-    862:867:void onFailed(int,java.util.List) -> b
+    875:875:void <init>(cn.bizzan.ui.home.MainActivity) -> <init>
+    878:883:void onSucceed(int,java.util.List) -> a
+    887:892:void onFailed(int,java.util.List) -> b
 cn.bizzan.ui.home.MainActivity$14 -> cn.bizzan.ui.home.MainActivity$f:
     cn.bizzan.ui.home.MainActivity this$0 -> a
-    905:905:void <init>(cn.bizzan.ui.home.MainActivity) -> <init>
-    908:910:void onClick(android.content.DialogInterface,int) -> onClick
+    930:930:void <init>(cn.bizzan.ui.home.MainActivity) -> <init>
+    933:935:void onClick(android.content.DialogInterface,int) -> onClick
 cn.bizzan.ui.home.MainActivity$15 -> cn.bizzan.ui.home.MainActivity$g:
     cn.bizzan.entity.Vision val$obj -> a
     cn.bizzan.ui.home.MainActivity this$0 -> b
-    891:891:void <init>(cn.bizzan.ui.home.MainActivity,cn.bizzan.entity.Vision) -> <init>
-    895:903:void onClick(android.content.DialogInterface,int) -> onClick
+    916:916:void <init>(cn.bizzan.ui.home.MainActivity,cn.bizzan.entity.Vision) -> <init>
+    920:928:void onClick(android.content.DialogInterface,int) -> onClick
 cn.bizzan.ui.home.MainActivity$2 -> cn.bizzan.ui.home.MainActivity$h:
     cn.bizzan.ui.home.MainActivity this$0 -> a
-    330:330:void <init>(cn.bizzan.ui.home.MainActivity) -> <init>
-    333:334:void onClick(android.view.View) -> onClick
+    334:334:void <init>(cn.bizzan.ui.home.MainActivity) -> <init>
+    337:338:void onClick(android.view.View) -> onClick
 cn.bizzan.ui.home.MainActivity$3 -> cn.bizzan.ui.home.MainActivity$i:
     cn.bizzan.ui.home.MainActivity this$0 -> a
-    336:336:void <init>(cn.bizzan.ui.home.MainActivity) -> <init>
-    339:340:void onClick(android.view.View) -> onClick
+    340:340:void <init>(cn.bizzan.ui.home.MainActivity) -> <init>
+    343:344:void onClick(android.view.View) -> onClick
 cn.bizzan.ui.home.MainActivity$4 -> cn.bizzan.ui.home.MainActivity$j:
     cn.bizzan.ui.home.MainActivity this$0 -> a
-    348:348:void <init>(cn.bizzan.ui.home.MainActivity) -> <init>
-    351:352:void onClick(android.view.View) -> onClick
+    352:352:void <init>(cn.bizzan.ui.home.MainActivity) -> <init>
+    355:356:void onClick(android.view.View) -> onClick
 cn.bizzan.ui.home.MainActivity$5 -> cn.bizzan.ui.home.MainActivity$k:
     cn.bizzan.ui.home.MainActivity this$0 -> a
-    354:354:void <init>(cn.bizzan.ui.home.MainActivity) -> <init>
-    357:358:void onClick(android.view.View) -> onClick
+    358:358:void <init>(cn.bizzan.ui.home.MainActivity) -> <init>
+    361:362:void onClick(android.view.View) -> onClick
 cn.bizzan.ui.home.MainActivity$6 -> cn.bizzan.ui.home.MainActivity$l:
     cn.bizzan.ui.home.MainActivity this$0 -> a
-    360:360:void <init>(cn.bizzan.ui.home.MainActivity) -> <init>
-    369:370:void onDrawerClosed(android.view.View) -> onDrawerClosed
-    363:365:void onDrawerOpened(android.view.View) -> onDrawerOpened
+    364:364:void <init>(cn.bizzan.ui.home.MainActivity) -> <init>
+    373:374:void onDrawerClosed(android.view.View) -> onDrawerClosed
+    369:369:void onDrawerOpened(android.view.View) -> onDrawerOpened
 cn.bizzan.ui.home.MainActivity$7 -> cn.bizzan.ui.home.MainActivity$m:
     cn.bizzan.ui.home.MainActivity this$0 -> a
-    372:372:void <init>(cn.bizzan.ui.home.MainActivity) -> <init>
-    375:376:void onClick(android.view.View) -> onClick
+    376:376:void <init>(cn.bizzan.ui.home.MainActivity) -> <init>
+    379:380:void onClick(android.view.View) -> onClick
 cn.bizzan.ui.home.MainActivity$8 -> cn.bizzan.ui.home.MainActivity$n:
-    569:569:void <init>(cn.bizzan.ui.home.MainActivity) -> <init>
-    569:569:void onResponse(java.lang.Object) -> a
-    572:574:void onError(okhttp3.Request,java.lang.Exception) -> a
-    578:590:void onResponse(java.lang.String) -> a
+    586:586:void <init>(cn.bizzan.ui.home.MainActivity) -> <init>
+    586:586:void onResponse(java.lang.Object) -> a
+    589:591:void onError(okhttp3.Request,java.lang.Exception) -> a
+    595:607:void onResponse(java.lang.String) -> a
 cn.bizzan.ui.home.MainActivity$9 -> cn.bizzan.ui.home.MainActivity$o:
-    681:681:void <init>(cn.bizzan.ui.home.MainActivity) -> <init>
+    700:700:void <init>(cn.bizzan.ui.home.MainActivity) -> <init>
 cn.bizzan.ui.home.MainActivity_ViewBinding -> cn.bizzan.ui.home.MainActivity_ViewBinding:
     cn.bizzan.ui.home.MainActivity target -> a
     30:47:void <init>(cn.bizzan.ui.home.MainActivity,android.view.View) -> <init>
@@ -25368,131 +25320,131 @@ cn.bizzan.ui.home.OneFragment -> cn.bizzan.ui.home.OneFragment:
     java.util.List currencies -> m
     java.util.List localImageUrls -> l
     java.util.List imageUrls -> k
-    93:848:void <clinit>() -> <clinit>
-    92:813:void <init>() -> <init>
+    93:849:void <clinit>() -> <clinit>
+    92:814:void <init>() -> <init>
     92:92:java.util.List access$000(cn.bizzan.ui.home.OneFragment) -> a
     92:92:void access$300(cn.bizzan.ui.home.OneFragment,java.util.List) -> a
-    273:325:void initViews(android.os.Bundle) -> a
-    565:566:void setPresenter(cn.bizzan.ui.home.MainContract$OnePresenter) -> a
-    570:571:void setPresenter(cn.bizzan.ui.home.presenter.CommonPresenter) -> a
-    631:636:void setChatTip(boolean) -> a
+    274:326:void initViews(android.os.Bundle) -> a
+    566:567:void setPresenter(cn.bizzan.ui.home.MainContract$OnePresenter) -> a
+    571:572:void setPresenter(cn.bizzan.ui.home.presenter.CommonPresenter) -> a
+    632:637:void setChatTip(boolean) -> a
     92:92:cn.bizzan.adapter.HomeAdapter access$100(cn.bizzan.ui.home.OneFragment) -> b
-    576:626:void dataLoaded(java.util.List,java.util.List) -> b
+    577:627:void dataLoaded(java.util.List,java.util.List) -> b
     92:92:java.util.List access$200(cn.bizzan.ui.home.OneFragment) -> c
-    686:728:void bannersSuccess(java.util.List) -> c
+    687:729:void bannersSuccess(java.util.List) -> c
     92:92:java.util.List access$400(cn.bizzan.ui.home.OneFragment) -> d
-    333:335:void fillWidget() -> d
-    733:733:void bannersFail(java.lang.Integer,java.lang.String) -> d
-    165:165:int getLayoutId() -> f
-    816:846:void setMarqueeView(java.util.List) -> f
-    556:561:void initImmersionBar() -> h
-    192:195:void hideLoadingPopup() -> hideLoadingPopup
-    851:852:boolean isContainChinese(java.lang.String) -> i
-    519:529:void loadData() -> j
-    329:329:void obtainData() -> k
-    225:225:java.lang.String getmTag() -> l
-    675:682:void notifyData() -> m
-    541:542:void myWalletFail(java.lang.Integer,java.lang.String) -> myWalletFail
-    533:537:void myWalletSuccess(java.util.List) -> myWalletSuccess
-    736:746:void tcpNotify() -> n
-    545:553:void calcuTotal() -> o
-    160:161:android.view.View onCreateView(android.view.LayoutInflater,android.view.ViewGroup,android.os.Bundle) -> onCreateView
-    750:754:void onDestroyView() -> onDestroyView
-    764:776:void onHiddenChanged(boolean) -> onHiddenChanged
-    230:232:void onPause() -> onPause
-    198:201:void onResume() -> onResume
-    758:760:void onStart() -> onStart
-    235:268:void dialogShow2() -> p
-    779:809:void getMessage() -> q
-    172:177:void initLoadingPopup() -> r
-    501:515:void initRvContent() -> s
+    334:336:void fillWidget() -> d
+    734:734:void bannersFail(java.lang.Integer,java.lang.String) -> d
+    166:166:int getLayoutId() -> f
+    817:847:void setMarqueeView(java.util.List) -> f
+    557:562:void initImmersionBar() -> h
+    193:196:void hideLoadingPopup() -> hideLoadingPopup
+    852:853:boolean isContainChinese(java.lang.String) -> i
+    520:530:void loadData() -> j
+    330:330:void obtainData() -> k
+    226:226:java.lang.String getmTag() -> l
+    676:683:void notifyData() -> m
+    542:543:void myWalletFail(java.lang.Integer,java.lang.String) -> myWalletFail
+    534:538:void myWalletSuccess(java.util.List) -> myWalletSuccess
+    737:747:void tcpNotify() -> n
+    546:554:void calcuTotal() -> o
+    161:162:android.view.View onCreateView(android.view.LayoutInflater,android.view.ViewGroup,android.os.Bundle) -> onCreateView
+    751:755:void onDestroyView() -> onDestroyView
+    765:777:void onHiddenChanged(boolean) -> onHiddenChanged
+    231:233:void onPause() -> onPause
+    199:202:void onResume() -> onResume
+    759:761:void onStart() -> onStart
+    236:269:void dialogShow2() -> p
+    780:810:void getMessage() -> q
+    173:178:void initLoadingPopup() -> r
+    502:516:void initRvContent() -> s
     92:92:void setPresenter(java.lang.Object) -> setPresenter
-    205:212:void loginingViewText() -> t
-    215:221:void notLoginViewText() -> u
+    206:213:void loginingViewText() -> t
+    216:222:void notLoginViewText() -> u
 cn.bizzan.ui.home.OneFragment$1 -> cn.bizzan.ui.home.OneFragment$e:
-    141:143:void <init>(cn.bizzan.ui.home.OneFragment) -> <init>
+    142:144:void <init>(cn.bizzan.ui.home.OneFragment) -> <init>
 cn.bizzan.ui.home.OneFragment$10 -> cn.bizzan.ui.home.OneFragment$a:
     cn.bizzan.ui.home.OneFragment this$0 -> a
-    509:509:void <init>(cn.bizzan.ui.home.OneFragment) -> <init>
-    512:513:void onItemClick(com.chad.library.adapter.base.BaseQuickAdapter,android.view.View,int) -> onItemClick
+    510:510:void <init>(cn.bizzan.ui.home.OneFragment) -> <init>
+    513:514:void onItemClick(com.chad.library.adapter.base.BaseQuickAdapter,android.view.View,int) -> onItemClick
 cn.bizzan.ui.home.OneFragment$11 -> cn.bizzan.ui.home.OneFragment$b:
     java.util.List val$obj -> a
     cn.bizzan.ui.home.OneFragment this$0 -> b
-    710:710:void <init>(cn.bizzan.ui.home.OneFragment,java.util.List) -> <init>
-    713:722:void OnBannerClick(int) -> OnBannerClick
+    711:711:void <init>(cn.bizzan.ui.home.OneFragment,java.util.List) -> <init>
+    714:723:void OnBannerClick(int) -> OnBannerClick
 cn.bizzan.ui.home.OneFragment$12 -> cn.bizzan.ui.home.OneFragment$c:
     cn.bizzan.ui.home.OneFragment this$0 -> c
-    781:781:void <init>(cn.bizzan.ui.home.OneFragment) -> <init>
-    781:781:void onResponse(java.lang.Object) -> a
-    785:785:void onError(okhttp3.Request,java.lang.Exception) -> a
-    790:801:void onResponse(java.lang.String) -> a
+    782:782:void <init>(cn.bizzan.ui.home.OneFragment) -> <init>
+    782:782:void onResponse(java.lang.Object) -> a
+    786:786:void onError(okhttp3.Request,java.lang.Exception) -> a
+    791:802:void onResponse(java.lang.String) -> a
 cn.bizzan.ui.home.OneFragment$12$1 -> cn.bizzan.ui.home.OneFragment$c$a:
-    792:792:void <init>(cn.bizzan.ui.home.OneFragment$12) -> <init>
+    793:793:void <init>(cn.bizzan.ui.home.OneFragment$12) -> <init>
 cn.bizzan.ui.home.OneFragment$13 -> cn.bizzan.ui.home.OneFragment$d:
     cn.bizzan.ui.home.OneFragment this$0 -> a
-    803:803:void <init>(cn.bizzan.ui.home.OneFragment) -> <init>
-    806:807:void onItemClick(int,android.widget.TextView) -> a
+    804:804:void <init>(cn.bizzan.ui.home.OneFragment) -> <init>
+    807:808:void onItemClick(int,android.widget.TextView) -> a
 cn.bizzan.ui.home.OneFragment$2 -> cn.bizzan.ui.home.OneFragment$f:
     android.widget.CheckBox val$checkbox -> a
     android.app.Dialog val$dialog -> b
-    243:243:void <init>(cn.bizzan.ui.home.OneFragment,android.widget.CheckBox,android.app.Dialog) -> <init>
-    246:250:void onClick(android.view.View) -> onClick
+    244:244:void <init>(cn.bizzan.ui.home.OneFragment,android.widget.CheckBox,android.app.Dialog) -> <init>
+    247:251:void onClick(android.view.View) -> onClick
 cn.bizzan.ui.home.OneFragment$3 -> cn.bizzan.ui.home.OneFragment$g:
     android.widget.CheckBox val$checkbox -> a
     cn.bizzan.ui.home.OneFragment this$0 -> c
     android.app.Dialog val$dialog -> b
-    253:253:void <init>(cn.bizzan.ui.home.OneFragment,android.widget.CheckBox,android.app.Dialog) -> <init>
-    256:265:void onClick(android.view.View) -> onClick
+    254:254:void <init>(cn.bizzan.ui.home.OneFragment,android.widget.CheckBox,android.app.Dialog) -> <init>
+    257:266:void onClick(android.view.View) -> onClick
 cn.bizzan.ui.home.OneFragment$4 -> cn.bizzan.ui.home.OneFragment$h:
     cn.bizzan.ui.home.OneFragment this$0 -> a
-    276:276:void <init>(cn.bizzan.ui.home.OneFragment) -> <init>
-    279:284:void onClick(android.view.View) -> onClick
+    277:277:void <init>(cn.bizzan.ui.home.OneFragment) -> <init>
+    280:285:void onClick(android.view.View) -> onClick
 cn.bizzan.ui.home.OneFragment$5 -> cn.bizzan.ui.home.OneFragment$i:
     cn.bizzan.ui.home.OneFragment this$0 -> a
-    286:286:void <init>(cn.bizzan.ui.home.OneFragment) -> <init>
-    289:290:void onClick(android.view.View) -> onClick
+    287:287:void <init>(cn.bizzan.ui.home.OneFragment) -> <init>
+    290:291:void onClick(android.view.View) -> onClick
 cn.bizzan.ui.home.OneFragment$6 -> cn.bizzan.ui.home.OneFragment$j:
     cn.bizzan.ui.home.OneFragment this$0 -> a
-    292:292:void <init>(cn.bizzan.ui.home.OneFragment) -> <init>
-    295:296:void onClick(android.view.View) -> onClick
+    293:293:void <init>(cn.bizzan.ui.home.OneFragment) -> <init>
+    296:297:void onClick(android.view.View) -> onClick
 cn.bizzan.ui.home.OneFragment$7 -> cn.bizzan.ui.home.OneFragment$k:
     cn.bizzan.ui.home.OneFragment this$0 -> a
-    298:298:void <init>(cn.bizzan.ui.home.OneFragment) -> <init>
-    301:302:void onClick(android.view.View) -> onClick
+    299:299:void <init>(cn.bizzan.ui.home.OneFragment) -> <init>
+    302:303:void onClick(android.view.View) -> onClick
 cn.bizzan.ui.home.OneFragment$8 -> cn.bizzan.ui.home.OneFragment$l:
     cn.bizzan.ui.home.OneFragment this$0 -> a
-    304:304:void <init>(cn.bizzan.ui.home.OneFragment) -> <init>
-    307:308:void onClick(android.view.View) -> onClick
+    305:305:void <init>(cn.bizzan.ui.home.OneFragment) -> <init>
+    308:309:void onClick(android.view.View) -> onClick
 cn.bizzan.ui.home.OneFragment$9 -> cn.bizzan.ui.home.OneFragment$m:
     cn.bizzan.ui.home.OneFragment this$0 -> a
-    310:310:void <init>(cn.bizzan.ui.home.OneFragment) -> <init>
-    313:315:void onClick(android.view.View) -> onClick
+    311:311:void <init>(cn.bizzan.ui.home.OneFragment) -> <init>
+    314:316:void onClick(android.view.View) -> onClick
 cn.bizzan.ui.home.OneFragment$MyAdapter -> cn.bizzan.ui.home.OneFragment$n:
     java.util.List lists -> a
     cn.bizzan.ui.home.OneFragment this$0 -> d
     int colorA -> b
     int colorC -> c
-    337:341:void <init>(cn.bizzan.ui.home.OneFragment) -> <init>
-    364:365:void destroyItem(android.view.ViewGroup,int,java.lang.Object) -> destroyItem
-    345:354:int getCount() -> getCount
-    369:369:int getItemPosition(java.lang.Object) -> getItemPosition
-    374:494:java.lang.Object instantiateItem(android.view.ViewGroup,int) -> instantiateItem
-    359:359:boolean isViewFromObject(android.view.View,java.lang.Object) -> isViewFromObject
+    338:342:void <init>(cn.bizzan.ui.home.OneFragment) -> <init>
+    365:366:void destroyItem(android.view.ViewGroup,int,java.lang.Object) -> destroyItem
+    346:355:int getCount() -> getCount
+    370:370:int getItemPosition(java.lang.Object) -> getItemPosition
+    375:495:java.lang.Object instantiateItem(android.view.ViewGroup,int) -> instantiateItem
+    360:360:boolean isViewFromObject(android.view.View,java.lang.Object) -> isViewFromObject
 cn.bizzan.ui.home.OneFragment$MyAdapter$1 -> cn.bizzan.ui.home.OneFragment$n$a:
     cn.bizzan.ui.home.OneFragment$MyAdapter this$1 -> b
     cn.bizzan.entity.Currency val$currency -> a
-    430:430:void <init>(cn.bizzan.ui.home.OneFragment$MyAdapter,cn.bizzan.entity.Currency) -> <init>
-    433:434:void onClick(android.view.View) -> onClick
+    431:431:void <init>(cn.bizzan.ui.home.OneFragment$MyAdapter,cn.bizzan.entity.Currency) -> <init>
+    434:435:void onClick(android.view.View) -> onClick
 cn.bizzan.ui.home.OneFragment$MyAdapter$2 -> cn.bizzan.ui.home.OneFragment$n$b:
     cn.bizzan.ui.home.OneFragment$MyAdapter this$1 -> b
     cn.bizzan.entity.Currency val$currency -> a
-    457:457:void <init>(cn.bizzan.ui.home.OneFragment$MyAdapter,cn.bizzan.entity.Currency) -> <init>
-    460:461:void onClick(android.view.View) -> onClick
+    458:458:void <init>(cn.bizzan.ui.home.OneFragment$MyAdapter,cn.bizzan.entity.Currency) -> <init>
+    461:462:void onClick(android.view.View) -> onClick
 cn.bizzan.ui.home.OneFragment$MyAdapter$3 -> cn.bizzan.ui.home.OneFragment$n$c:
     cn.bizzan.ui.home.OneFragment$MyAdapter this$1 -> b
     cn.bizzan.entity.Currency val$currency -> a
-    484:484:void <init>(cn.bizzan.ui.home.OneFragment$MyAdapter,cn.bizzan.entity.Currency) -> <init>
-    487:488:void onClick(android.view.View) -> onClick
+    485:485:void <init>(cn.bizzan.ui.home.OneFragment$MyAdapter,cn.bizzan.entity.Currency) -> <init>
+    488:489:void onClick(android.view.View) -> onClick
 cn.bizzan.ui.home.OneFragment_ViewBinding -> cn.bizzan.ui.home.OneFragment_ViewBinding:
     cn.bizzan.ui.home.OneFragment target -> a
     25:44:void <init>(cn.bizzan.ui.home.OneFragment,android.view.View) -> <init>
@@ -25726,38 +25678,35 @@ cn.bizzan.ui.home.TrustFragment_ViewBinding -> cn.bizzan.ui.home.TrustFragment_V
     19:24:void <init>(cn.bizzan.ui.home.TrustFragment,android.view.View) -> <init>
     29:30:void unbind() -> unbind
 cn.bizzan.ui.home.TwoFragment -> cn.bizzan.ui.home.TwoFragment:
+    boolean isLoad -> n
+    java.lang.String TAG -> o
     java.util.List baseBtc -> j
-    cn.bizzan.ui.home.BTCMarketFragment btcMarketFragment -> n
-    cn.bizzan.ui.home.FavoriteFragment favoriteFragment -> p
     java.util.List baseUsdt -> i
-    cn.bizzan.ui.home.ETHMarketFragment ethMarketFragment -> o
-    boolean isLoad -> q
-    java.lang.String TAG -> r
+    cn.bizzan.ui.home.FavoriteFragment favoriteFragment -> m
     java.util.List favoriteCoin -> l
-    cn.bizzan.ui.home.USDTMarketFragment usdtMarketFragment -> m
     java.util.List baseEth -> k
     28:28:void <clinit>() -> <clinit>
-    27:74:void <init>() -> <init>
+    27:76:void <init>() -> <init>
     27:27:boolean access$000(cn.bizzan.ui.home.TwoFragment) -> a
     27:27:void access$100(cn.bizzan.ui.home.TwoFragment,boolean) -> a
-    61:73:void initViews(android.os.Bundle) -> a
-    76:80:void changeLoad(boolean) -> a
-    131:132:void setPresenter(cn.bizzan.ui.home.MainContract$TwoPresenter) -> a
-    135:159:void dataLoaded(java.util.List,java.util.List,java.util.List,java.util.List) -> a
-    110:110:void fillWidget() -> d
+    61:75:void initViews(android.os.Bundle) -> a
+    78:84:void changeLoad(boolean) -> a
+    141:142:void setPresenter(cn.bizzan.ui.home.MainContract$TwoPresenter) -> a
+    145:171:void dataLoaded(java.util.List,java.util.List,java.util.List,java.util.List) -> a
+    118:118:void fillWidget() -> d
     56:56:int getLayoutId() -> f
-    122:127:void initImmersionBar() -> h
-    114:118:void loadData() -> j
-    106:106:void obtainData() -> k
-    163:163:java.lang.String getmTag() -> l
-    83:88:void addFragments() -> m
-    92:102:void recoveryFragments() -> n
-    167:172:void tcpNotify() -> o
+    132:137:void initImmersionBar() -> h
+    127:128:void loadData() -> j
+    114:114:void obtainData() -> k
+    175:175:java.lang.String getmTag() -> l
+    87:94:void addFragments() -> m
+    98:110:void recoveryFragments() -> n
+    185:186:void tcpNotify() -> o
     27:27:void setPresenter(java.lang.Object) -> setPresenter
 cn.bizzan.ui.home.TwoFragment$1 -> cn.bizzan.ui.home.TwoFragment$a:
     cn.bizzan.ui.home.TwoFragment this$0 -> a
-    67:67:void <init>(cn.bizzan.ui.home.TwoFragment) -> <init>
-    70:71:void onClick(android.view.View) -> onClick
+    69:69:void <init>(cn.bizzan.ui.home.TwoFragment) -> <init>
+    72:73:void onClick(android.view.View) -> onClick
 cn.bizzan.ui.home.TwoFragment_ViewBinding -> cn.bizzan.ui.home.TwoFragment_ViewBinding:
     cn.bizzan.ui.home.TwoFragment target -> a
     23:35:void <init>(cn.bizzan.ui.home.TwoFragment,android.view.View) -> <init>
@@ -25768,19 +25717,16 @@ cn.bizzan.ui.home.USDTMarket2Fragment -> cn.bizzan.ui.home.USDTMarket2Fragment:
     java.util.List currencies -> i
     32:37:void <init>() -> <init>
     32:32:cn.bizzan.adapter.Homes2Adapter access$000(cn.bizzan.ui.home.USDTMarket2Fragment) -> a
-    42:46:cn.bizzan.ui.home.USDTMarket2Fragment getInstance(int) -> a
     62:64:void initViews(android.os.Bundle) -> a
     131:132:void setPresenter(cn.bizzan.ui.home.presenter.CommonPresenter) -> a
     32:32:int access$100(cn.bizzan.ui.home.USDTMarket2Fragment) -> b
     73:74:void fillWidget() -> d
     51:51:int getLayoutId() -> f
-    119:122:void dataLoaded(java.util.List) -> f
     115:115:boolean isImmersionBarEnabled() -> i
     110:111:void loadData() -> j
     69:69:void obtainData() -> k
     159:161:void notifyData() -> m
-    164:165:void tcpNotify() -> n
-    77:96:void initRvContent() -> o
+    77:96:void initRvContent() -> n
     56:58:void setUserVisibleHint(boolean) -> setUserVisibleHint
 cn.bizzan.ui.home.USDTMarket2Fragment$1 -> cn.bizzan.ui.home.USDTMarket2Fragment$a:
     cn.bizzan.ui.home.USDTMarket2Fragment this$0 -> a
@@ -25796,20 +25742,16 @@ cn.bizzan.ui.home.USDTMarketFragment -> cn.bizzan.ui.home.USDTMarketFragment:
     cn.bizzan.adapter.HomesAdapter mAdapter -> h
     29:34:void <init>() -> <init>
     29:29:cn.bizzan.adapter.HomesAdapter access$000(cn.bizzan.ui.home.USDTMarketFragment) -> a
-    39:43:cn.bizzan.ui.home.USDTMarketFragment getInstance(int) -> a
     59:61:void initViews(android.os.Bundle) -> a
-    117:121:void isChange(boolean) -> a
     124:125:void setPresenter(cn.bizzan.ui.home.presenter.CommonPresenter) -> a
     29:29:int access$100(cn.bizzan.ui.home.USDTMarketFragment) -> b
     70:71:void fillWidget() -> d
     48:48:int getLayoutId() -> f
-    112:115:void dataLoaded(java.util.List) -> f
     108:108:boolean isImmersionBarEnabled() -> i
     103:104:void loadData() -> j
     66:66:void obtainData() -> k
     152:154:void notifyData() -> m
-    157:158:void tcpNotify() -> n
-    74:89:void initRvContent() -> o
+    74:89:void initRvContent() -> n
     53:55:void setUserVisibleHint(boolean) -> setUserVisibleHint
 cn.bizzan.ui.home.USDTMarketFragment$1 -> cn.bizzan.ui.home.USDTMarketFragment$a:
     cn.bizzan.ui.home.USDTMarketFragment this$0 -> a
@@ -26221,14 +26163,14 @@ cn.bizzan.ui.kline.KlineActivity$8 -> cn.bizzan.ui.kline.KlineActivity$h:
     883:883:void <init>(cn.bizzan.ui.kline.KlineActivity) -> <init>
     886:888:void onSelectedChanged(com.github.tifezh.kchartlib.chart.BaseKChartView,java.lang.Object,int) -> a
 cn.bizzan.ui.kline.KlineActivity_ViewBinding -> cn.bizzan.ui.kline.KlineActivity_ViewBinding:
-    android.view.View view2131297115 -> h
+    android.view.View view2131297108 -> h
     cn.bizzan.ui.kline.KlineActivity target -> a
-    android.view.View view2131296481 -> c
-    android.view.View view2131297213 -> b
-    android.view.View view2131297172 -> e
-    android.view.View view2131297135 -> d
-    android.view.View view2131296528 -> g
-    android.view.View view2131297053 -> f
+    android.view.View view2131296480 -> c
+    android.view.View view2131297204 -> b
+    android.view.View view2131297164 -> e
+    android.view.View view2131297128 -> d
+    android.view.View view2131296527 -> g
+    android.view.View view2131297046 -> f
     46:138:void <init>(cn.bizzan.ui.kline.KlineActivity,android.view.View) -> <init>
     143:144:void unbind() -> unbind
 cn.bizzan.ui.kline.KlineActivity_ViewBinding$1 -> cn.bizzan.ui.kline.KlineActivity_ViewBinding$a:

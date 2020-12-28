@@ -41,6 +41,7 @@
     <color name="bgBlue">#EFF1F5</color>
     <color name="baseBlue">#4462A5</color>
     <color name="btnBlue">#20242b</color>
+    <color name="blueDark">#00a7f0</color>
     <color name="yellowDark">#f0a70a</color>
     <color name="yellowLight">#edca76</color>
     <color name="yellowDark_sell">#d0b387</color>
@@ -69,6 +70,7 @@
     <color name="my_zi">#fd7652</color>
     <color name="background_gray">#f5f5f8</color>
     <color name="text_orange">#F0A70A</color>
+    <color name="text_blue">#0069ff</color>
     <color name="text_black_light">#424950</color>
     <color name="green_back">#2035DF7E</color>
     <color name="red_back">#20DF3536</color>

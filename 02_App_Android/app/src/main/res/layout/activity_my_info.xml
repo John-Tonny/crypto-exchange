@@ -7,7 +7,7 @@
     android:layout_height="match_parent"
     android:background="@color/primaryBackDark"
     android:orientation="vertical"
-    tools:context="cn.bizzan.ui.myinfo.MyInfoActivity">
+    tools:context="info.lftong.ui.myinfo.MyInfoActivity">
 
     <!--标题-->
     <LinearLayout
@@ -101,7 +101,7 @@
             android:layout_height="wrap_content"
             android:layout_weight="1"/>
 
-        <cn.bizzan.customview.CircleImageView
+        <info.lftong.customview.CircleImageView
             android:id="@+id/ivHeader"
             android:layout_width="48dp"
             android:layout_height="48dp"

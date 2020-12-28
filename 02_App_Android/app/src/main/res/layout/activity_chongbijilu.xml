@@ -4,7 +4,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@color/primaryBackDark"
-    tools:context="cn.bizzan.ui.wallet_detail.WalletDetailActivity">
+    tools:context="info.lftong.ui.wallet_detail.WalletDetailActivity">
 
     <LinearLayout
         android:layout_width="match_parent"
@@ -26,7 +26,7 @@
             android:layout_marginRight="10dp"
             android:orientation="vertical">
 
-            <cn.bizzan.base.LinListView
+            <info.lftong.base.LinListView
                 android:id="@+id/listview_1"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent" />
@@ -59,7 +59,7 @@
         </LinearLayout>
     </LinearLayout>
 
-    <cn.bizzan.ui.entrust.DropdownLayout
+    <info.lftong.ui.entrust.DropdownLayout
         android:id="@+id/dropdownLayout"
         android:layout_width="match_parent"
         android:layout_height="wrap_content">
@@ -139,7 +139,7 @@
             android:layout_height="match_parent"
             android:background="#906e6e6e"/>
 
-    </cn.bizzan.ui.entrust.DropdownLayout>
+    </info.lftong.ui.entrust.DropdownLayout>
 
 </RelativeLayout>
 

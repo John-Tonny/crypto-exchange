@@ -7,7 +7,7 @@
     android:layout_height="match_parent"
     android:orientation="vertical"
     android:background="@color/primaryBackDark"
-    tools:context="cn.bizzan.ui.wallet_detail.WalletDetailActivity">
+    tools:context="info.lftong.ui.wallet_detail.WalletDetailActivity">
 
     <!--标题-->
     <LinearLayout
@@ -63,7 +63,7 @@
 
     </LinearLayout>
 
-<cn.bizzan.base.CustomHorizontalScrollView
+<info.lftong.base.CustomHorizontalScrollView
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@drawable/shape_biaoge_xia"
@@ -148,18 +148,18 @@
                 />
 
         </LinearLayout>
-        <cn.bizzan.base.LinListView
+        <info.lftong.base.LinListView
             android:id="@+id/listview_1"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:layout_marginLeft="1dp"
             android:layout_marginRight="1dp"
             >
-        </cn.bizzan.base.LinListView>
+        </info.lftong.base.LinListView>
 
     </LinearLayout>
 
-</cn.bizzan.base.CustomHorizontalScrollView>
+</info.lftong.base.CustomHorizontalScrollView>
 
 </LinearLayout>
 

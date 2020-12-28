@@ -7,7 +7,7 @@
     android:layout_height="match_parent"
     android:orientation="vertical"
     android:background="@color/primaryBackDark"
-    tools:context="cn.bizzan.ui.chatlist.ChatListActivity">
+    tools:context="info.lftong.ui.chatlist.ChatListActivity">
 
     <!--标题-->
     <LinearLayout

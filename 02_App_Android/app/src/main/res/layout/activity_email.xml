@@ -7,7 +7,7 @@
     android:layout_height="match_parent"
     android:background="@color/primaryBackDark"
     android:orientation="vertical"
-    tools:context="cn.bizzan.ui.bind_email.EmailActivity">
+    tools:context="info.lftong.ui.bind_email.EmailActivity">
 
     <!--标题-->
     <LinearLayout

@@ -37,7 +37,7 @@
                 android:paddingRight="16dp"
                 android:paddingTop="10dp"
                 android:text="@string/login_entity"
-                android:textColor="#777"
+                android:textColor="#0069ff"
                 android:textSize="16sp"/>
 
         </LinearLayout>

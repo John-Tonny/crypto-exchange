@@ -79,7 +79,7 @@
     <!--gyf:tr_head_height="40dp"-->
     <!--gyf:tr_wave_height="40dp">-->
 
-    <cn.bizzan.customview.intercept.WonderfulScrollView
+    <info.lftong.customview.intercept.WonderfulScrollView
         android:id="@+id/scrollView"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
@@ -153,7 +153,7 @@
                         android:layout_marginLeft="5dp"
                         android:gravity="center"
                         android:text="更多"
-                        android:textColor="@color/text_orange"
+                        android:textColor="@color/text_blue"
                         android:textSize="12sp" />
                 </LinearLayout>
             </LinearLayout>
@@ -206,7 +206,7 @@
                         android:paddingBottom="3dp"
                         android:text="登录/注册"
                         android:textAlignment="center"
-                        android:textColor="@color/chart_ma20"
+                        android:textColor="#0069ff"
                         android:textSize="13sp" />
 
                     <TextView
@@ -362,7 +362,7 @@
                         android:textSize="16sp"
                         android:textStyle="bold" />
 
-                    <!--TextView
+                    <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_marginTop="5dp"
@@ -370,18 +370,20 @@
                         android:layout_gravity="center"
                         android:textAlignment="center"
                         android:textColor="@color/home_ziti"
-                        android:textSize="12sp" /-->
+                        android:visibility="gone"
+                        android:textSize="12sp" />
 
                 </LinearLayout>
 
 
             </LinearLayout>
-            <!--android.support.v4.view.ViewPager
+            <android.support.v4.view.ViewPager
 
                 android:id="@+id/viewPager"
                 android:layout_width="match_parent"
                 android:layout_height="114dp"
-                android:background="@color/primaryBackNormal"></android.support.v4.view.ViewPager-->
+                android:visibility="gone"
+                android:background="@color/primaryBackNormal"></android.support.v4.view.ViewPager>
 
             <LinearLayout
                 android:id="@+id/main_linear"
@@ -479,7 +481,7 @@
                         android:id="@+id/view_die"
                         android:layout_width="60dp"
                         android:layout_height="1dp"
-                        android:background="@color/text_orange"
+                        android:background="@color/text_blue"
                         android:visibility="gone"></View>
                 </LinearLayout>
             </LinearLayout>
@@ -511,7 +513,7 @@
 
         </LinearLayout>
 
-    </cn.bizzan.customview.intercept.WonderfulScrollView>
+    </info.lftong.customview.intercept.WonderfulScrollView>
 
     <!--</com.lcodecore.tkrefreshlayout.TwinklingRefreshLayout>-->
 </LinearLayout>

@@ -6,7 +6,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@color/primaryBackDark"
-    tools:context="cn.bizzan.ui.wallet.WalletActivity">
+    tools:context="info.lftong.ui.wallet.WalletActivity">
 
     <!--标题-->
     <LinearLayout

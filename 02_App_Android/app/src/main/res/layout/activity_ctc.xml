@@ -92,7 +92,7 @@
                     android:id="@+id/buy_tab_underline"
                     android:layout_width="80dp"
                     android:layout_height="2dp"
-                    android:background="@color/text_orange" />
+                    android:background="@color/text_blue" />
             </LinearLayout>
 
             <!--LinearLayout
@@ -116,7 +116,7 @@
                     android:id="@+id/sell_tab_underline"
                     android:layout_width="80dp"
                     android:layout_height="2dp"
-                    android:background="@color/text_orange"
+                    android:background="@color/text_blue"
                     android:visibility="gone" />
             </LinearLayout-->
 
@@ -568,7 +568,7 @@
                         android:layout_height="match_parent"
                         android:gravity="center|right"
                         android:text="交易须知"
-                        android:textColor="@color/text_orange"
+                        android:textColor="@color/text_blue"
                         android:textSize="12sp" />
                 </LinearLayout>
 

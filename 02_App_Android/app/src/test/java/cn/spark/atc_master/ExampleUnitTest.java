@@ -1,4 +1,4 @@
-package cn.bizzan;
+package info.lftong;
 
 import org.junit.Test;
 

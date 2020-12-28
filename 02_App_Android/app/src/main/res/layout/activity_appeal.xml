@@ -7,7 +7,7 @@
     android:layout_height="match_parent"
     android:background="@color/primaryBackDark"
     android:orientation="vertical"
-    tools:context="cn.bizzan.ui.appeal.AppealActivity">
+    tools:context="info.lftong.ui.appeal.AppealActivity">
 
     <!--标题-->
     <LinearLayout

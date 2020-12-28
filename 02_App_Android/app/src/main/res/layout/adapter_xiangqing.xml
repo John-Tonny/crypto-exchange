@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<cn.bizzan.base.CustomHorizontalScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+<info.lftong.base.CustomHorizontalScrollView xmlns:android="http://schemas.android.com/apk/res/android"
     android:id="@+id/scrollView"
     android:layout_width="match_parent"
     android:layout_height="40dp"
@@ -85,4 +85,4 @@
             android:textSize="11sp" />
 
     </LinearLayout>
-</cn.bizzan.base.CustomHorizontalScrollView>
+</info.lftong.base.CustomHorizontalScrollView>

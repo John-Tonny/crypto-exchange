@@ -6,7 +6,7 @@
     android:layout_height="match_parent"
     android:orientation="vertical"
     android:background="@color/primaryBackDark"
-    tools:context="cn.bizzan.ui.safe.SafeActivity">
+    tools:context="info.lftong.ui.safe.SafeActivity">
 
     <!--标题-->
     <LinearLayout
@@ -98,7 +98,7 @@
 
     </LinearLayout>
 
-    <cn.bizzan.customview.intercept.WonderfulScrollView
+    <info.lftong.customview.intercept.WonderfulScrollView
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         >
@@ -134,17 +134,17 @@
                     android:paddingRight="20dp"
                     android:paddingBottom="5dp"
                     android:text="更多"
-                    android:textColor="@color/text_orange"
+                    android:textColor="@color/text_blue"
                     android:textSize="14sp" />
             </LinearLayout>
-            <cn.bizzan.base.MyListView
+            <info.lftong.base.MyListView
                 android:id="@+id/listview_xinshou"
                 android:layout_width="match_parent"
                 android:layout_marginRight="20dp"
                 android:layout_marginLeft="20dp"
                 android:divider="@null"
                 android:layout_height="wrap_content">
-            </cn.bizzan.base.MyListView>
+            </info.lftong.base.MyListView>
 
             <LinearLayout
                 android:layout_width="match_parent"
@@ -173,17 +173,17 @@
                     android:paddingRight="20dp"
                     android:paddingBottom="5dp"
                     android:text="更多"
-                    android:textColor="@color/text_orange"
+                    android:textColor="@color/text_blue"
                     android:textSize="14sp" />
             </LinearLayout>
-            <cn.bizzan.base.MyListView
+            <info.lftong.base.MyListView
                 android:id="@+id/listview_changjian"
                 android:layout_width="match_parent"
                 android:layout_marginRight="20dp"
                 android:layout_marginLeft="20dp"
                 android:divider="@null"
                 android:layout_height="wrap_content">
-            </cn.bizzan.base.MyListView>
+            </info.lftong.base.MyListView>
 
             <LinearLayout
                 android:layout_width="match_parent"
@@ -212,17 +212,17 @@
                     android:paddingRight="20dp"
                     android:paddingBottom="5dp"
                     android:text="更多"
-                    android:textColor="@color/text_orange"
+                    android:textColor="@color/text_blue"
                     android:textSize="14sp" />
             </LinearLayout>
-            <cn.bizzan.base.MyListView
+            <info.lftong.base.MyListView
                 android:id="@+id/listview_jiaoyi"
                 android:layout_width="match_parent"
                 android:layout_marginRight="20dp"
                 android:layout_marginLeft="20dp"
                 android:divider="@null"
                 android:layout_height="wrap_content">
-            </cn.bizzan.base.MyListView>
+            </info.lftong.base.MyListView>
 
             <LinearLayout
                 android:layout_width="match_parent"
@@ -251,17 +251,17 @@
                     android:paddingRight="20dp"
                     android:paddingBottom="5dp"
                     android:text="更多"
-                    android:textColor="@color/text_orange"
+                    android:textColor="@color/text_blue"
                     android:textSize="14sp" />
             </LinearLayout>
-            <cn.bizzan.base.MyListView
+            <info.lftong.base.MyListView
                 android:id="@+id/listview_bizhong"
                 android:layout_width="match_parent"
                 android:layout_marginRight="20dp"
                 android:layout_marginLeft="20dp"
                 android:divider="@null"
                 android:layout_height="wrap_content">
-            </cn.bizzan.base.MyListView>
+            </info.lftong.base.MyListView>
 
             <LinearLayout
                 android:layout_width="match_parent"
@@ -290,17 +290,17 @@
                     android:paddingRight="20dp"
                     android:paddingBottom="5dp"
                     android:text="更多"
-                    android:textColor="@color/text_orange"
+                    android:textColor="@color/text_blue"
                     android:textSize="14sp" />
             </LinearLayout>
-            <cn.bizzan.base.MyListView
+            <info.lftong.base.MyListView
                 android:id="@+id/listview_hangqing"
                 android:layout_width="match_parent"
                 android:layout_marginRight="20dp"
                 android:layout_marginLeft="20dp"
                 android:divider="@null"
                 android:layout_height="wrap_content">
-            </cn.bizzan.base.MyListView>
+            </info.lftong.base.MyListView>
 
             <LinearLayout
                 android:layout_width="match_parent"
@@ -329,17 +329,17 @@
                     android:paddingRight="20dp"
                     android:paddingBottom="5dp"
                     android:text="更多"
-                    android:textColor="@color/text_orange"
+                    android:textColor="@color/text_blue"
                     android:textSize="14sp" />
             </LinearLayout>
-            <cn.bizzan.base.MyListView
+            <info.lftong.base.MyListView
                 android:id="@+id/listview_tiaokuan"
                 android:layout_width="match_parent"
                 android:layout_marginRight="20dp"
                 android:layout_marginLeft="20dp"
                 android:divider="@null"
                 android:layout_height="wrap_content">
-            </cn.bizzan.base.MyListView>
+            </info.lftong.base.MyListView>
 
             <LinearLayout
                 android:layout_width="match_parent"
@@ -368,18 +368,18 @@
                     android:paddingRight="20dp"
                     android:paddingBottom="5dp"
                     android:text="更多"
-                    android:textColor="@color/text_orange"
+                    android:textColor="@color/text_blue"
                     android:textSize="14sp" />
             </LinearLayout>
-            <cn.bizzan.base.MyListView
+            <info.lftong.base.MyListView
                 android:id="@+id/listview_qita"
                 android:layout_width="match_parent"
                 android:layout_marginRight="20dp"
                 android:layout_marginLeft="20dp"
                 android:divider="@null"
                 android:layout_height="wrap_content">
-            </cn.bizzan.base.MyListView>
+            </info.lftong.base.MyListView>
         </LinearLayout>
-    </cn.bizzan.customview.intercept.WonderfulScrollView>
+    </info.lftong.customview.intercept.WonderfulScrollView>
 
 </LinearLayout>

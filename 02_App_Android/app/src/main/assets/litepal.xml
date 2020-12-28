@@ -4,7 +4,7 @@
     <version value="1"/>
 
     <list>
-        <mapping class="cn.bizzan.entity.User"/>
+        <mapping class="info.lftong.entity.User"/>
     </list>
 
     <storage value="internal"/>

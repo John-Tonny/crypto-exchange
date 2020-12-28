@@ -7,7 +7,7 @@
     android:layout_height="match_parent"
     android:focusableInTouchMode="true"
     android:orientation="vertical"
-    tools:context="cn.bizzan.ui.signup.SignUpActivity">
+    tools:context="info.lftong.ui.signup.SignUpActivity">
 
     <FrameLayout
         android:id="@+id/flContainer"

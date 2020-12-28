@@ -7,7 +7,7 @@
     android:layout_height="match_parent"
     android:orientation="vertical"
     android:background="@color/primaryBackDark"
-    tools:context="cn.bizzan.ui.aboutus.AboutUsActivity">
+    tools:context="info.lftong.ui.aboutus.AboutUsActivity">
 
     <RelativeLayout
         android:layout_width="match_parent"
@@ -67,7 +67,7 @@
         </LinearLayout>
     </RelativeLayout>
 
-    <cn.bizzan.base.LinListView
+    <info.lftong.base.LinListView
         android:id="@+id/listview_1"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
@@ -76,7 +76,7 @@
 
         android:layout_marginRight="10dp">
 
-    </cn.bizzan.base.LinListView>
+    </info.lftong.base.LinListView>
 
 
 

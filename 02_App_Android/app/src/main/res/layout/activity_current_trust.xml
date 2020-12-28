@@ -31,7 +31,7 @@
 
     </android.support.v4.widget.SwipeRefreshLayout>
 
-    <cn.bizzan.ui.entrust.DropdownLayout
+    <info.lftong.ui.entrust.DropdownLayout
         android:id="@+id/dropdown_layout"
         android:layout_width="match_parent"
         android:layout_height="wrap_content">
@@ -83,7 +83,7 @@
                         android:layout_width="match_parent"
                         android:layout_height="2dp"
                         android:layout_marginTop="-2dp"
-                        android:background="@color/text_orange" />
+                        android:background="@color/text_blue" />
 
                 </LinearLayout>
 
@@ -108,7 +108,7 @@
                         android:layout_width="match_parent"
                         android:layout_height="2dp"
                         android:layout_marginTop="-2dp"
-                        android:background="@color/text_orange" />
+                        android:background="@color/text_blue" />
 
                 </LinearLayout>
 
@@ -288,5 +288,5 @@
                 android:background="#906e6e6e" />
         </LinearLayout>
 
-    </cn.bizzan.ui.entrust.DropdownLayout>
+    </info.lftong.ui.entrust.DropdownLayout>
 </RelativeLayout>

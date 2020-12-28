@@ -6,7 +6,7 @@
     android:layout_height="match_parent"
     android:background="@color/primaryBackDark"
     android:orientation="vertical"
-    tools:context="cn.bizzan.ui.entrust.TrustDetailActivity">
+    tools:context="info.lftong.ui.entrust.TrustDetailActivity">
     <!--标题-->
     <LinearLayout
         android:id="@+id/llTitle"

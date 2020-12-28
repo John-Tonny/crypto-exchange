@@ -181,7 +181,7 @@
                     android:paddingLeft="8dp"
                     android:paddingRight="8dp"
                     android:text="@string/send_code"
-                    android:textColor="@color/text_orange"
+                    android:textColor="@color/text_blue"
                     android:textSize="13sp"/>
 
             </LinearLayout>

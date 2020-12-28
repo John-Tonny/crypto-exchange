@@ -198,7 +198,7 @@
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:text="《认证商家协议》"
-                        android:textColor="@color/text_orange"
+                        android:textColor="@color/text_blue"
                         android:textSize="12sp" />
 
                 </LinearLayout>

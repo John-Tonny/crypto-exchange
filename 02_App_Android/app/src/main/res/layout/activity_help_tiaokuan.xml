@@ -6,7 +6,7 @@
     android:layout_height="match_parent"
     android:background="@color/primaryBackDark"
     android:orientation="vertical"
-    tools:context="cn.bizzan.ui.safe.SafeActivity">
+    tools:context="info.lftong.ui.safe.SafeActivity">
 
     <!--标题-->
     <LinearLayout
@@ -124,13 +124,13 @@
 
         </LinearLayout>
 
-        <cn.bizzan.base.LinListView
+        <info.lftong.base.LinListView
             android:id="@+id/listview_tiaokuan"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginLeft="20dp"
 
-            android:layout_marginRight="20dp"></cn.bizzan.base.LinListView>
+            android:layout_marginRight="20dp"></info.lftong.base.LinListView>
 
     </LinearLayout>
 

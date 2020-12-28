@@ -154,7 +154,7 @@
         <!--android:layout_height="1px"-->
         <!--android:background="#3361688A" />-->
 
-    <cn.bizzan.customview.intercept.WonderfulScrollView
+    <info.lftong.customview.intercept.WonderfulScrollView
         android:id="@+id/scrollView"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
@@ -373,7 +373,7 @@
                 </LinearLayout>
             </LinearLayout>
 
-            <cn.bizzan.customview.MyViewPager
+            <info.lftong.customview.MyViewPager
                 android:id="@+id/viewPager"
                 android:layout_width="match_parent"
                 android:layout_height="300dp"
@@ -388,21 +388,21 @@
                 android:layout_width="match_parent"
                 android:layout_height="35dp"
                 android:visibility="visible"
-                app:tabIndicatorColor="@color/text_orange"
+                app:tabIndicatorColor="@color/text_blue"
                 app:tabMinWidth="80dp"
                 app:tabMode="scrollable"
                 app:tabBackground="@null"
-                app:tabSelectedTextColor="@color/text_orange"
+                app:tabSelectedTextColor="@color/text_blue"
                 app:tabTextColor="@color/primaryTextGray" />
 
-            <cn.bizzan.customview.CustomViewPager
+            <info.lftong.customview.CustomViewPager
                 android:id="@+id/vpDepth"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:overScrollMode="never"
                 android:visibility="visible" />
         </LinearLayout>
-    </cn.bizzan.customview.intercept.WonderfulScrollView>
+    </info.lftong.customview.intercept.WonderfulScrollView>
 
     <LinearLayout
         android:id="@+id/llVertical"

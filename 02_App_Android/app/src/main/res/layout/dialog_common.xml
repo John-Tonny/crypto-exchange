@@ -59,7 +59,7 @@
                 android:paddingBottom="10dp"
                 android:paddingTop="10dp"
                 android:text="@string/dialog_confirm"
-                android:textColor="@color/text_orange"
+                android:textColor="@color/text_blue"
                 android:textSize="16sp" />
 
         </LinearLayout>

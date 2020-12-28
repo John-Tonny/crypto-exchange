@@ -75,11 +75,11 @@
         android:layout_height="50dp"
         android:background="@color/primaryBackNormal"
         app:tabBackground="@null"
-        app:tabIndicatorColor="@color/text_orange"
-        app:tabSelectedTextColor="@color/text_orange"
+        app:tabIndicatorColor="@color/text_blue"
+        app:tabSelectedTextColor="@color/text_blue"
         app:tabTextColor="@color/colorPrimary" />
 
-    <cn.bizzan.customview.intercept.WonderfulViewPager
+    <info.lftong.customview.intercept.WonderfulViewPager
         android:id="@+id/vpPager"
         android:layout_width="match_parent"
         android:layout_height="match_parent"

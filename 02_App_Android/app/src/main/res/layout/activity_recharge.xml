@@ -62,7 +62,7 @@
 
     </LinearLayout>
 
-    <cn.bizzan.customview.intercept.WonderfulScrollView
+    <info.lftong.customview.intercept.WonderfulScrollView
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:background="@color/primaryBackDark">
@@ -105,7 +105,7 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:text="@string/savePhoto"
-                    android:textColor="@color/text_orange"
+                    android:textColor="@color/text_blue"
                     android:textSize="14sp" />
             </LinearLayout>
 
@@ -141,7 +141,7 @@
                     android:gravity="center"
 
                     android:text="@string/copyAddress"
-                    android:textColor="@color/text_orange"
+                    android:textColor="@color/text_blue"
                     android:textSize="14sp" />
             </LinearLayout>
 
@@ -172,7 +172,7 @@
                     android:layout_weight="1"
                     android:text="充值时请输入备注(Memo)"
                     android:textAlignment="center"
-                    android:textColor="@color/text_orange" />
+                    android:textColor="@color/text_blue" />
             </LinearLayout>
 
             <TextView
@@ -187,5 +187,5 @@
                 android:textColor="#777"
                 android:textSize="12sp" />
         </LinearLayout>
-    </cn.bizzan.customview.intercept.WonderfulScrollView>
+    </info.lftong.customview.intercept.WonderfulScrollView>
 </LinearLayout>

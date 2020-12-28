@@ -220,7 +220,7 @@
                             android:paddingLeft="8dp"
                             android:paddingRight="8dp"
                             android:text="@string/send_code"
-                            android:textColor="@color/text_orange"
+                            android:textColor="@color/text_blue"
                             android:textSize="13sp" />
 
                     </LinearLayout>
@@ -412,7 +412,7 @@
                     android:layout_height="wrap_content"
                     android:layout_marginLeft="5dp"
                     android:text="用户协议"
-                    android:textColor="@color/text_orange"
+                    android:textColor="@color/text_blue"
                     android:textSize="13sp" />
             </LinearLayout>
             <LinearLayout
@@ -457,7 +457,7 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:text="@string/goto_login"
-                    android:textColor="@color/text_orange"
+                    android:textColor="@color/text_blue"
                     android:textSize="14sp"/>
 
             </LinearLayout>

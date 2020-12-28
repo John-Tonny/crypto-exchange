@@ -205,13 +205,13 @@
         android:layout_weight="1"
         android:orientation="vertical">
 
-        <cn.bizzan.ui.mychart.MyCombinedChart
+        <info.lftong.ui.mychart.MyCombinedChart
             android:id="@+id/combinedK"
             android:layout_width="match_parent"
             android:layout_height="0dp"
             android:layout_weight="2"/>
 
-        <cn.bizzan.ui.mychart.MyCombinedChart
+        <info.lftong.ui.mychart.MyCombinedChart
             android:id="@+id/combinedChartDeal"
             android:layout_width="match_parent"
             android:layout_height="0dp"

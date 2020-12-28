@@ -1,4 +1,4 @@
-package cn.bizzan;
+package info.lftong;
 
 import android.content.Context;
 import android.support.test.InstrumentationRegistry;

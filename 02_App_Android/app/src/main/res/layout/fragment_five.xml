@@ -51,7 +51,7 @@
                 android:layout_height="wrap_content"
                 android:paddingLeft="16dp">
 
-                <cn.bizzan.customview.CircleImageView
+                <info.lftong.customview.CircleImageView
                     android:id="@+id/ivHeader"
                     android:layout_width="56dp"
                     android:layout_height="56dp"
@@ -132,7 +132,7 @@
                             android:layout_width="3dp"
                             android:layout_height="14dp"
 
-                            android:background="@color/text_orange"></View>
+                            android:background="@color/text_blue"></View>
 
                         <TextView
                             android:layout_width="wrap_content"
@@ -267,7 +267,7 @@
                         <View
                             android:layout_width="3dp"
                             android:layout_height="14dp"
-                            android:background="@color/text_orange"></View>
+                            android:background="@color/text_blue"></View>
 
                         <TextView
                             android:layout_width="wrap_content"
@@ -286,7 +286,7 @@
                             android:layout_marginRight="15dp"
                             android:layout_toStartOf="@+id/tv_more_right"
                             android:text="我的邀请链接"
-                            android:textColor="@color/text_orange"
+                            android:textColor="@color/text_blue"
                             android:textSize="12sp" />
                     </LinearLayout>
 
@@ -485,7 +485,7 @@
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:layout_marginTop="20dp"
-                            android:background="@drawable/shape_c2c_tv_buy"
+                            android:background="#0069ff"
                             android:paddingLeft="15dp"
                             android:paddingTop="5dp"
                             android:paddingRight="15dp"
@@ -537,7 +537,7 @@
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:layout_marginTop="20dp"
-                            android:background="@drawable/shape_c2c_tv_buy"
+                            android:background="#0069ff"
                             android:paddingLeft="15dp"
                             android:paddingTop="5dp"
                             android:paddingRight="15dp"
@@ -580,7 +580,7 @@
                         <View
                             android:layout_width="3dp"
                             android:layout_height="14dp"
-                            android:background="@color/text_orange"></View>
+                            android:background="@color/text_blue"></View>
 
                         <TextView
                             android:layout_width="wrap_content"

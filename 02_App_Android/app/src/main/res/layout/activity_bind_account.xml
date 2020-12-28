@@ -7,7 +7,7 @@
     android:layout_height="match_parent"
     android:background="@color/primaryBackDark"
     android:orientation="vertical"
-    tools:context="cn.bizzan.ui.setting.SettingActivity">
+    tools:context="info.lftong.ui.setting.SettingActivity">
 
     <!--标题-->
     <LinearLayout

@@ -6,7 +6,7 @@
     android:layout_height="match_parent"
     android:fillViewport="true"
     android:background="@color/primaryBackDark"
-    tools:context="cn.bizzan.ui.login.LoginActivity">
+    tools:context="info.lftong.ui.login.LoginActivity">
 
     <LinearLayout
         android:layout_width="match_parent"
@@ -166,7 +166,7 @@
                     android:layout_height="match_parent"
                     android:minWidth="48dp"
                     android:text="@string/goto_regist"
-                    android:textColor="@color/text_orange"
+                    android:textColor="@color/text_blue"
                     android:textSize="14sp"
                     android:visibility="invisible" />
 
@@ -187,7 +187,7 @@
                     android:layout_height="match_parent"
                     android:gravity="center"
                     android:text="@string/forgot_password"
-                    android:textColor="@color/text_orange"
+                    android:textColor="@color/text_blue"
                     android:textSize="14sp" />
             </LinearLayout>
 
@@ -199,7 +199,7 @@
                 android:layout_centerInParent="true"
                 android:layout_marginLeft="32dp"
                 android:layout_marginRight="32dp"
-                android:background="@drawable/shape_c2c_tv_buy"
+                android:background="#0069ff"
                 android:gravity="center"
                 android:text="@string/login"
                 android:textColor="#fff"
@@ -229,7 +229,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="@string/goto_regist"
-                android:textColor="@color/text_orange"
+                android:textColor="@color/text_blue"
                 android:textSize="14sp" />
 
         </LinearLayout>

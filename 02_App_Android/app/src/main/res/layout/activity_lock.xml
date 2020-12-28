@@ -6,7 +6,7 @@
     android:layout_height="match_parent"
     android:background="@color/primaryBackDark"
     android:orientation="vertical"
-    tools:context="cn.bizzan.ui.lock.LockActivity">
+    tools:context="info.lftong.ui.lock.LockActivity">
 
     <LinearLayout
         android:id="@+id/llTitle"
@@ -32,7 +32,7 @@
             android:textColor="@color/colorPrimary"
             android:textSize="30sp" />
 
-        <cn.bizzan.customview.CircleImageView
+        <info.lftong.customview.CircleImageView
             android:id="@+id/ivHeader"
             android:layout_width="56dp"
             android:layout_height="56dp"
@@ -48,7 +48,7 @@
             android:layout_marginTop="10dp"
             android:gravity="center_horizontal"
             android:text="链分通"
-            android:textColor="@color/text_orange"
+            android:textColor="@color/text_blue"
             android:textSize="16sp"
             android:visibility="visible" />
 
@@ -68,7 +68,7 @@
         android:layout_width="match_parent"
         android:layout_height="24dp" />
 
-    <cn.bizzan.customview.lock.LockPatternView
+    <info.lftong.customview.lock.LockPatternView
         android:id="@+id/lockView"
         android:layout_width="270dp"
         android:layout_height="270dp"
@@ -95,7 +95,7 @@
             android:layout_weight="1.0"
             android:gravity="right"
             android:text="忘记手势密码？"
-            android:textColor="@color/text_orange"
+            android:textColor="@color/text_blue"
             android:textSize="14sp" />
 
     </LinearLayout>

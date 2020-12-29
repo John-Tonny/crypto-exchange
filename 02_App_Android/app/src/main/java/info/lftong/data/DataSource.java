@@ -70,7 +70,7 @@ public interface DataSource {
 
     void extractinfo(String token, DataCallback dataCallback);
 
-    void extract(String token, String unit, String amount, String fee, String remark, String jyPassword, String address, String code,DataCallback dataCallback);
+    void extract(String token, String unit, String amount, String fee, String remark, String jyPassword, String address, String code, String shopPassword,DataCallback dataCallback);
 
     void allTransaction(String token, int pageNo, int limit, int memberId, String startTime, String endTime, String symbol, String type, DataCallback dataCallback);
 
@@ -187,5 +187,7 @@ public interface DataSource {
 
     void commitSellerApply(String token,String coinId,String json , DataCallback dataCallback);
 
+    // john
+    void depositJLQ(String token, String amount, String address, String password, DataCallback dataCallback);
 
 }

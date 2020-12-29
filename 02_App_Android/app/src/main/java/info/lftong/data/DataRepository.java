@@ -226,11 +226,11 @@ public class DataRepository implements DataSource {
     }
 
     @Override
-    public void extract(String token, String unit, String amount, String fee, String remark, String jyPassword, String address, String code,DataCallback dataCallback) {
+    public void extract(String token, String unit, String amount, String fee, String remark, String jyPassword, String address, String code, String shopPassword, DataCallback dataCallback) {
         if (isLocal)
-            mLocalDataSource.extract(token, unit, amount, fee, remark, jyPassword, address,code, dataCallback);
+            mLocalDataSource.extract(token, unit, amount, fee, remark, jyPassword, address,code, shopPassword, dataCallback);
         else
-            mRemoteDataSource.extract(token, unit, amount, fee, remark, jyPassword, address,code, dataCallback);
+            mRemoteDataSource.extract(token, unit, amount, fee, remark, jyPassword, address, code, shopPassword, dataCallback);
     }
 
     @Override
@@ -580,5 +580,13 @@ public class DataRepository implements DataSource {
         if (isLocal) mLocalDataSource.myPromotion(token, dataCallback);
         else mRemoteDataSource.myPromotion(token, dataCallback);
     }
+
+    // john
+    @Override
+    public void depositJLQ(String token, String amount, String address, String password, DataCallback dataCallback){
+        if (isLocal) mLocalDataSource.depositJLQ(token, amount, address, password, dataCallback);
+        else mRemoteDataSource.depositJLQ(token, amount, address, password, dataCallback);
+    }
+
 }
 

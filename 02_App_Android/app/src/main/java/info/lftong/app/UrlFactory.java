@@ -432,4 +432,7 @@ public class UrlFactory {
     }
 
     public static String getMyPromotion(){ return host + "/uc/promotion/mypromotion"; }
+
+    // john
+    public static String getDepositJLQ(){ return host + "/uc/asset/deposit/JLQ"; }
 }

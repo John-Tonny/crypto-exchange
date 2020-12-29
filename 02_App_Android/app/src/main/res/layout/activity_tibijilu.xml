@@ -93,7 +93,7 @@
                 android:layout_centerVertical="true"
                 android:layout_gravity="center_vertical"
                 android:layout_marginLeft="16dp"
-                android:text="提币记录"
+                android:text="转出记录"
                 android:textColor="@color/colorPrimary"
                 android:textSize="18sp" />
 

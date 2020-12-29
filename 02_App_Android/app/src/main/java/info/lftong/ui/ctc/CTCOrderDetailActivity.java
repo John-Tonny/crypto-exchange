@@ -199,7 +199,7 @@ public class CTCOrderDetailActivity  extends BaseActivity implements CTCContract
             tvTips.setText(temStatus + "承兑商已接单，请您尽快付款");
         }
         if(detailOrder.getDirection() == 0 && detailOrder.getStatus() == 2){
-            tvTips.setText(temStatus + "等待承兑商放币中...");
+            tvTips.setText(temStatus + "等待承兑商放行中...");
         }
         if(detailOrder.getDirection() == 0 && detailOrder.getStatus() == 3){
             tvTips.setText(temStatus + "恭喜！订单已完成！");
@@ -214,7 +214,7 @@ public class CTCOrderDetailActivity  extends BaseActivity implements CTCContract
             tvTips.setText(temStatus + "承兑商已接单，正在付款中...");
         }
         if(detailOrder.getDirection() == 1 && detailOrder.getStatus() == 2){
-            tvTips.setText(temStatus + "承兑商已付款，确认放币中...");
+            tvTips.setText(temStatus + "承兑商已付款，确认放行中...");
         }
         if(detailOrder.getDirection() == 1 && detailOrder.getStatus() == 3){
             tvTips.setText(temStatus + "恭喜！订单已完成！");

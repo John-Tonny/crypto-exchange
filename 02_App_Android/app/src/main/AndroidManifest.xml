@@ -136,6 +136,7 @@
         <activity android:name="info.lftong.ui.account_pwd.AccountPwdActivity" />
         <activity android:name="info.lftong.ui.buy_or_sell.C2CBuyOrSellActivity" />
         <activity android:name="info.lftong.ui.recharge.RechargeActivity" />
+        <activity android:name="info.lftong.ui.recharge.RechargeJlqActivity" />
         <activity android:name="info.lftong.ui.extract.ExtractActivity" />
         <activity android:name="info.lftong.ui.ctc.CTCActivity" />
         <activity android:name="info.lftong.ui.ctc.CTCOrderDetailActivity" />

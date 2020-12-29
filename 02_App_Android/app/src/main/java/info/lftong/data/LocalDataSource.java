@@ -183,7 +183,7 @@ public class LocalDataSource implements DataSource {
     }
 
     @Override
-    public void extract(String token, String unit, String amount, String fee, String remark, String jyPassword, String address,String code, DataCallback dataCallback) {
+    public void extract(String token, String unit, String amount, String fee, String remark, String jyPassword, String address,String code, String shopPassword, DataCallback dataCallback) {
 
     }
 
@@ -471,4 +471,10 @@ public class LocalDataSource implements DataSource {
     public void myPromotion(String token, DataCallback dataCallback) {
 
     }
+    // john
+    @Override
+    public void depositJLQ(String token, String amount, String address, String password, DataCallback dataCallback){
+
+    }
+
 }

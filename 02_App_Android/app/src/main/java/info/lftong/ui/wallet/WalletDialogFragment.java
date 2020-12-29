@@ -19,6 +19,7 @@ import info.lftong.app.MyApplication;
 import info.lftong.base.BaseDialogFragment;
 import info.lftong.entity.Coin;
 import info.lftong.app.UrlFactory;
+import info.lftong.ui.recharge.RechargeJlqActivity;
 import info.lftong.utils.SharedPreferenceInstance;
 import info.lftong.utils.WonderfulDpPxUtils;
 import info.lftong.utils.WonderfulLogUtils;
@@ -150,7 +151,11 @@ public class WalletDialogFragment extends BaseDialogFragment {
                     huoQu();
                 } else {
                     dismiss();
-                    RechargeActivity.actionStart(getActivity(), coin);
+                    if (coin.getCoin().getName().compareToIgnoreCase("JLQ")==0) {
+                        RechargeJlqActivity.actionStart(getActivity(), coin);
+                    }else {
+                        RechargeActivity.actionStart(getActivity(), coin);
+                    }
                 }
             }
         });
@@ -192,7 +197,11 @@ public class WalletDialogFragment extends BaseDialogFragment {
                         int code = jsonObject.optInt("code");
                         if (code == 0) {
                             dismiss();
-                            RechargeActivity.actionStart(getActivity(), coin);
+                            if (coin.getCoin().getName().compareToIgnoreCase("JLQ")==0) {
+                                RechargeJlqActivity.actionStart(getActivity(), coin);
+                            }else {
+                                RechargeActivity.actionStart(getActivity(), coin);
+                            }
                         } else {
                             WonderfulToastUtils.showToast("" + jsonObject.optString("message"));
                         }

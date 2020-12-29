@@ -38,7 +38,7 @@
             android:layout_height="wrap_content"
             android:layout_gravity="center_vertical"
             android:layout_marginLeft="16dp"
-            android:text="充币"
+            android:text="转入"
             android:textColor="@color/colorPrimary"
             android:textSize="18sp" />
 
@@ -65,6 +65,7 @@
     <info.lftong.customview.intercept.WonderfulScrollView
         android:layout_width="match_parent"
         android:layout_height="match_parent"
+        android:visibility="visible"
         android:background="@color/primaryBackDark">
 
         <LinearLayout

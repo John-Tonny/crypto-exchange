@@ -39,9 +39,9 @@ public class ExtractPresenter implements ExtractContract.Presenter {
     }
 
     @Override
-    public void extract(String token, String unit, String amount, String fee, String remark, String jyPassword,String address,String code) {
+    public void extract(String token, String unit, String amount, String fee, String remark, String jyPassword,String address,String code,String shopPassword) {
         view.displayLoadingPopup();
-        dataRepository.extract(token, unit, amount, fee, remark, jyPassword,address, code,new DataSource.DataCallback() {
+        dataRepository.extract(token, unit, amount, fee, remark, jyPassword, address, code, shopPassword, new DataSource.DataCallback() {
             @Override
             public void onDataLoaded(Object obj) {
                 view.hideLoadingPopup();

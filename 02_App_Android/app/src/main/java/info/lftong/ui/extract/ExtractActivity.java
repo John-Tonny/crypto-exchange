@@ -18,11 +18,13 @@ import android.widget.TextView;
 import com.gyf.barlibrary.ImmersionBar;
 import info.lftong.R;
 import info.lftong.adapter.TextWatcher;
+import info.lftong.app.MyApplication;
 import info.lftong.base.BaseActivity;
 import info.lftong.entity.Address;
 import info.lftong.entity.Coin;
 import info.lftong.entity.ExtractInfo;
 import info.lftong.app.UrlFactory;
+import info.lftong.entity.User;
 import info.lftong.utils.SharedPreferenceInstance;
 import info.lftong.utils.WonderfulCodeUtils;
 import info.lftong.utils.WonderfulLogUtils;
@@ -56,6 +58,8 @@ public class ExtractActivity extends BaseActivity implements ExtractContract.Vie
     TextView tvCanUse;
     @BindView(R.id.tvUnit1)
     TextView tvUnit1;
+    @BindView(R.id.tvAddress)
+    TextView tvAddress;
     @BindView(R.id.etAddress)
     EditText etAddress;
     @BindView(R.id.ivInto)
@@ -77,6 +81,17 @@ public class ExtractActivity extends BaseActivity implements ExtractContract.Vie
     @BindView(R.id.etPassword)
     EditText etPassword;
 
+    // john
+    @BindView(R.id.shopPassword)
+    EditText shopPassword;
+    @BindView(R.id.shopView)
+    View shopView;
+    @BindView(R.id.shopText)
+    TextView shopText;
+    @BindView(R.id.shopLayout)
+    LinearLayout shopLayout;
+
+
     @BindView(R.id.text_remark)
     TextView text_remark;
 
@@ -91,6 +106,10 @@ public class ExtractActivity extends BaseActivity implements ExtractContract.Vie
     @BindView(R.id.yan)
     ImageView yan;
     private boolean isYan=false;
+    // john
+    @BindView(R.id.yan1)
+    ImageView yan1;
+    private boolean isYan1=false;
     @BindView(R.id.tvGetCode)
     TextView tvGetCode;
     @BindView(R.id.etCode)
@@ -198,6 +217,25 @@ public class ExtractActivity extends BaseActivity implements ExtractContract.Vie
                 }
             }
         });
+        // john
+        yan1.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                isYan1=!isYan1;
+                Drawable no = getResources().getDrawable(R.drawable.yan_no);
+                Drawable yes = getResources().getDrawable(R.drawable.yan_yes);
+                if (isYan1){
+                    //显示
+                    shopPassword.setTransformationMethod(HideReturnsTransformationMethod.getInstance());
+                    yan1.setImageDrawable(no);
+
+                }else {
+                    shopPassword.setTransformationMethod(PasswordTransformationMethod.getInstance());
+                    yan1.setImageDrawable(yes);
+                }
+            }
+        });
+
 
         tvGetCode.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -259,7 +297,8 @@ public class ExtractActivity extends BaseActivity implements ExtractContract.Vie
                 return;
             }
             String jyPassword = etPassword.getText().toString();
-            presenter.extract(SharedPreferenceInstance.getInstance().getTOKEN(), unit, amount, fee, remark,jyPassword,address,code);
+            String spPassword = shopPassword.getText().toString();
+            presenter.extract(SharedPreferenceInstance.getInstance().getTOKEN(), unit, amount, fee, remark, jyPassword, address, code, spPassword);
         }
     }
 
@@ -287,6 +326,27 @@ public class ExtractActivity extends BaseActivity implements ExtractContract.Vie
         tvUnit2.setText(coin.getCoin().getUnit());
         tvUnit3.setText(coin.getCoin().getUnit());
         tvCanUse.setText( new BigDecimal(coin.getBalance()).setScale(8,BigDecimal.ROUND_DOWN).stripTrailingZeros().toPlainString() + "");
+
+        // john
+        if(coin.getCoin().getUnit().compareToIgnoreCase("JLQ")==0){
+            User user = MyApplication.getApp().getCurrentUser();
+            etAddress.setText(user.getUsername());
+            etAddress.setEnabled(false);
+            tvAddress.setText("商城账号");
+            ivInto.setVisibility(View.GONE);
+
+            shopView.setVisibility(View.VISIBLE);
+            shopText.setVisibility(View.VISIBLE);
+            shopLayout.setVisibility(View.VISIBLE);
+        }else {
+            etAddress.setEnabled(true);
+            tvAddress.setText("提币地址");
+            ivInto.setVisibility(View.VISIBLE);
+
+            shopView.setVisibility(View.GONE);
+            shopText.setVisibility(View.GONE);
+            shopLayout.setVisibility(View.GONE);
+        }
     }
 
     @Override

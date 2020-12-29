@@ -476,8 +476,8 @@
     <string name="availableCoin">可用</string>
     <string name="freezeCoin">冻结</string>
     <string name="suocang">待释放</string>
-    <string name="mentionMoney">提币</string>
-    <string name="chargeMoney">充币</string>
+    <string name="mentionMoney">转出</string>
+    <string name="chargeMoney">转入</string>
     <string name="matchMoney">配对</string>
     <string name="activityexchange">活动兑换</string>
     <string name="ctcbuy">C2C买入</string>

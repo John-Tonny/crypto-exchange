@@ -139,7 +139,7 @@
                 android:layout_height="match_parent"
                 android:layout_weight="1"
                 android:gravity="center"
-                android:text="充币"
+                android:text="转入"
                 android:textColor="@color/typeRed"
                 android:textSize="18sp" />
 
@@ -149,7 +149,7 @@
                 android:layout_height="match_parent"
                 android:layout_weight="1"
                 android:gravity="center"
-                android:text="提币"
+                android:text="转出"
                 android:textColor="@color/typeGreen"
                 android:textSize="18sp" />
 

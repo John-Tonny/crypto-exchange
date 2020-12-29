@@ -25,6 +25,6 @@ public interface ExtractContract {
     interface Presenter extends Contract.BasePresenter {
         void extractinfo(String token);
 
-        void extract(String token, String unit, String amount, String fee, String remark, String jyPassword, String address,String code);
+        void extract(String token, String unit, String amount, String fee, String remark, String jyPassword, String address,String code,String shopPassword);
     }
 }

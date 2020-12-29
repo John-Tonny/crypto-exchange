@@ -42,6 +42,14 @@ public class TiBiAdapter extends LinAdapter<TiBiBean> {
         TextView text_time=ViewHolders.get(convertView,R.id.text_time);
         text_time.setText(bean.time);
 
+        // john
+        TextView label_dizhi=ViewHolders.get(convertView,R.id.label_dizhi);
+        if ( bean.name.compareToIgnoreCase("JLQ")==0) {
+            label_dizhi.setText("商城账号");
+        }else{
+            label_dizhi.setText("提币地址");
+        }
+
         TextView text_dizhi=ViewHolders.get(convertView,R.id.text_dizhi);
         text_dizhi.setText(bean.dizhi);
 

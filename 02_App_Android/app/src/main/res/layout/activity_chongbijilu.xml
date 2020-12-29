@@ -91,7 +91,7 @@
                 android:layout_height="wrap_content"
                 android:layout_centerVertical="true"
                 android:layout_gravity="center_vertical"
-                android:text="充币记录"
+                android:text="转入记录"
                 android:textColor="@color/primaryText"
                 android:textSize="18sp" />
 

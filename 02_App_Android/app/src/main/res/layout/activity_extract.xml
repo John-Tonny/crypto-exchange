@@ -39,7 +39,7 @@
             android:layout_centerVertical="true"
             android:layout_gravity="center_vertical"
             android:layout_marginLeft="16dp"
-            android:text="提币"
+            android:text="转出"
             android:textColor="@color/colorPrimary"
             android:textSize="18sp" />
 
@@ -119,6 +119,7 @@
                 android:background="@color/primaryBackNormal"></View>
 
             <TextView
+                android:id="@+id/tvAddress"
                 android:layout_width="80dp"
                 android:layout_height="wrap_content"
                 android:layout_gravity="center_vertical"
@@ -354,6 +355,58 @@
                     android:textColor="@color/primaryText"
                     android:textSize="14sp"
                     android:textStyle="bold" />
+            </LinearLayout>
+
+            <View
+                    android:id="@+id/shopView"
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:visibility="gone"
+                    android:background="@color/primaryBackNormal"/>
+
+            <TextView
+                    android:id="@+id/shopText"
+                    android:layout_width="120dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginLeft="16dp"
+                    android:layout_marginTop="10dp"
+                    android:text="商城账户密码"
+                    android:visibility="gone"
+                    android:textColor="@color/primaryText"
+                    android:textSize="16sp" />
+
+            <LinearLayout
+                    android:id="@+id/shopLayout"
+                    android:layout_width="match_parent"
+                    android:layout_height="56dp"
+                    android:layout_marginLeft="16dp"
+                    android:layout_marginTop="10dp"
+                    android:gravity="center"
+                    android:visibility="gone"
+                    android:paddingRight="16dp">
+
+                <EditText
+                        android:id="@+id/shopPassword"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:layout_weight="1"
+                        android:background="@null"
+                        android:gravity="center|left"
+                        android:hint="商城账户密码"
+                        android:inputType="textPassword"
+                        android:text=""
+                        android:textColor="@color/primaryText"
+                        android:textColorHint="@color/primaryTextGray"
+                        android:textSize="14sp" />
+
+                <ImageView
+                        android:id="@+id/yan1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:src="@drawable/yan_no" />
+
             </LinearLayout>
 
             <View

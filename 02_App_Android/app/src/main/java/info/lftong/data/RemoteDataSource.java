@@ -974,9 +974,9 @@ public class RemoteDataSource implements DataSource {
     }
 
     @Override
-    public void extract(String token, String unit, String amount, String fee, String remark, String jyPassword,String address,String code, final DataCallback dataCallback) {
-        WonderfulOkhttpUtils.post().url(UrlFactory.getTIBi()).addHeader("x-auth-token", token).addParams("jyPassword", jyPassword)
-                .addParams("unit", unit).addParams("amount", amount).addParams("fee", fee).addParams("address",address).addParams("remark", remark).addParams("code",code).build().execute(new StringCallback() {
+    public void extract(String token, String unit, String amount, String fee, String remark, String jyPassword, String address, String code, String shopPassword, final DataCallback dataCallback) {
+        WonderfulOkhttpUtils.post().url(UrlFactory.getTIBi()).addHeader("x-auth-token", token).addParams("jyPassword", jyPassword).addParams("unit", unit).addParams("amount", amount).addParams("fee", fee).addParams("address",address)
+                .addParams("remark", remark).addParams("code",code).addParams("shopPassword", shopPassword).build().execute(new StringCallback() {
             @Override
             public void onError(Request request, Exception e) {
                 super.onError(request,e);
@@ -990,7 +990,7 @@ public class RemoteDataSource implements DataSource {
                 try {
                     JSONObject object = new JSONObject(response);
                     if (object.optInt("code") == 0) {
-                        dataCallback.onDataLoaded("提币成功");
+                        dataCallback.onDataLoaded("提取成功");
                     } else {
                         dataCallback.onDataNotAvailable(object.getInt("code"), object.optString("message"));
                     }
@@ -2722,6 +2722,35 @@ public class RemoteDataSource implements DataSource {
                     JSONObject object = new JSONObject(response);
                     if (object.optInt("code") == 0) {
                         dataCallback.onDataLoaded(object.getJSONObject("data"));
+                    }
+                } catch (JSONException e) {
+                    e.printStackTrace();
+                    dataCallback.onDataNotAvailable(JSON_ERROR, null);
+                }
+            }
+        });
+    }
+
+    @Override
+    public void depositJLQ(String token, String amount, String address, String password, final DataCallback dataCallback) {
+        WonderfulOkhttpUtils.post().url(UrlFactory.getDepositJLQ()).addHeader("x-auth-token", token).addParams("password", password).addParams("amount", amount)
+                .addParams("address",address).build().execute(new StringCallback() {
+            @Override
+            public void onError(Request request, Exception e) {
+                super.onError(request,e);
+                WonderfulLogUtils.logi("转入JLQ出错", "转入JLQ出错：" + e.getMessage());
+                dataCallback.onDataNotAvailable(OKHTTP_ERROR, null);
+            }
+
+            @Override
+            public void onResponse(String response) {
+                WonderfulLogUtils.logi("转入JLQ回执：", "转入JLQ回执：" + response.toString());
+                try {
+                    JSONObject object = new JSONObject(response);
+                    if (object.optInt("code") == 0) {
+                        dataCallback.onDataLoaded("转入JLQ成功");
+                    } else {
+                        dataCallback.onDataNotAvailable(object.getInt("code"), object.optString("message"));
                     }
                 } catch (JSONException e) {
                     e.printStackTrace();

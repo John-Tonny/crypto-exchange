@@ -36,12 +36,14 @@ import info.lftong.R;
 import info.lftong.entity.Coin;
 import info.lftong.ui.chatlist.ChatListActivity;
 import info.lftong.ui.ctc.CTCActivity;
+import info.lftong.ui.extract.ExtractActivity;
 import info.lftong.ui.home.presenter.CommonPresenter;
 import info.lftong.ui.home.presenter.ICommonView;
 import info.lftong.ui.kline.KlineActivity;
 import info.lftong.ui.login.LoginActivity;
 import info.lftong.ui.message_detail.MessageDetailActivity;
 import info.lftong.ui.myinfo.MyInfoActivity;
+import info.lftong.ui.recharge.RechargeJlqActivity;
 import info.lftong.ui.setting.GongGaoActivity;
 import info.lftong.ui.setting.HelpActivity;
 import info.lftong.adapter.BannerImageLoader;
@@ -287,7 +289,13 @@ public class OneFragment extends BaseTransFragment implements info.lftong.ui.hom
         line_ctc.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                CTCActivity.actionStart(getmActivity());
+                // john
+                for (Coin coin : coins) {
+                    if (coin.getCoin().getName().compareToIgnoreCase("JLQ")==0) {
+                        RechargeJlqActivity.actionStart(getmActivity(), coin);
+                    }
+                }
+                // CTCActivity.actionStart(getmActivity());
             }
         });
         line_help.setOnClickListener(new View.OnClickListener() {

@@ -46,6 +46,15 @@ public class ChongBiAdapter extends LinAdapter<ChongBiBean.ContentBean> {
         TextView text_number=ViewHolders.get(convertView,R.id.text_number);
         text_number.setText(bean.getAmount()+"");
 
+        // john
+        TextView label_dizhi=ViewHolders.get(convertView,R.id.label_dizhi);
+        if ( bean.getSymbol().compareToIgnoreCase("JLQ")==0) {
+            label_dizhi.setText("商城账号");
+        }else{
+            label_dizhi.setText("充币地址");
+        }
+
+
         return convertView;
     }
 }

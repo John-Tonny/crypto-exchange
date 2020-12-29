@@ -178,7 +178,7 @@ public class ChongBiJLActivity extends BaseActivity {
             }
             @Override
             public void onResponse(String response) {
-                WonderfulLogUtils.logi("miao","充币记录："+response);
+                WonderfulLogUtils.logi("miao","转入记录："+response);
                 if (page==1){
                     beans.clear();
                 }

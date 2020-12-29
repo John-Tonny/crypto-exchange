@@ -12,6 +12,8 @@ import android.widget.ListView;
 
 import com.gyf.barlibrary.ImmersionBar;
 import info.lftong.R;
+import info.lftong.app.MyApplication;
+import info.lftong.entity.User;
 import info.lftong.ui.entrust.DropdownLayout;
 import info.lftong.adapter.ShaiXuanAdapter;
 import info.lftong.adapter.TiBiAdapter;
@@ -168,7 +170,7 @@ public class TiBiJLActivity extends BaseActivity {
 
             @Override
             public void onResponse(String response) {
-                WonderfulLogUtils.logi("miao", "提币记录：" + response);
+                WonderfulLogUtils.logi("miao", "转出记录：" + response);
                 if (page == 0) {
                     beans.clear();
                 }
@@ -201,7 +203,7 @@ public class TiBiJLActivity extends BaseActivity {
                         if (status == 0) {
                             bean.zhuangtai = "审核中";
                         } else if (status == 1) {
-                            bean.zhuangtai = "等待放币";
+                            bean.zhuangtai = "等待放行";
                         } else if (status == 2) {
                             bean.zhuangtai = "失败";
                         } else if (status == 3) {

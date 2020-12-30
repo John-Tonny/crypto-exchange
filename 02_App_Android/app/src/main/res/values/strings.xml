@@ -618,6 +618,7 @@
 
     <string-array name="home_two_top_tab">
         <item>自选</item>
+        <item>JLQ</item>
         <item>USDT</item>
         <item>BTC</item>
         <item>ETH</item>

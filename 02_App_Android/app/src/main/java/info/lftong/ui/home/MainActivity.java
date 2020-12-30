@@ -114,6 +114,7 @@ public class MainActivity extends BaseTransFragmentActivity implements MainContr
     private List<Currency> baseUsdt = new ArrayList<>();
     private List<Currency> baseBtc = new ArrayList<>();
     private List<Currency> baseEth = new ArrayList<>();
+    private List<Currency> baseJlq = new ArrayList<>();
     private List<BaseFragment> menusFragments = new ArrayList<>();
     private List<BaseFragment> menusFragments2 = new ArrayList<>();
 
@@ -126,10 +127,12 @@ public class MainActivity extends BaseTransFragmentActivity implements MainContr
     private USDTMarketFragment usdtMarketFragment;
     private BTCMarketFragment btcMarketFragment;
     private ETHMarketFragment ethMarketFragment;
+    private JLQMarketFragment jlqMarketFragment;
     private FavoriteFragment favoriteFragment;
     private USDTMarket2Fragment usdtMarketFragment2;
     private BTCMarket2Fragment btcMarketFragment2;
     private ETHMarket2Fragment ethMarketFragment2;
+    private JLQMarket2Fragment jlqMarketFragment2;
     private Favorite2Fragment favoriteFragment2;
 
     private MainContract.Presenter presenter;
@@ -157,12 +160,14 @@ public class MainActivity extends BaseTransFragmentActivity implements MainContr
         btcMarketFragment.tcpNotify();
         ethMarketFragment.tcpNotify();
          */
+        jlqMarketFragment.tcpNotify();
         favoriteFragment.tcpNotify();
         /* john
         usdtMarketFragment2.tcpNotify();
         btcMarketFragment2.tcpNotify();
         ethMarketFragment2.tcpNotify();
          */
+        jlqMarketFragment2.tcpNotify();
         favoriteFragment2.tcpNotify();
     }
 
@@ -364,8 +369,12 @@ public class MainActivity extends BaseTransFragmentActivity implements MainContr
         dlRoot.addDrawerListener(new DrawerListener() {
             @Override
             public void onDrawerOpened(View drawerView) {
-                // usdtMarketFragment.notifyData();
-                // usdtMarketFragment2.notifyData();
+                /* john
+                usdtMarketFragment.notifyData();
+                usdtMarketFragment2.notifyData();
+                 */
+                jlqMarketFragment.notifyData();
+                jlqMarketFragment2.notifyData();
             }
 
             @Override
@@ -390,8 +399,7 @@ public class MainActivity extends BaseTransFragmentActivity implements MainContr
         List<String> titles = Arrays.asList(this.titles);
         vpMenu.setAdapter(new PagerAdapter(getSupportFragmentManager(), menusFragments2, titles));
         tab.setupWithViewPager(vpMenu);
-        tab.getTabAt(0).select(); // john
-        // tab.getTabAt(1).select();
+        tab.getTabAt(1).select();
         new OnePresenter(Injection.provideTasksRepository(getApplicationContext()), oneFragment);
         new TwoPresenter(Injection.provideTasksRepository(getApplicationContext()), twoFragment);
         new ThreePresenter(Injection.provideTasksRepository(getApplicationContext()), threeFragment);
@@ -418,27 +426,29 @@ public class MainActivity extends BaseTransFragmentActivity implements MainContr
         btcMarketFragment = (BTCMarketFragment) getSupportFragmentManager().findFragmentByTag(BaseFragment.makeFragmentName(vpMenu.getId(), 2));
         ethMarketFragment = (ETHMarketFragment) getSupportFragmentManager().findFragmentByTag(BaseFragment.makeFragmentName(vpMenu.getId(), 3));
         */
+        jlqMarketFragment = (JLQMarketFragment) getSupportFragmentManager().findFragmentByTag(BaseFragment.makeFragmentName(vpMenu.getId(), 1));
 
         menusFragments.add(favoriteFragment);
-        /*
+        /* john
         menusFragments.add(usdtMarketFragment);
         menusFragments.add(btcMarketFragment);
         menusFragments.add(ethMarketFragment);
         */
-
+        menusFragments.add(jlqMarketFragment);
         favoriteFragment2 = (Favorite2Fragment) getSupportFragmentManager().findFragmentByTag(BaseFragment.makeFragmentName(vpMenu.getId(), 0));
         /* john
         usdtMarketFragment2 = (USDTMarket2Fragment) getSupportFragmentManager().findFragmentByTag(BaseFragment.makeFragmentName(vpMenu.getId(), 1));
         btcMarketFragment2 = (BTCMarket2Fragment) getSupportFragmentManager().findFragmentByTag(BaseFragment.makeFragmentName(vpMenu.getId(), 2));
         ethMarketFragment2 = (ETHMarket2Fragment) getSupportFragmentManager().findFragmentByTag(BaseFragment.makeFragmentName(vpMenu.getId(), 3));
          */
-
+        jlqMarketFragment2 = (JLQMarket2Fragment) getSupportFragmentManager().findFragmentByTag(BaseFragment.makeFragmentName(vpMenu.getId(), 3));
         menusFragments2.add(favoriteFragment2);
         /* john
         menusFragments2.add(usdtMarketFragment2);
         menusFragments2.add(btcMarketFragment2);
         menusFragments2.add(ethMarketFragment2);
          */
+        menusFragments2.add(jlqMarketFragment2);
     }
 
     private void addFragments() {
@@ -462,6 +472,10 @@ public class MainActivity extends BaseTransFragmentActivity implements MainContr
             menusFragments2.add(ethMarketFragment2 = ETHMarket2Fragment.getInstance(type));
         }
          */
+        if (jlqMarketFragment == null) {
+            menusFragments.add(jlqMarketFragment = JLQMarketFragment.getInstance(type));
+            menusFragments2.add(jlqMarketFragment2 = JLQMarket2Fragment.getInstance(type));
+        }
     }
 
     public void selecte(View v, int page) {
@@ -677,6 +691,7 @@ public class MainActivity extends BaseTransFragmentActivity implements MainContr
         baseBtc = Currency.baseCurrencies(currencyListAll, "BTC");
         baseEth = Currency.baseCurrencies(currencyListAll, "ETH");
          */
+        baseJlq = Currency.baseCurrencies(currencyListAll, "JLQ");
         WonderfulLogUtils.logi("miao", "baseUsdt:" + baseUsdt.size());
         if (MyApplication.getApp().isLogin()) {
             presenter.find(getToken());
@@ -735,7 +750,7 @@ public class MainActivity extends BaseTransFragmentActivity implements MainContr
     }
     private void setData() {
         oneFragment.dataLoaded(currencies, currenciesTwo);
-        twoFragment.dataLoaded(baseUsdt, baseBtc, baseEth, currencyListAll);
+        twoFragment.dataLoaded(baseUsdt, baseBtc, baseEth, baseJlq, currencyListAll);
         /* john
         usdtMarketFragment.dataLoaded(baseUsdt);
         usdtMarketFragment2.dataLoaded(baseUsdt);
@@ -745,11 +760,13 @@ public class MainActivity extends BaseTransFragmentActivity implements MainContr
         btcMarketFragment.dataLoaded(baseBtc);
         ethMarketFragment.dataLoaded(baseEth);
         */
+        jlqMarketFragment.dataLoaded(baseJlq);
         favoriteFragment.dataLoaded(currencyListAll);
-        /*
+        /* john
         btcMarketFragment2.dataLoaded(baseBtc);
         ethMarketFragment2.dataLoaded(baseEth);
          */
+        jlqMarketFragment2.dataLoaded(baseJlq);
         favoriteFragment2.dataLoaded(currencyListAll);
     }
 
@@ -783,7 +800,7 @@ public class MainActivity extends BaseTransFragmentActivity implements MainContr
             }
         }
         if (twoFragment != null)
-            twoFragment.dataLoaded(baseUsdt, baseBtc, baseEth, currencyListAll);
+            twoFragment.dataLoaded(baseUsdt, baseBtc, baseEth, baseJlq, currencyListAll);
         if (favoriteFragment != null) favoriteFragment.dataLoaded(currencyListAll);
     }
 
@@ -900,11 +917,9 @@ public class MainActivity extends BaseTransFragmentActivity implements MainContr
             if (!f.exists()) {
                 return false;
             }
-
         } catch (Exception e) {
             return false;
         }
-
         return true;
     }
 

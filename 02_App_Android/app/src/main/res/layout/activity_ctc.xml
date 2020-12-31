@@ -36,7 +36,7 @@
                 android:layout_centerVertical="true"
                 android:layout_gravity="center_vertical"
                 android:layout_marginLeft="-50dp"
-                android:text="充值久零券"
+                android:text="充值JLQ"
                 android:textColor="@color/colorPrimary"
                 android:textSize="18sp"/>
 

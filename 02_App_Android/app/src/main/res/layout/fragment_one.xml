@@ -356,7 +356,7 @@
                     <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:text="充值久零券"
+                        android:text="充值JLQ"
                         android:layout_gravity="center"
                         android:textColor="@color/primaryText"
                         android:textSize="16sp"
@@ -391,6 +391,7 @@
                 android:layout_height="25dp"
                 android:background="@color/primaryBackNormal"
                 android:gravity="center"
+                android:visibility="gone"
                 android:orientation="horizontal" />
 
 

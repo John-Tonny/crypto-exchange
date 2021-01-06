@@ -8,8 +8,8 @@
 
 //可能通用
 "notice" = "公告";
-"projectName" = "正拓";
-"projectNameTip" = "正拓提示您";
+"projectName" = "链分通";
+"projectNameTip" = "链分通提示您";
 "addHeadImageMessage" = "请选择头像添加方式";
 "takingPictures" = "拍照";
 "photoAlbumSelect" = "从相册里选择";
@@ -81,7 +81,7 @@
 "invite" = "邀请码";
 "china" = "中国";
 "selectCountry" = "选择国家";
-"noAccount" = "没有正拓账号";
+"noAccount" = "没有账号";
 //我的
 
 //首页
@@ -101,8 +101,8 @@
 "Miningoutput" = "昨日挖矿产出";
 "Totalflux" = "BHB总流通量";
 "parallelmarketflux" = "BHB二级市场流通量";
-"accounting" = "欢迎来到正拓";
-"totalAssets" = "总资产（USDT）";
+"accounting" = "欢迎来到链分通";
+"totalAssets" = "总资产（CNY）";
 "Assetflow" = "资产流水";
 "myBill" = "我的订单";
 "myAdvertising" = "我的广告";
@@ -117,14 +117,14 @@
 "versionUpdate" = "版本更新";
 "versionUpdateTip" = "已更新到最新版本";
 
-"aboutZhengTuo" = "关于正拓";
-"aboutBUHUO" = "正拓国际数字加密资产交易平台是一个综合数字资产交易平台,我们拥有领先的技术实力、优质的客户服务和良好的用户体验,为广大数字货币爱好者提供一个自由的网上交换的平台。\n\n正拓国际数字加密资产交易平台同时还提供数字货币白皮书规划、加密算法调整、数字货币研发、交易平台上架一条龙的区块链服务。\n\n正拓国际数字加密资产交易平台海外运营中心分别设立在新加坡、柬埔寨、马绍尔，国内北京、郑州、深圳三大办事处，中国总部设立在海南陵水清水湾国际信息产业园。";
+"aboutZhengTuo" = "关于链分通";
+"aboutBUHUO" = "链分通专注于优质资产首发的数字交易平台。\n\n专注挖掘能落地、有实际商业价值、有估值模型和能解决问题的优质项目。\n\n链分通为区块链赋能实体经济而生，精选实体项目，共享优质项目成长价值。";
 
-"ZhengTuoIdea" = "正拓理念";
-"Idea" = "当下数字资产发展如火如荼，良莠不齐。正拓会筛选优质数字资产，重视项目的透明度和治理结构，在自有评级体系形成的筛选标准之上，参考市场投资者的决策，共同发掘优质数字资产价值。\n我们的理念是：与每一位自由汇集于此的成员共同塑造一方价值流通、合抱共耕的优质生态土壤。";
+"ZhengTuoIdea" = "我们的理念";
+"Idea" = "当下数字资产发展如火如荼，良莠不齐。我们会筛选优质数字资产，重视项目的透明度和治理结构，在自有评级体系形成的筛选标准之上，参考市场投资者的决策，共同发掘优质数字资产价值。\n我们的理念是：专注赋能实体经济。";
 
-"ZhengTuoTarget" = "正拓目标";
-"target" = "正拓的目标是建立一个相对去中心化的交易平台。平台的运营环境安全、公平而良性的发展，有创新、可迭代，符合社会进步和发展的趋势。";
+"ZhengTuoTarget" = "我们的目标";
+"target" = "我们的目标是建立一个相对去中心化的交易平台。平台的运营环境安全、公平而良性的发展，有创新、可迭代，符合社会进步和发展的趋势。";
 //账号设置
 "accountSettings" = "账号设置";
 "HeadPortrait" = "个人头像";
@@ -156,7 +156,7 @@
 "phoneNum" = "手机号";
 //修改绑定手机号
 "changeBindPhoneNum" = "修改绑定手机号";
-"changeBindPhoneNumTip" = "您正在修改正拓账户绑定的手机号，请进行身份认证";
+"changeBindPhoneNumTip" = "您正在修改账户绑定的手机号，请进行身份认证";
 "receivePhoneCode" = "原手机能接受验证码";
 "unReceivePhoneCode" = "原手机不能接受验证码";
 "unReceivePhoneCodeTip" = "原手机号不能接收验证码，请联系客服进行修改绑定";
@@ -166,7 +166,7 @@
 "newPhoneNum" = "新手机号";
 "getVerifyCode" = "获取验证码";
 "Loginimmediately" = "立即登录";
-"Existingaccounts" = "已有正拓账号";
+"Existingaccounts" = "已有账号";
 //绑定邮箱
 "email" = "邮箱";
 "emailCode" = "邮箱验证码";
@@ -174,7 +174,7 @@
 "emailAccount" = "邮箱账号";
 //更改登录密码
 "changeLoginPassword" = "更改登录密码";
-"changeLoginPasswordTip" = "您正在修改正拓的登录密码";
+"changeLoginPasswordTip" = "您正在修改登录密码";
 "oldLoginPassword" = "旧登录密码";
 "newLoginPassword" = "新登录密码";
 "certainPassword" = "确认密码";
@@ -186,14 +186,14 @@
 "inputCertainLoginPassword" = "请确认新登录密码";
 //修改/设置资金密码
 "changeMoneyPassword" = "修改资金密码";
-"changeMoneyPasswordTip" = "您正在修改正拓的交易密码";
+"changeMoneyPasswordTip" = "您正在修改交易密码";
 "oldMoneyPassword" = "原资金密码";
 "newMoneyPassword" = "新资金密码";
 "certainMoneyPassword" = "确认新资金密码";
 "forgetPassword" = "忘记密码?";
 "certainChange" = "确认修改";
 "setMoneyPassword" = "设置资金密码";
-"setMoneyPasswordTip" = "您正在设置正拓的交易密码";
+"setMoneyPasswordTip" = "您正在设置交易密码";
 "setting" = "设置";
 "inputNewMoneyPassword" = "请输入新资金密码";
 "inputOldMoneyPassword" = "请输入旧资金密码";
@@ -219,9 +219,9 @@
 "hidden0Currency" = "隐藏为0的币种";
 "availableCoin" = "可用";
 "freezeCoin" = "冻结";
-"notRaiseMoneyTip" = "不可提币充币";
+"notRaiseMoneyTip" = "不可转入转出";
 "mentionMoney" = "提币";
-"chargeMoney" = "充币";
+"chargeMoney" = "转入";
 "done" = "完成";
 //明细
 "Transactiondetails" = "交易明细";
@@ -235,9 +235,10 @@
 "Pendingmine" = "待挖矿";
 "withdrawal" = "提现";
 "transfer" = "转账";
-"coinCurrencyTrading" = "币币交易";
-"Currencyexchange" = "法币交易";
-"buyingandsellingmoney" = "安全、便捷、快速买卖数字货币";
+"coinCurrencyTrading" = "资产交易";
+"Currencyexchange" = "充值JLQ";
+//"buyingandsellingmoney" = "从商场余额转入JLQ账户"; //john
+"buyingandsellingmoney" = "链分通 专注赋能实体经济";
 "balancecoinworld" = "币世界里的余额宝";
 "Helpcenter" = "帮助中心";
 "Findmeproblem" = "有问题找我";
@@ -294,8 +295,9 @@
 "savePhoto" = "保存相册";
 "copyAddress" = "复制地址";
 "Copylink"= "复制链接";
-"unChargeMoneyTip1" = "暂无充币地址";
-"Address" = "充币地址";
+"unChargeMoneyTip1" = "暂无充值地址";
+"unChargeJlqTip1" = "暂无商城账号";
+"Address" = "充值地址";
 "unChargeMoneyTip2" = "暂时无地址无法生成二维码图片，无法保存图片";
 "unChargeMoneyTip3" = "暂时无地址，无法复制地址";
 "copyAdressTip" = "复制地址成功";
@@ -303,7 +305,7 @@
 "mentionMoneyAddress" = "提币地址";
 "mentionMoneyAmount" = "提币数量";
 "Currencyrecord" = "提币记录";
-"Chargerecord" = "充币记录";
+"Chargerecord" = "转入记录";
 "total" = "全部";
 "addAddress" = "添加地址";
 "accountNum" = "到账数量";
@@ -605,11 +607,11 @@
 "BuYongLe" = "不用了";
 "WeChatcustomer" = "微信客服";
 "BiYong" = "币用客服";
-"Community" = "正拓官方社群";
+"Community" = "官方社群";
 //首页
 "tabbar1" = "首页";
 "tabbar2" = "行情";
-"tabbar3" = "币币";
+"tabbar3" = "交易";
 "tabbar4" = "法币";
 "tabbar5" = "我的";
 "Top" = " 涨幅榜";
@@ -734,3 +736,4 @@
 "TotalNumber" = "投注总数";
 "OpeningTime" = "开奖时间";
 "Detailsoftheaward" = "开奖详情";
+"shopAccount" = "商城账号";

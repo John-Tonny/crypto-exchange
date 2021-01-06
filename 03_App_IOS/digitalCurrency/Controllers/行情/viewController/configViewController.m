@@ -85,8 +85,7 @@
             }
         }];
     }
-    else if (self.childViewType==ChildViewType_BTC)
-    {
+    else if (self.childViewType==ChildViewType_BTC){
         [[marketManager shareInstance].BTCArray enumerateObjectsUsingBlock:^(symbolModel*  obj, NSUInteger idx, BOOL * _Nonnull stop) {
             if ([obj.symbol isEqualToString:model.symbol]) {
                 [[marketManager shareInstance].BTCArray  replaceObjectAtIndex:idx withObject:model];
@@ -94,7 +93,8 @@
                 [self.tableView reloadData];
             }
         }];
-    }else if (self.childViewType==ChildViewType_ETH){
+    }
+    else if (self.childViewType==ChildViewType_ETH){
         [[marketManager shareInstance].ETHArray enumerateObjectsUsingBlock:^(symbolModel*   obj, NSUInteger idx, BOOL * _Nonnull stop) {
             if ([obj.symbol isEqualToString:model.symbol]) {
                 [[marketManager shareInstance].ETHArray  replaceObjectAtIndex:idx withObject:model];
@@ -136,7 +136,8 @@
                     [self.contentArr addObject:model];
                     NSArray *array = [model.symbol componentsSeparatedByString:@"/"];
                     NSString*baseSymbol=[array lastObject];
-                    if ([baseSymbol isEqualToString:@"USDT"]) {
+                    if ([baseSymbol // isEqualToString:@"USDT"]) {
+                        isEqualToString:@"JLQ"]) {
                         [[marketManager shareInstance].USDTArray addObject:model];
                     }else if ([baseSymbol isEqualToString:@"BTC"])
                     {

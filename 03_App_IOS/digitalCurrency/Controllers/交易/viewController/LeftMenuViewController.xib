@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14313.18" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
     <device id="retina4_7" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14283.14"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14490.49"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <objects>
@@ -66,28 +66,18 @@
                         <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="YSZ-n0-PT0">
                             <rect key="frame" x="0.0" y="65" width="305" height="40"/>
                             <subviews>
-                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="pMk-VX-WIK">
-                                    <rect key="frame" x="5" y="0.0" width="70" height="40"/>
+                                <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="pMk-VX-WIK">
+                                    <rect key="frame" x="15" y="0.0" width="50" height="40"/>
                                     <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="17"/>
-                                    <state key="normal" title="USDT">
+                                    <state key="normal" title="JLQ">
                                         <color key="titleColor" red="0.90196078431372551" green="0.90196078431372551" blue="0.90196078431372551" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                     </state>
                                     <connections>
                                         <action selector="changeData:" destination="-1" eventType="touchUpInside" id="f4b-Oa-SoT"/>
                                     </connections>
                                 </button>
-                                <button opaque="NO" tag="1" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="vEN-nh-Cgl">
-                                    <rect key="frame" x="80" y="0.0" width="70" height="40"/>
-                                    <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="17"/>
-                                    <state key="normal" title="BTC">
-                                        <color key="titleColor" red="0.90196078431372551" green="0.90196078431372551" blue="0.90196078431372551" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                    </state>
-                                    <connections>
-                                        <action selector="changeData:" destination="-1" eventType="touchUpInside" id="zZQ-vZ-pOe"/>
-                                    </connections>
-                                </button>
                                 <button opaque="NO" tag="3" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="qOY-Nw-JDL">
-                                    <rect key="frame" x="230" y="0.0" width="70" height="40"/>
+                                    <rect key="frame" x="79" y="0.0" width="34" height="40"/>
                                     <fontDescription key="fontDescription" name="PingFangSC-Regular" family="PingFang SC" pointSize="17"/>
                                     <state key="normal" title="收藏">
                                         <color key="titleColor" red="0.90196078431372551" green="0.90196078431372551" blue="0.90196078431372551" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -96,41 +86,22 @@
                                         <action selector="changeData:" destination="-1" eventType="touchUpInside" id="8qK-5w-1L7"/>
                                     </connections>
                                 </button>
-                                <button opaque="NO" tag="2" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Yee-eA-StK">
-                                    <rect key="frame" x="155" y="0.0" width="70" height="40"/>
-                                    <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="17"/>
-                                    <state key="normal" title="ETH">
-                                        <color key="titleColor" red="0.90196078431372551" green="0.90196078431372551" blue="0.90196078431372551" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                    </state>
-                                    <connections>
-                                        <action selector="changeData:" destination="-1" eventType="touchUpInside" id="g2Z-ds-znm"/>
-                                    </connections>
-                                </button>
                             </subviews>
                             <color key="backgroundColor" red="0.1215686275" green="0.15686274510000001" blue="0.20000000000000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                             <constraints>
-                                <constraint firstItem="vEN-nh-Cgl" firstAttribute="leading" secondItem="pMk-VX-WIK" secondAttribute="trailing" constant="5" id="1Cf-UK-vco"/>
-                                <constraint firstItem="qOY-Nw-JDL" firstAttribute="leading" secondItem="Yee-eA-StK" secondAttribute="trailing" constant="5" id="2vU-nH-5A2"/>
-                                <constraint firstAttribute="trailing" secondItem="qOY-Nw-JDL" secondAttribute="trailing" constant="5" id="323-eD-qDI"/>
                                 <constraint firstAttribute="height" constant="40" id="3xg-9D-HSD"/>
-                                <constraint firstItem="pMk-VX-WIK" firstAttribute="leading" secondItem="YSZ-n0-PT0" secondAttribute="leading" constant="5" id="7qm-vg-ic8"/>
-                                <constraint firstItem="vEN-nh-Cgl" firstAttribute="width" secondItem="pMk-VX-WIK" secondAttribute="width" id="9oX-AO-Uj7"/>
-                                <constraint firstItem="Yee-eA-StK" firstAttribute="top" secondItem="pMk-VX-WIK" secondAttribute="top" id="A4G-Jz-MBF"/>
-                                <constraint firstItem="Yee-eA-StK" firstAttribute="bottom" secondItem="pMk-VX-WIK" secondAttribute="bottom" id="ImX-nX-9xl"/>
-                                <constraint firstItem="Yee-eA-StK" firstAttribute="width" secondItem="pMk-VX-WIK" secondAttribute="width" id="O77-hl-R0G"/>
+                                <constraint firstItem="pMk-VX-WIK" firstAttribute="leading" secondItem="YSZ-n0-PT0" secondAttribute="leading" constant="15" id="7qm-vg-ic8"/>
                                 <constraint firstAttribute="bottom" secondItem="pMk-VX-WIK" secondAttribute="bottom" id="OLt-S8-8Hl"/>
                                 <constraint firstItem="qOY-Nw-JDL" firstAttribute="bottom" secondItem="pMk-VX-WIK" secondAttribute="bottom" id="QHm-vm-mmZ"/>
                                 <constraint firstItem="qOY-Nw-JDL" firstAttribute="width" secondItem="pMk-VX-WIK" secondAttribute="width" id="WPn-ca-QiN"/>
-                                <constraint firstItem="vEN-nh-Cgl" firstAttribute="top" secondItem="pMk-VX-WIK" secondAttribute="top" id="bog-sn-7xg"/>
-                                <constraint firstItem="Yee-eA-StK" firstAttribute="leading" secondItem="vEN-nh-Cgl" secondAttribute="trailing" constant="5" id="bsL-uV-9Rj"/>
-                                <constraint firstItem="vEN-nh-Cgl" firstAttribute="bottom" secondItem="pMk-VX-WIK" secondAttribute="bottom" id="lwC-X9-9kj"/>
                                 <constraint firstItem="pMk-VX-WIK" firstAttribute="top" secondItem="YSZ-n0-PT0" secondAttribute="top" id="nHF-7c-iBQ"/>
+                                <constraint firstItem="qOY-Nw-JDL" firstAttribute="leading" secondItem="pMk-VX-WIK" secondAttribute="trailing" constant="30" id="s6o-vN-sAP"/>
                                 <constraint firstItem="qOY-Nw-JDL" firstAttribute="top" secondItem="pMk-VX-WIK" secondAttribute="top" id="ws2-0e-3os"/>
                             </constraints>
                         </view>
                         <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="bOL-zS-gB6">
-                            <rect key="frame" x="5" y="105" width="70" height="1"/>
-                            <color key="backgroundColor" red="0.94901960780000005" green="0.65098039220000004" blue="0.19215686269999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            <rect key="frame" x="15" y="105" width="34" height="1"/>
+                            <color key="backgroundColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                             <constraints>
                                 <constraint firstAttribute="height" constant="1" id="5FB-XN-9hK"/>
                             </constraints>
@@ -190,10 +161,10 @@
                 <constraint firstItem="sEg-3L-PhL" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="kac-wD-Jfw"/>
                 <constraint firstItem="guR-FM-8OT" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="lsK-1h-Wnc"/>
             </constraints>
-            <point key="canvasLocation" x="-319" y="-233"/>
+            <point key="canvasLocation" x="-319.19999999999999" y="-233.43328335832086"/>
         </view>
     </objects>
     <resources>
-        <image name="tradeLeft" width="18" height="17"/>
+        <image name="tradeLeft" width="18" height="17.5"/>
     </resources>
 </document>

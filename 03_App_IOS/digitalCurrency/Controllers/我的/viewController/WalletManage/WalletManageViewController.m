@@ -10,7 +10,9 @@
 #import "WalletManageTableViewCell.h"
 #import "WalletManageDetailViewController.h"
 #import "MentionMoneyViewController.h"
+#import "MentionJlqViewController.h"
 #import "ChargeMoneyViewController.h"
+#import "ChargeJlqViewController.h"
 #import "MineNetManager.h"
 #import "WalletManageModel.h"
 #import "WalletManageTableHeadView.h"
@@ -54,14 +56,17 @@
         self.asset1.text = @"0.000000";
         self.assetUSD=@"0.000000";
     }else{
-      self.asset1.text = self.assetUSD;
+        // self.asset1.text = self.assetUSD;
+        self.asset1.text = self.assetCNY;  // john
     }
     if (!self.assetCNY) {
         self.asset2.text = @"≈0.00CNY";
-        self.assetCNY=@"≈0.00CNY";
+        // self.assetCNY=@"≈0.00CNY";
+        self.assetCNY=@"0.00";  // john
     }else{
       self.asset2.text = self.assetCNY;
     }
+    self.asset2.hidden = YES; // john
     
     self.bottomViewHeight.constant = SafeAreaBottomHeight;
 //    self.topBgViewHeight.constant = SafeAreaTopHeight+10+(kWindowW-40)*2/5 -40;
@@ -421,24 +426,38 @@
 //MARK:--充币点击事件
 -(void)chargeMoneyBtnClick{
     _refreshFlag = YES;
-    ChargeMoneyViewController *chargeVC = [[ChargeMoneyViewController alloc] init];
-    chargeVC.unit = self.clickModel.coin.unit;
-    chargeVC.address = self.clickModel.address;
-    chargeVC.hidesBottomBarWhenPushed = YES;
-    [self.navigationController pushViewController:chargeVC animated:YES];
+    if ([self.clickModel.coin.unit isEqualToString:@"JLQ"]){
+        ChargeJlqViewController *chargeVC = [[ChargeJlqViewController alloc] init];
+        chargeVC.unit = self.clickModel.coin.unit;
+        chargeVC.address = self.clickModel.address;
+        chargeVC.hidesBottomBarWhenPushed = YES;
+        [self.navigationController pushViewController:chargeVC animated:YES];
+    }else{
+        ChargeMoneyViewController *chargeVC = [[ChargeMoneyViewController alloc] init];
+        chargeVC.unit = self.clickModel.coin.unit;
+        chargeVC.address = self.clickModel.address;
+        chargeVC.hidesBottomBarWhenPushed = YES;
+        [self.navigationController pushViewController:chargeVC animated:YES];
+    }
     self.clickModel.clickIndex = @"0";
     [self.tableview reloadData];
 }
 //MARK:--提币点击事件
 -(void)mentionMoneyBtnClick{
-    MentionMoneyViewController *mentionVC = [[MentionMoneyViewController alloc] init];
     _refreshFlag = YES;
-    mentionVC.unit = self.clickModel.coin.unit;
-    mentionVC.hidesBottomBarWhenPushed = YES;
-    [self.navigationController pushViewController:mentionVC animated:YES];
+    if ([self.clickModel.coin.unit isEqualToString:@"JLQ"]){
+        MentionJlqViewController *mentionVC = [[MentionJlqViewController alloc] init];
+        mentionVC.unit = self.clickModel.coin.unit;
+        mentionVC.hidesBottomBarWhenPushed = YES;
+        [self.navigationController pushViewController:mentionVC animated:YES];
+    }else {
+        MentionMoneyViewController *mentionVC = [[MentionMoneyViewController alloc] init];
+        mentionVC.unit = self.clickModel.coin.unit;
+        mentionVC.hidesBottomBarWhenPushed = YES;
+        [self.navigationController pushViewController:mentionVC animated:YES];
+    }
     self.clickModel.clickIndex = @"0";
     [self.tableview reloadData];
-
 }
 //-(CGFloat)tableView:(UITableView *)tableView estimatedHeightForRowAtIndexPath:(NSIndexPath *)indexPath{
 //
@@ -472,7 +491,8 @@
             self.asset2.text = @"≈0.000000CNY";
 
         }else{
-            self.asset1.text = self.assetUSD;
+            // self.asset1.text = self.assetUSD;
+            self.asset1.text = self.assetCNY;  // john
             self.asset2.text = self.assetCNY;
         }
         [NSUserDefaultUtil PutBoolDefaults:HIDEMONEY Value:NO];
@@ -495,7 +515,8 @@
             self.asset1.text = @"0.000000";
             self.asset2.text = @"≈0.00CNY";
         }else{
-            self.asset1.text = self.assetUSD;
+            // self.asset1.text = self.assetUSD;
+            self.asset1.text = self.assetCNY;  // john
             self.asset2.text = self.assetCNY;
         }
     }

@@ -77,12 +77,14 @@
     
     UIButton *btn = [UIButton buttonWithType:UIButtonTypeCustom];
     [btn setTitle:[[ChangeLanguage bundle] localizedStringForKey:@"helpMore" value:nil table:@"English"] forState:UIControlStateNormal];
-    [btn setBackgroundColor:RGBOF(0xF0A70A)];
+    // [btn setBackgroundColor:RGBOF(0xF0A70A)]; //john
+    [btn setBackgroundColor:RGBOF(0x007AFF)];
     [btn setTitleColor:RGBOF(0xe6e6e6) forState:UIControlStateNormal];
     btn.titleLabel.font = [UIFont fontWithName:@"PingFangSC-Medium" size:13];
     [btn addTarget:self action:@selector(moreAction:) forControlEvents:UIControlEventTouchUpInside];
     btn.layer.cornerRadius = 13;
-    btn.layer.borderColor = RGBOF(0xF0A70A).CGColor;
+    //[btn setBackgroundColor:RGBOF(0xF0A70A)];
+    [btn setBackgroundColor:RGBOF(0x007AFF)]; //john
     btn.layer.borderWidth = 1;
     btn.tag = section;
     [view addSubview:btn];

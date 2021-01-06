@@ -49,7 +49,8 @@
     UIButton *btn = [UIButton buttonWithType:UIButtonTypeCustom];
     btn.frame = CGRectMake(0, 0, 30, 44);
     [btn setTitle:LocalizationKey(@"save") forState:UIControlStateNormal];
-    [btn setTitleColor:RGBOF(0xF0A70A) forState:UIControlStateNormal];
+    //[btn setTitleColor:RGBOF(0xF0A70A) forState:UIControlStateNormal];
+    [btn setTitleColor:RGBOF(0x007AFF) forState:UIControlStateNormal]; // john
     btn.titleLabel.font = [UIFont systemFontOfSize:14];
     [btn addTarget:self action:@selector(RighttouchEvent) forControlEvents:UIControlEventTouchUpInside];
     
@@ -266,7 +267,8 @@
     
     UIButton *tipBtn = [UIButton buttonWithType:UIButtonTypeCustom];
     [tipBtn setTitle:@"示例图片" forState:UIControlStateNormal];
-    [tipBtn setTitleColor:RGBOF(0xF0A70A) forState:UIControlStateNormal];
+    //[tipBtn setTitleColor:RGBOF(0xF0A70A) forState:UIControlStateNormal];
+    [tipBtn setTitleColor:RGBOF(0x007AFF) forState:UIControlStateNormal]; //john
     tipBtn.titleLabel.font = [UIFont systemFontOfSize:15];
     tipBtn.frame = CGRectMake(0, CGRectGetMaxY(btn.frame) + 20, kWindowW, 20);
     [tipBtn addTarget:self action:@selector(tipPicture) forControlEvents:UIControlEventTouchUpInside];

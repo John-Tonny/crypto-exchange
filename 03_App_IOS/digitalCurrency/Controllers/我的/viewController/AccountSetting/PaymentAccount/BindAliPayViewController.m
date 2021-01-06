@@ -62,7 +62,9 @@
     UIButton *btn = [UIButton buttonWithType:UIButtonTypeCustom];
     btn.frame = CGRectMake(0, 0, 30, 44);
     [btn setTitle:LocalizationKey(@"save") forState:UIControlStateNormal];
-    [btn setTitleColor:RGBOF(0xF0A70A) forState:UIControlStateNormal];
+    //[btn setTitleColor:RGBOF(0xF0A70A) john
+    [btn setTitleColor:RGBOF(0x007AFF)
+          forState:UIControlStateNormal];
     btn.titleLabel.font = [UIFont systemFontOfSize:14];
     [btn addTarget:self action:@selector(RighttouchEvent) forControlEvents:UIControlEventTouchUpInside];
     

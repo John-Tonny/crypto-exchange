@@ -359,7 +359,8 @@
         self.loginOutButton = [UIButton buttonWithType:UIButtonTypeCustom];
         self.loginOutButton.frame = CGRectMake(15, 120, kWindowW - 30, 50);
         [self.loginOutButton setTitle:[[ChangeLanguage bundle] localizedStringForKey:@"loginOut" value:nil table:@"English"] forState:UIControlStateNormal];
-        [self.loginOutButton setBackgroundColor:RGBOF(0xF0A70A)];
+        //[self.loginOutButton setBackgroundColor:RGBOF(0xF0A70A)];
+        [self.loginOutButton setBackgroundColor:RGBOF(0x007AFF)];//john
         self.loginOutButton.layer.cornerRadius = 25;
         [self.loginOutButton addTarget:self action:@selector(loginoutAction) forControlEvents:UIControlEventTouchUpInside];
         [_tableFooterView addSubview:self.loginOutButton];

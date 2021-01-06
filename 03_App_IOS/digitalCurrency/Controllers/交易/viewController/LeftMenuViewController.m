@@ -41,7 +41,8 @@
     self.tableView.separatorStyle = UITableViewCellSelectionStyleNone;
     self.tableView.rowHeight=55;
     self.tableView.tableFooterView=[UIView new];
-     [_defalutBtn setTitleColor:kRGBColor(240, 167, 11) forState:UIControlStateNormal];
+    //[_defalutBtn setTitleColor:kRGBColor(240, 167, 11) forState:UIControlStateNormal];
+    [_defalutBtn setTitleColor:kRGBColor(0, 122, 255) forState:UIControlStateNormal];  // john
     LYEmptyView*emptyView=[LYEmptyView emptyViewWithImageStr:@"no" titleStr:LocalizationKey(@"noDada")];
     self.tableView.ly_emptyView = emptyView;
     // 添加从左划入的功能
@@ -80,12 +81,12 @@
         symbolModel*model=[marketManager shareInstance].USDTArray[indexPath.row];
         [cell configDataWithModel:model withtype:0 withIndex:(int)indexPath.row];
 
-    }else if (self.viewType==ChildViewType_BTC){
+    /*}else if (self.viewType==ChildViewType_BTC){
         symbolModel*model=[marketManager shareInstance].BTCArray[indexPath.row];
         [cell configDataWithModel:model withtype:0 withIndex:(int)indexPath.row];
     }else if (self.viewType==ChildViewType_ETH){
         symbolModel*model=[marketManager shareInstance].ETHArray[indexPath.row];
-        [cell configDataWithModel:model withtype:0 withIndex:(int)indexPath.row];
+        [cell configDataWithModel:model withtype:0 withIndex:(int)indexPath.row];*/
     }else{
         symbolModel*model=[marketManager shareInstance].CollectionArray[indexPath.row];
         [cell configDataWithModel:model withtype:1 withIndex:(int)indexPath.row];
@@ -134,7 +135,8 @@
     
     if (sender!=_currentBtn) {
         [_currentBtn setTitleColor:RGBOF(0xe6e6e6) forState:UIControlStateNormal];
-        [sender setTitleColor:kRGBColor(240, 167, 11) forState:UIControlStateNormal];
+        //[sender setTitleColor:kRGBColor(240, 167, 11) forState:UIControlStateNormal];
+        [sender setTitleColor:kRGBColor(0, 122, 255) forState:UIControlStateNormal]; //john
         _currentBtn=sender;
         self.viewType=sender.tag;
         [self.tableView reloadData];
@@ -178,7 +180,8 @@ kRemoveCellSeparator
                     [self.contentArr addObject:model];
                     NSArray *array = [model.symbol componentsSeparatedByString:@"/"];
                     NSString*baseSymbol=[array lastObject];
-                    if ([baseSymbol isEqualToString:@"USDT"]) {
+                    if ([baseSymbol //isEqualToString:@"USDT"]) { //john
+                        isEqualToString:@"JLQ"]) {
                         [[marketManager shareInstance].USDTArray addObject:model];
                     }else if ([baseSymbol isEqualToString:@"BTC"])
                     {

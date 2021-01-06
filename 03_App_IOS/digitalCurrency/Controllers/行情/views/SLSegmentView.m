@@ -81,7 +81,8 @@
         [button setTitle:self.segementTitleArray[i] forState:UIControlStateSelected];
         [button setTitleColor:RGBOF(0xe5e5e5) forState:UIControlStateNormal];
         [button.titleLabel setFont:[UIFont fontWithName:@"PingFang-SC-Medium" size:15]];
-        [button setTitleColor:RGBOF(0xF0A70A) forState:UIControlStateSelected];
+        //[button setTitleColor:RGBOF(0xF0A70A) forState:UIControlStateSelected];
+        [button setTitleColor:RGBOF(0x007AFF) forState:UIControlStateSelected]; //john
         //button.titleLabel.font = [UIFont systemFontOfSize:17.0f];
         button.titleLabel.adjustsFontSizeToFitWidth = YES;
         if (i==0) {
@@ -171,7 +172,8 @@
 {
     if (!_canSliderLine) {
         _canSliderLine = [[UIView alloc] init];
-        _canSliderLine.backgroundColor = RGBOF(0xF0A70A);
+        //_canSliderLine.backgroundColor = RGBOF(0xF0A70A);
+        _canSliderLine.backgroundColor = RGBOF(0x007AFF); // john
     }
     return _canSliderLine;
 }

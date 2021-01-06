@@ -31,7 +31,8 @@
     self.title = [[ChangeLanguage bundle] localizedStringForKey:@"changeMoneyPassword" value:nil table:@"English"];
     [self setRightItem];
     self.codeButton.layer.cornerRadius = 15;
-    self.codeButton.layer.borderColor = RGBOF(0xF0A70A).CGColor;
+    self.codeButton.layer.borderColor = RGBOF(0x007AFF).CGColor;
+        //RGBOF(0xF0A70A).CGColor;  // john
     self.codeButton.layer.borderWidth = 1;
     self.moneyPassword.secureTextEntry = YES;
     self.certainPassword.secureTextEntry = YES;
@@ -53,7 +54,8 @@
     UIButton *btn = [UIButton buttonWithType:UIButtonTypeCustom];
     btn.frame = CGRectMake(0, 0, 30, 44);
     [btn setTitle:LocalizationKey(@"save") forState:UIControlStateNormal];
-    [btn setTitleColor:RGBOF(0xF0A70A) forState:UIControlStateNormal];
+    //[btn setTitleColor:RGBOF(0xF0A70A) forState:UIControlStateNormal];  //john
+    [btn setTitleColor:RGBOF(0x007AFF) forState:UIControlStateNormal];
     btn.titleLabel.font = [UIFont systemFontOfSize:14];
     [btn addTarget:self action:@selector(RighttouchEvent) forControlEvents:UIControlEventTouchUpInside];
     

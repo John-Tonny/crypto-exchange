@@ -15,7 +15,7 @@
 //自定义block
 typedef void(^ResultBlock)(id resultObject,int isSuccessed);
 
-#define   HOST     @"https://www.chulian.top/"//正拓测试
+#define   HOST     @"https://api.lftong.info/"  //链分通API
 
 #define kUpdateAppStore 0 //是否上传到appStore 0企业分发 1appStore
 
@@ -38,7 +38,8 @@ blue:((float)(rgbValue & 0xFF))/255.0 \
 alpha:1.0]
 //主色调
 #define mainColor  RGBOF(0x1F2833)
-#define baseColor  RGBOF(0xF0A70A)
+// #define baseColor  RGBOF(0xF0A70A) //john
+#define baseColor  RGBOF(0x007AFF)
 #define ViewBackgroundColor  kRGBColor(18,22,28)
 #define AppTextColor  RGBOF(0xE6E6E6)
 #define AppTextColor_999999  RGBOF(0x999999)
@@ -47,6 +48,8 @@ alpha:1.0]
 
 #define RedColor   RGBOF(0xF15057)   //红跌
 #define GreenColor RGBOF(0x00B275)  //绿涨
+#define BlueColor RGBOF(0x007AFF)  //蓝
+
 
 #define APPCONFIG_UNIT_LINE_WIDTH                (1/[UIScreen mainScreen].scale)      //常用线宽
 //设备唯一标识符

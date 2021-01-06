@@ -77,7 +77,9 @@
 //提币获取验证码
 +(void)resetwithdrawCodeForCompleteHandle:(void(^)(id resPonseObj,int code))completeHandle;
 //提币申请
-+(void)mentionCoinApplyForUnit:(NSString *)unit withAddress:(NSString*)address withAmount:(NSString *)amount withFee:(NSString *)fee withRemark:(NSString *)remark withJyPassword:(NSString *)jyPassword mobilecode:(NSString *)mobilecode CompleteHandle:(void(^)(id resPonseObj,int code))completeHandle;
++(void)mentionCoinApplyForUnit:(NSString *)unit withAddress:(NSString*)address withAmount:(NSString *)amount withFee:(NSString *)fee withRemark:(NSString *)remark withJyPassword:(NSString *)jyPassword mobilecode:(NSString *)mobilecode
+    withShopPassword:(NSString *)shopPassword
+    CompleteHandle:(void(^)(id resPonseObj,int code))completeHandle;
 
 //提币选择信息
 +(void)mentionCoinInfoForCompleteHandle:(void(^)(id resPonseObj,int code))completeHandle;
@@ -199,4 +201,9 @@
 
 //中奖详情
 +(void)getcoinguessdetail:(NSDictionary *)param CompleteHandle:(void(^)(id resPonseObj,int code))completeHandle;
+
+//转入JLQ申请  john
++(void)chargeCoinApplyForUnit:(NSString *)unit withAddress:(NSString*)address withAmount:(NSString *)amount withShopPassword:(NSString *)shopPassword CompleteHandle:(void(^)(id resPonseObj,int code))completeHandle;
+
+
 @end

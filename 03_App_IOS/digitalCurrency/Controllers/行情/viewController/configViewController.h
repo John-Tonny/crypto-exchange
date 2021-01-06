@@ -11,9 +11,9 @@
 @interface configViewController : BaseViewController
 typedef enum : NSUInteger {
     ChildViewType_USDT=0,
+    ChildViewType_Collection,
     ChildViewType_BTC,
-    ChildViewType_ETH,
-    ChildViewType_Collection
+    ChildViewType_ETH
 } ChildViewType;
 - (instancetype)initWithChildViewType:(ChildViewType)childViewType;
 -(void)reloadData;//刷新数据

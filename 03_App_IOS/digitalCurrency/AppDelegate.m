@@ -40,7 +40,7 @@
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
     // 启动图片延时: 1秒
-//    [NSThread sleepForTimeInterval:1];
+    //    [NSThread sleepForTimeInterval:1];
     self.CNYRate = [NSDecimalNumber decimalNumberWithString:@"0.00"];
     [ChangeLanguage initUserLanguage];//初始化应用语言
     [self initKeyboardManager];//初始化键盘工具
@@ -53,13 +53,13 @@
     self.window = [[UIWindow alloc] initWithFrame:[UIScreen mainScreen].bounds];
     self.window.backgroundColor=[UIColor whiteColor];
     //引导页
-//    KSGuaidManager.images = @[[UIImage imageNamed:@"guid01"],
-//                              [UIImage imageNamed:@"guid02"],
-//                              [UIImage imageNamed:@"guid03"]];
-//    KSGuaidManager.shouldDismissWhenDragging = YES;
-//    KSGuaidManager.pageIndicatorTintColor=[UIColor whiteColor];
-//    KSGuaidManager.currentPageIndicatorTintColor=baseColor;
-//    [KSGuaidManager begin];
+    //    KSGuaidManager.images = @[[UIImage imageNamed:@"guid01"],
+    //                              [UIImage imageNamed:@"guid02"],
+    //                              [UIImage imageNamed:@"guid03"]];
+    //    KSGuaidManager.shouldDismissWhenDragging = YES;
+    //    KSGuaidManager.pageIndicatorTintColor=[UIColor whiteColor];
+    //    KSGuaidManager.currentPageIndicatorTintColor=baseColor;
+    //    [KSGuaidManager begin];
     YLTabBarController *SectionTabbar = [[YLTabBarController alloc] init];
     self.window.rootViewController = SectionTabbar;
     dispatch_after(dispatch_time(DISPATCH_TIME_NOW, (int64_t)(0.5 * NSEC_PER_SEC)), dispatch_get_main_queue(), ^{
@@ -72,7 +72,7 @@
     [MobClick startWithConfigure:UMConfigInstance];
     [MobClick setLogEnabled:YES];
     [UIApplication sharedApplication].applicationIconBadgeNumber = 0;
-//    注册远程通知服务
+    //    注册远程通知服务
     if (@available(iOS 10.0, *)) {
         //iOS 10 later
         UNUserNotificationCenter *center = [UNUserNotificationCenter currentNotificationCenter];
@@ -81,7 +81,7 @@
         [center requestAuthorizationWithOptions:(UNAuthorizationOptionBadge | UNAuthorizationOptionSound | UNAuthorizationOptionAlert) completionHandler:^(BOOL granted, NSError * _Nullable error) {
             if (!error && granted) {
                 //用户点击允许
-//                NSLog(@"注册成功");
+                //                NSLog(@"注册成功");
             }else{
                 //用户点击不允许
                 NSLog(@"注册失败");
@@ -91,7 +91,7 @@
         // 可以通过 getNotificationSettingsWithCompletionHandler 获取权限设置
         //之前注册推送服务，用户点击了同意还是不同意，以及用户之后又做了怎样的更改我们都无从得知，现在 apple 开放了这个 API，我们可以直接获取到用户的设定信息了。注意UNNotificationSettings是只读对象哦，不能直接修改！
         [center getNotificationSettingsWithCompletionHandler:^(UNNotificationSettings * _Nonnull settings) {
-//            NSLog(@"========%@",settings);
+            //            NSLog(@"========%@",settings);
         }];
     }else {
         //iOS 8 - iOS 10系统
@@ -99,15 +99,15 @@
         [application registerUserNotificationSettings:settings];
     }
     
-
+    
     [[UIApplication sharedApplication]registerForRemoteNotifications];
     
     [self.window makeKeyAndVisible];
     if ([self isFirstLauch]) {
-
+        
     }else{
         //启动动画
-//        [self customLaunchImageView];
+        //        [self customLaunchImageView];
     }
     [UIApplication sharedApplication].statusBarStyle = UIStatusBarStyleLightContent;
     return YES;
@@ -139,25 +139,25 @@
     launchImageView.image = [self getLaunchImage];
     [self.window addSubview:launchImageView];
     [self.window bringSubviewToFront:launchImageView];
-
-//    UIImageView *gifImageView = [[UIImageView alloc] initWithFrame:CGRectMake(0, kWindowH == 812.0 ? 64 : 0, 288 * kWindowWHOne, kWindowH - (kWindowH == 812.0 ? 145 : 0 ))];
+    
+    //    UIImageView *gifImageView = [[UIImageView alloc] initWithFrame:CGRectMake(0, kWindowH == 812.0 ? 64 : 0, 288 * kWindowWHOne, kWindowH - (kWindowH == 812.0 ? 145 : 0 ))];
     UIImageView *gifImageView = [[UIImageView alloc] initWithFrame:CGRectMake(0, 0, 144, 422)];
     gifImageView.center = self.window.center;
     NSString  *filePath = [[NSBundle bundleWithPath:[[NSBundle mainBundle] bundlePath]] pathForResource:@"启动页.gif" ofType:nil];
     NSData  *imageData = [NSData dataWithContentsOfFile:filePath];
     gifImageView.image = [UIImage sd_animatedGIFWithData:imageData];
     [launchImageView addSubview:gifImageView];
-  
+    
     [UIView animateWithDuration:0.5f delay:5.0f options:UIViewAnimationOptionTransitionCrossDissolve animations:^{
-          launchImageView.alpha = 0;
-
+        launchImageView.alpha = 0;
+        
     } completion:^(BOOL finished) {
         //         设置启动页广告
-//        [self setupAdvert];
+        //        [self setupAdvert];
         [launchImageView removeFromSuperview];
         [[NSNotificationCenter defaultCenter] postNotificationName:@"launchImageViewDismiss" object:nil];
     }];
-
+    
     
 }
 
@@ -195,20 +195,20 @@
  */
 - (void)setupAdvert {
     
-//    // 1.判断沙盒中是否存在广告图片，如果存在，直接显示
-//    NSString *filePath = [self getFilePathWithImageName:[kUserDefaults valueForKey:adImageName]];
-//
-//    BOOL isExist = [self isFileExistWithFilePath:filePath];
-//    if (isExist) { // 图片存在
-//
-       NSString  *filePath = [[NSBundle bundleWithPath:[[NSBundle mainBundle] bundlePath]] pathForResource:@"广告.png" ofType:nil];
-        ZLAdvertView *advertView = [[ZLAdvertView alloc] initWithFrame:self.window.bounds];
-        advertView.filePath = filePath;
-        [advertView show];
-//    }
-//
-//    // 2.无论沙盒中是否存在广告图片，都需要重新调用广告接口，判断广告是否更新
-//    [self getAdvertisingImage];
+    //    // 1.判断沙盒中是否存在广告图片，如果存在，直接显示
+    //    NSString *filePath = [self getFilePathWithImageName:[kUserDefaults valueForKey:adImageName]];
+    //
+    //    BOOL isExist = [self isFileExistWithFilePath:filePath];
+    //    if (isExist) { // 图片存在
+    //
+    NSString  *filePath = [[NSBundle bundleWithPath:[[NSBundle mainBundle] bundlePath]] pathForResource:@"广告.png" ofType:nil];
+    ZLAdvertView *advertView = [[ZLAdvertView alloc] initWithFrame:self.window.bounds];
+    advertView.filePath = filePath;
+    [advertView show];
+    //    }
+    //
+    //    // 2.无论沙盒中是否存在广告图片，都需要重新调用广告接口，判断广告是否更新
+    //    [self getAdvertisingImage];
 }
 
 /**
@@ -309,13 +309,13 @@
 -(void)application:(UIApplication *)application didRegisterForRemoteNotificationsWithDeviceToken:(NSData *)deviceToken{
     //获取deviceToken
     _deviceToken= [[[[deviceToken description] stringByReplacingOccurrencesOfString:@"<"withString:@""]
-                                     stringByReplacingOccurrencesOfString:@">" withString:@""]
-                                    stringByReplacingOccurrencesOfString:@" " withString:@""];
+                    stringByReplacingOccurrencesOfString:@">" withString:@""]
+                   stringByReplacingOccurrencesOfString:@" " withString:@""];
     [self PresentGestureLockViewController];
-     NSDictionary*dic=[NSDictionary dictionaryWithObjectsAndKeys:[YLUserInfo shareUserInfo].ID, @"uid",_deviceToken, @"token",nil];
+    NSDictionary*dic=[NSDictionary dictionaryWithObjectsAndKeys:[YLUserInfo shareUserInfo].ID, @"uid",_deviceToken, @"token",nil];
     [[ChatSocketManager share] ChatsendMsgWithLength:SOCKETREQUEST_LENGTH withsequenceId:0 withcmd:UNSUBSCRIBE_APNS withVersion:COMMANDS_VERSION withRequestId: 0 withbody:dic];
     //[ChatSocketManager share].delegate=self;//先取消订阅
-//    NSLog(@"注册远程推送成功——————%@",_deviceToken);
+    //    NSLog(@"注册远程推送成功——————%@",_deviceToken);
 }
 #pragma mark-注册远程通知失败
 - (void)application:(UIApplication *)application didFailToRegisterForRemoteNotificationsWithError:(NSError *)error {
@@ -327,7 +327,7 @@
 {
     if ([UIApplication sharedApplication].applicationState==UIApplicationStateInactive){//点击通知栏进来
         YLTabBarController *SectionTabbar=(YLTabBarController *) APPLICATION.window.rootViewController;
-//        NSLog(@"远程推送的信息是--%@",userInfo);
+        //        NSLog(@"远程推送的信息是--%@",userInfo);
         ChatGroupInfoModel*model=[ChatGroupInfoModel mj_objectWithKeyValues:userInfo[@"addition"]];
         MyBillChatViewController *chatVC = [[MyBillChatViewController alloc] init];
         chatVC.hidesBottomBarWhenPushed = YES;
@@ -362,7 +362,7 @@
     if ([YLUserInfo isLogIn]) {
         NSDictionary*dic=[NSDictionary dictionaryWithObjectsAndKeys:[YLUserInfo shareUserInfo].ID, @"uid",_deviceToken, @"token",nil];
         [[ChatSocketManager share] ChatsendMsgWithLength:SOCKETREQUEST_LENGTH withsequenceId:0 withcmd:SUBSCRIBE_APNS withVersion:COMMANDS_VERSION withRequestId: 0 withbody:dic];
-       // [ChatSocketManager share].delegate=self;
+        // [ChatSocketManager share].delegate=self;
     }
     
     // Use this method to release shared resources, save user data, invalidate timers, and store enough application state information to restore your application to its current state in case it is terminated later.
@@ -372,9 +372,9 @@
 - (void)applicationWillEnterForeground:(UIApplication *)application {
     // Called as part of the transition from the background to the active state; here you can undo many of the changes made on entering the background.
     if ([YLUserInfo isLogIn]) {
-         NSDictionary*dic=[NSDictionary dictionaryWithObjectsAndKeys:[YLUserInfo shareUserInfo].ID, @"uid",_deviceToken, @"token",nil];
+        NSDictionary*dic=[NSDictionary dictionaryWithObjectsAndKeys:[YLUserInfo shareUserInfo].ID, @"uid",_deviceToken, @"token",nil];
         [[ChatSocketManager share] ChatsendMsgWithLength:SOCKETREQUEST_LENGTH withsequenceId:0 withcmd:UNSUBSCRIBE_APNS withVersion:COMMANDS_VERSION withRequestId: 0 withbody:dic];
-       // [ChatSocketManager share].delegate=self;
+        // [ChatSocketManager share].delegate=self;
     }
     [self PresentGestureLockViewController];
 }
@@ -397,11 +397,11 @@
 - (UIInterfaceOrientationMask)application:(UIApplication *)application supportedInterfaceOrientationsForWindow:(UIWindow *)window
 {
     if(self.isEable) {
-       
+        
         return UIInterfaceOrientationMaskLandscape;
         
     } else {
-       
+        
         return UIInterfaceOrientationMaskPortrait;
     }
 }
@@ -420,15 +420,15 @@
     NSData *cmdData = [data subdataWithRange:NSMakeRange(12,2)];
     uint16_t cmd=[SocketUtils uint16FromBytes:cmdData];
     if (cmd==SUBSCRIBE_APNS) {
-//        NSLog(@"订阅APNS");
-    
+        //        NSLog(@"订阅APNS");
+        
     }else if (cmd==UNSUBSCRIBE_APNS)
     {
-//        NSLog(@"取消订阅APNS");
+        //        NSLog(@"取消订阅APNS");
     }
     else{
-       // NSLog(@"聊天消息-%@--%d",endStr,cmd);
-     }
+        // NSLog(@"聊天消息-%@--%d",endStr,cmd);
+    }
     NSLog(@"APNS消息-%@--%d",endStr,cmd);
 }
 

@@ -9,6 +9,9 @@
 #import "NoticeTableViewCell.h"
 #import "HelpeCenterViewController.h"
 #import "NoticeCenterViewController.h"
+#import "WalletManageViewController.h" // john
+#import "ChargeJlqViewController.h" // john
+
 @implementation NoticeTableViewCell
 
 - (void)awakeFromNib {
@@ -16,7 +19,8 @@
     // Initialization code
     self.transactionlabel.font = self.helplebel.font  = self.noticelabel.font = [UIFont fontWithName:@"Helvetica-Bold" size:16 * kWindowWHOne];
      self.safelabel.font = self.problemlabel.font  = self.noticecontentlabel.font = [UIFont systemFontOfSize:12 * kWindowWHOne];
-  
+    self.transactionlabel.hidden = YES;
+    
     
     self.transactionview.userInteractionEnabled = YES;
     self.helpView.userInteractionEnabled = YES;
@@ -41,7 +45,7 @@
 
 //法币交易
 -(void)transactionaction{
-    self.CtoCBlock();
+    // self.CtoCBlock(); john
 }
 
 //帮助中心

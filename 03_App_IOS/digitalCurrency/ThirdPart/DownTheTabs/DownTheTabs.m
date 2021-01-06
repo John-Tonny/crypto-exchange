@@ -291,7 +291,8 @@
             [headerBtn setBackgroundColor:RGBOF(0x213144)];
             [headerBtn setTitleColor:RGBOF(0xe6e6e6) forState:UIControlStateNormal];
         }else{
-            [headerBtn setBackgroundColor:RGBOF(0xF0A70A)];
+            // [headerBtn setBackgroundColor:RGBOF(0xF0A70A)];
+            [headerBtn setBackgroundColor:RGBOF(0x007AFF)]; // john
             [headerBtn setTitleColor:RGBOF(0xe6e6e6) forState:UIControlStateNormal];
         }
         headerBtn.titleLabel.font = [UIFont systemFontOfSize:15];

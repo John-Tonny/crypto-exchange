@@ -433,9 +433,11 @@
 }
 - (CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath*)indexPath{
     if (indexPath.section==1) {
-        return 150;
+        // return 150;
+        return 0;   // john
     }else if (indexPath.section == 0){
         return 167 * kWindowWHOne;
+        // return 0; // john
     }
     else{
         return 65;
@@ -455,7 +457,7 @@
     }
     else{
         if (self.contentArr.count>0) {
-            NSArray*changeRankArr=self.contentArr[section - 2];
+            NSArray*changeRankArr=self.contentArr[section - 1];
             return changeRankArr.count;
         }else{
             return 1;
@@ -483,7 +485,6 @@
         cell.safelabel.text = LocalizationKey(@"buyingandsellingmoney");
         cell.helplebel.text = LocalizationKey(@"Helpcenter");
         cell.problemlabel.text = LocalizationKey(@"Findmeproblem");
-
         cell.CtoCBlock = ^{
             [self.tabBarController setSelectedIndex:3];
         };
@@ -493,7 +494,7 @@
         listCell * cell = [tableView dequeueReusableCellWithIdentifier:@"Cell2" forIndexPath:indexPath];
         cell.selectionStyle=UITableViewCellSelectionStyleNone;
         if (self.contentArr.count>0) {
-            [cell configModel:self.contentArr[indexPath.section - 2] withIndex:(int)indexPath.row];
+            [cell configModel:self.contentArr[indexPath.section - 1] withIndex:(int)indexPath.row];
         }
         if (indexPath.row > 2) {
             cell.titleIndex.backgroundColor = kRGBColor(92, 206, 167);
@@ -510,7 +511,7 @@
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath{
 
     if (indexPath.section==2) {
-        symbolModel*model=self.contentArr[indexPath.section - 2][indexPath.row];
+        symbolModel*model=self.contentArr[indexPath.section - 1][indexPath.row];
         KchatViewController*klineVC=[[KchatViewController alloc]init];
         klineVC.symbol=model.symbol;
         [[AppDelegate sharedAppDelegate] pushViewController:klineVC withBackTitle:model.symbol];
@@ -530,7 +531,9 @@
                 
                 [self.tableView reloadData];
             }
-            symbolModel*model = [recommendArr firstObject];
+            //symbolModel*model = [recommendArr firstObject];  // john
+            symbolModel*model = [changeRankArr firstObject];  // john
+
             if (![marketManager shareInstance].symbol) {
                 [marketManager shareInstance].symbol=model.symbol;//默认第一个
             }
@@ -772,6 +775,7 @@
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
 }
+
 
 
 @end

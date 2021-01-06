@@ -169,7 +169,8 @@
     CoinUserInfoModel *model = _coinTypeArr[indexPath.row];
     cell.coinUserInfoModel = model;
     [cell.buyBtn setTitle:[[ChangeLanguage bundle] localizedStringForKey:@"buy" value:nil table:@"English"] forState:UIControlStateNormal];
-    [cell.buyBtn setBackgroundColor:RGBOF(0xF0A70A)];
+    //[cell.buyBtn setBackgroundColor:RGBOF(0xF0A70A)];
+    [cell.buyBtn setBackgroundColor:RGBOF(0x007AFF)];  //john
     __weak typeof(self)weakself = self;
     cell.block = ^{
         if(![YLUserInfo isLogIn]){

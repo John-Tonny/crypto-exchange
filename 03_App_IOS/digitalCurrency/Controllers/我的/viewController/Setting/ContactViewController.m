@@ -50,7 +50,7 @@
     lineView.backgroundColor = RGBOF(0x333333);
     [self.scrollView addSubview:lineView];
     
-    //正拓理念
+    //理念
     UILabel *idea = [[UILabel alloc] initWithFrame:CGRectMake(15, CGRectGetMaxY(lineView.frame) + 30, kWindowW - 30, 20)];
     idea.textColor = RGBOF(0xe6e6e6);
     idea.font = [UIFont systemFontOfSize:17];
@@ -70,7 +70,7 @@
     lineView1.backgroundColor = RGBOF(0x333333);
     [self.scrollView addSubview:lineView1];
 
-    //正拓目标
+    //目标
     UILabel *target = [[UILabel alloc] initWithFrame:CGRectMake(15, CGRectGetMaxY(lineView1.frame) + 30, kWindowW - 30, 20)];
     target.textColor = RGBOF(0xe6e6e6);
     target.font = [UIFont systemFontOfSize:17];
@@ -106,7 +106,7 @@
     UILabel *kefuLabel = [[UILabel alloc] initWithFrame:CGRectMake(15, CGRectGetMaxY(contact.frame) + 10, kWindowW - 30, 15)];
     kefuLabel.textColor = RGBOF(0xe6e6e6);
     kefuLabel.font = [UIFont systemFontOfSize:14];
-    kefuLabel.text = @"正拓邮箱：service@zhengtuo.top";
+    kefuLabel.text = @"邮箱：service@lftong.info";
 //    kefuLabel.textAlignment = NSTextAlignmentCenter;
     [self.scrollView addSubview:kefuLabel];
     

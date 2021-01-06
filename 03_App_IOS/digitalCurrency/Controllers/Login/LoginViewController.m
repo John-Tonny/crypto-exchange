@@ -51,12 +51,14 @@
     self.phonelabel.text = LocalizationKey(@"phoneNum");
     self.passwordlabel.text = LocalizationKey(@"pwd");
     self.noAccountlabel.text = LocalizationKey(@"noAccount");
+    self.noAccountlabel.hidden = YES;  // john
     
     // Do any additional setup after loading the view from its nib.
     self.sqliteFlag = NO;
     [self.loginBtn setTitle:LocalizationKey(@"login") forState:UIControlStateNormal];
     [self.forgetPwdBtn setTitle:LocalizationKey(@"forgetPassword") forState:UIControlStateNormal];
     [self.nowRegisterBtn setTitle:LocalizationKey(@"nowregister") forState:UIControlStateNormal];
+    self.nowRegisterBtn.hidden = YES;   // john
     [self.loginBtn setOriginaStyle];
     self.loginBtn.delegate = self;
 }

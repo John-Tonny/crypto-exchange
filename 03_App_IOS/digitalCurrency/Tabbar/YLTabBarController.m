@@ -42,7 +42,8 @@
         [barItem setTitleTextAttributes:normalAttributes forState:UIControlStateNormal];
         //设置item中文字被选中的样式
         NSMutableDictionary *selectedAttributes = [NSMutableDictionary dictionary];
-        selectedAttributes[NSForegroundColorAttributeName] =RGBOF(0xF0A70A);
+        selectedAttributes[NSForegroundColorAttributeName] //=RGBOF(0xF0A70A);
+            =RGBOF(0x007AFF);  //john
         selectedAttributes[NSFontAttributeName] = [UIFont fontWithName:@"PingFang-SC-Medium" size:11];
         [barItem setTitleTextAttributes:selectedAttributes forState:UIControlStateSelected];
     }
@@ -97,8 +98,9 @@
     YLNavigationController *Section3Navi = [[YLNavigationController alloc] initWithRootViewController:Section3VC];
     YLNavigationController *Section4Navi = [[YLNavigationController alloc] initWithRootViewController:Section4VC];
     YLNavigationController *Section5Navi = [[YLNavigationController alloc] initWithRootViewController:Section5VC];
-    self.viewControllers = @[Section1Navi,Section2Navi,Section3Navi,Section4Navi,Section5Navi];
-    
+    //self.viewControllers = @[Section1Navi,Section2Navi,Section3Navi,Section4Navi,Section5Navi];  //john
+    self.viewControllers = @[Section1Navi,Section2Navi,Section3Navi,Section5Navi];
+
 }
 
 

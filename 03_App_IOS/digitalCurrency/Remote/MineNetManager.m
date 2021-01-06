@@ -248,7 +248,7 @@
     }];
 }
 //提币申请
-+(void)mentionCoinApplyForUnit:(NSString *)unit withAddress:(NSString*)address withAmount:(NSString *)amount withFee:(NSString *)fee withRemark:(NSString *)remark withJyPassword:(NSString *)jyPassword mobilecode:(NSString *)mobilecode CompleteHandle:(void(^)(id resPonseObj,int code))completeHandle{
++(void)mentionCoinApplyForUnit:(NSString *)unit withAddress:(NSString*)address withAmount:(NSString *)amount withFee:(NSString *)fee withRemark:(NSString *)remark withJyPassword:(NSString *)jyPassword mobilecode:(NSString *)mobilecode withShopPassword:(NSString *)showPassword CompleteHandle:(void(^)(id resPonseObj,int code))completeHandle{
     NSString *path = @"uc/withdraw/apply/code";
     NSMutableDictionary *dic = [NSMutableDictionary new];
     dic[@"unit"] = unit;
@@ -258,6 +258,7 @@
     dic[@"fee"] = fee;
     dic[@"jyPassword"] = jyPassword;
     dic[@"code"] = mobilecode;
+    dic[@"shopPassword"]=showPassword;
     [self ylNonTokenRequestWithGET:path parameters:dic successBlock:^(id resultObject, int isSuccessed) {
         completeHandle(resultObject,isSuccessed);
     }];
@@ -678,6 +679,19 @@
     [self requestWithPost:path parameters:dic successBlock:^(id resultObject, int isSuccessed) {
         completeHandle(resultObject,isSuccessed);
 
+    }];
+}
+
+// john
+//转入coin申请
++(void)chargeCoinApplyForUnit:(NSString *)unit withAddress:(NSString*)address withAmount:(NSString *)amount withShopPassword:(NSString *)showPassword CompleteHandle:(void(^)(id resPonseObj,int code))completeHandle{
+    NSString *path = @"uc/asset/deposit/JLQ";
+    NSMutableDictionary *dic = [NSMutableDictionary new];
+    dic[@"address"] = address;
+    dic[@"amount"] = amount;
+    dic[@"shopPassword"]=showPassword;
+    [self ylNonTokenRequestWithGET:path parameters:dic successBlock:^(id resultObject, int isSuccessed) {
+        completeHandle(resultObject,isSuccessed);
     }];
 }
 @end

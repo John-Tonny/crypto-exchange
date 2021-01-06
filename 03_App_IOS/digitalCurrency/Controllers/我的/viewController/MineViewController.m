@@ -250,11 +250,10 @@
                     [self.navigationController pushViewController:billVC animated:YES];
                 }
             }
-           
+         
         };
         return cell;
     }
-    
 }
 
 //MARK:--头像点击事件  账号设置
@@ -318,7 +317,8 @@
     }else if (indexPath.section == 1){
         return kWindowW * 0.95 * 136 / 355;
     }else{
-        return 110 * kWindowWHOne;
+        // return 110 * kWindowWHOne;
+        return 0; //john
     }
 }
 
@@ -342,7 +342,8 @@
                 }
                 
                 self.assetUSD = [NSString stringWithFormat:@"%f",ass1];
-                self.assetCNY  = [NSString stringWithFormat:@"≈%.2fCNY",ass2];
+                // self.assetCNY  = [NSString stringWithFormat:@"≈%.2fCNY",ass2];
+                self.assetCNY  = [NSString stringWithFormat:@"%.2f",ass2]; // john
             }else{
                 [self.view makeToast:resPonseObj[MESSAGE] duration:1.5 position:CSToastPositionCenter];
             }

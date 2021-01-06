@@ -8,8 +8,8 @@
 
 #import "ChatSocketManager.h"
 #import "SocketUtils.h"
-//static  NSString * s_host = @"39.104.106.202";//正拓测试
-static  NSString * s_host = @"54.255.151.74";//正拓生产
+//static  NSString * s_host = @"39.104.106.202";//测试
+static  NSString * s_host = @"https://api.lftong.info";//生产
 
 static const uint16_t s_port = 28902;
 #define Heartbeat    11004 //心跳指令

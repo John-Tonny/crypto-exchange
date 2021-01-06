@@ -23,7 +23,8 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     self.view.backgroundColor = [UIColor whiteColor];
-    self.segmentTitleArray= @[@"USDT",@"BTC",@"ETH",LocalizationKey(@"collect")];
+    //self.segmentTitleArray= @[@"USDT",@"BTC",@"ETH",LocalizationKey(@"collect")];
+    self.segmentTitleArray= @[@"JLQ",LocalizationKey(@"collect")];
     [self setUpViews];
   
     // Do any additional setup after loading the view from its nib.

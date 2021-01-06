@@ -8,8 +8,8 @@
 
 #import "SocketManager.h"
 #import "SocketUtils.h"
-//static  NSString * s_host = @"39.104.106.202";//正拓测试
-static  NSString * s_host = @"18.136.195.191";//正拓生产
+//static  NSString * s_host = @"39.104.106.202";//测试
+static  NSString * s_host = @"https://api.lftong.info";//生产
 
 static const uint16_t s_port = 28901;
 #define kMaxReconnection_time 5//异常中断时，重连次数

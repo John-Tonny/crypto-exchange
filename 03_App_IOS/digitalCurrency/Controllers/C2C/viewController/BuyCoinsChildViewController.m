@@ -27,7 +27,8 @@
     self.lineWidth = 2.0;//选中下划线宽度
     self.titleFont = [UIFont systemFontOfSize:17.0];
     self.defaultColor = RGBOF(0xE5E5E5);//默认字体颜色
-    self.chooseColor = RGBOF(0xF0A70A);//选中字体颜色
+    // self.chooseColor = RGBOF(0xF0A70A);//选中字体颜色
+    self.chooseColor = RGBOF(0x007AFF);//选中字体颜色 john
     self.selectIndex = 0;//默认选中第几页
     [self getCoinTypeData];
    

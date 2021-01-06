@@ -93,7 +93,8 @@
 -(void)getAccountSettingStatus{
     if ([_accountInfo.phoneVerified isEqualToString:@"1"]) {
         [self.accountInfoArr replaceObjectAtIndex:3 withObject:[[ChangeLanguage bundle] localizedStringForKey:@"bounded" value:nil table:@"English"]];
-         [self.accountColorArr replaceObjectAtIndex:3 withObject:[UIColor darkGrayColor]];
+        [self.accountColorArr replaceObjectAtIndex:3 withObject:[UIColor greenColor]];
+            //withObject:[UIColor darkGrayColor]]; //john
         _phoneVerified = YES;
     }else{
         _phoneVerified = NO;

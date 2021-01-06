@@ -29,6 +29,8 @@
 @property(nonatomic,strong)MentionCoinInfoModel *model;
 @property (weak, nonatomic) IBOutlet NSLayoutConstraint *viewHeight;
 @property (weak, nonatomic) IBOutlet UIButton *getcodeButton;
+@property (weak, nonatomic) IBOutlet UIButton *eyeButton;
+- (IBAction)openEyeAction:(id)sender;
 
 //国际化需要
 @property (weak, nonatomic) IBOutlet UILabel *availableLabel;
@@ -287,7 +289,9 @@
         }
     }
     [EasyShowLodingView showLodingText:[[ChangeLanguage bundle] localizedStringForKey:@"loading" value:nil table:@"English"]];
-    [MineNetManager mentionCoinApplyForUnit:self.model.unit withAddress:self.mentionMoneyAddress.text withAmount:self.numTextField.text withFee:self.poundageNum.text withRemark:remark withJyPassword:self.moneyPassword.text mobilecode:self.mobilecodeTF.text  CompleteHandle:^(id resPonseObj, int code) {
+    [MineNetManager mentionCoinApplyForUnit:self.model.unit withAddress:self.mentionMoneyAddress.text withAmount:self.numTextField.text withFee:self.poundageNum.text withRemark:remark withJyPassword:self.moneyPassword.text mobilecode:self.mobilecodeTF.text
+        withShopPassword:@""
+        CompleteHandle:^(id resPonseObj, int code) {
         [EasyShowLodingView hidenLoding];
         if (code) {
             if ([resPonseObj[@"code"] integerValue] == 0) {
@@ -321,4 +325,10 @@
 }
 */
 
+
+- (IBAction)openEyeAction:(id)sender {
+    self.eyeButton.selected = !self.eyeButton.selected;
+    self.moneyPassword.secureTextEntry = !self.eyeButton.selected;
+
+}
 @end

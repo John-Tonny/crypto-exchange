@@ -39,7 +39,8 @@
     web.scrollView.scrollEnabled = NO;
     _webView = web;
     [self loadScrollView];
-    [self initData];
+    // [self initData];
+    [self getData];
 }
 
 
@@ -81,7 +82,7 @@
 - (void)initData{
     _title = self.contentModel.title;
     NSString *time = self.contentModel.createTime;
-    _source = [NSString stringWithFormat:@"%@  ZhengTuo交易所",time];
+    _source = [NSString stringWithFormat:@"%@  交易所",time];
     _content = self.contentModel.content;
     
     NSString *htmlStr = [NSString stringWithFormat:@"<head><style>img{max-width:%dpx !important;}</style></head>%@",(int)(kWindowW - 20), _content];
@@ -90,7 +91,7 @@
 
 - (void)webViewDidFinishLoad:(UIWebView *)webView{
     [self loadSubViews];
-    
+    [EasyShowLodingView hidenLoding];
     NSString *str = [NSString stringWithFormat:@"var script = document.createElement('script');"
                      "script.type = 'text/javascript';"
                      "script.text = \"function ResizeImages() { "
@@ -126,6 +127,21 @@
     self.scrollView.contentSize = CGSizeMake(kWindowW, CGRectGetMaxY(_webView.frame));
     
 }
-
-
+//john
+- (void)getData{
+    [EasyShowLodingView showLodingText:[[ChangeLanguage bundle] localizedStringForKey:@"loading" value:nil table:@"English"]];
+    NSString *url = [NSString stringWithFormat:@"%@%@",HOST, @"uc/ancillary/more/help/detail"];
+    NSLog(@"id --- %@", self.contentModel.ID);
+    NSDictionary *param = @{@"id":self.contentModel.ID};
+    [[XBRequest sharedInstance] postDataWithUrl:url Parameter:param ResponseObject:^(NSDictionary *responseResult) {
+        NSLog(@"responseResult --- %@",responseResult);
+        if (![responseResult objectForKey:@"resError"]) {
+            NSDictionary *data = responseResult[@"data"];
+            self.contentModel.content = data[@"content"];
+            [self initData];            
+        }else{
+            [EasyShowLodingView hidenLoding];
+        }
+    }];
+}
 @end

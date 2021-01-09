@@ -70,7 +70,7 @@
     }
     UILabel *label = [[UILabel alloc] init];
 //    label.text = @[[[ChangeLanguage bundle] localizedStringForKey:@"Noviceguide" value:nil table:@"English"], [[ChangeLanguage bundle] localizedStringForKey:@"Commonproblem" value:nil table:@"English"]][section];
-    label.text = model.title;
+    label.text = model.titleCN;
     label.textColor = RGBOF(0xe6e6e6);
     label.font = [UIFont fontWithName:@"PingFangSC-Heavy" size:17];
     [view addSubview:label];
@@ -127,7 +127,7 @@
     HelpCenterModel *model = self.dataSourceArr[sender.tag];
     HelpCenterMoreViewController *more = [[HelpCenterMoreViewController alloc] init];
     more.cate = model.cate;
-    more.title = model.title;
+    more.title = model.titleCN;
     [[AppDelegate sharedAppDelegate] pushViewController:more];
 }
 

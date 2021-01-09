@@ -129,9 +129,9 @@
                 NSMutableArray *muArr = [NSMutableArray arrayWithCapacity:0];
                 for (NSDictionary *dic in arr) {
                     if ([[ChangeLanguage userLanguage] isEqualToString:@"en"]) {
-                        if (![self hasChinese:dic[@"title"]]) {
-                            [muArr addObject:dic];
-                        }
+                        //if ([!self hasChinese:dic[@"title"]]) {  //john
+                        [muArr addObject:dic];
+                        //}
                     }else{
                         if ([self hasChinese:dic[@"title"]]) {
                             [muArr addObject:dic];
@@ -150,6 +150,7 @@
     }];
     
 }
+
 
 - (BOOL)hasChinese:(NSString *)str {
     for(int i=0; i< [str length];i++){
@@ -181,6 +182,7 @@
     PlatformMessageDetailViewController *detailVC = [[PlatformMessageDetailViewController alloc] init];
     detailVC.content = model.content;
     detailVC.navtitle = model.title;
+    detailVC.id = model.ID;
     [[AppDelegate sharedAppDelegate] pushViewController:detailVC];
 }
 

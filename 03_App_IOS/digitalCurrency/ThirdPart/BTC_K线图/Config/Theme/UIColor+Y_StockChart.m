@@ -88,7 +88,8 @@
 #pragma mark ma30颜色
 +(UIColor *)ma30Color
 {
-    return [UIColor colorWithRGBHex:0xF0A70A];
+    //return [UIColor colorWithRGBHex:0xF0A70A];
+    return [UIColor colorWithRGBHex:0x007AFF];
 }
 
 #pragma mark BOLL_MB的颜色

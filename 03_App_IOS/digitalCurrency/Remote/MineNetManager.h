@@ -92,6 +92,8 @@
 
 //平台消息
 +(void)getPlatformMessageForCompleteHandleWithPageNo:(NSString*)pageNo withPageSize:(NSString *)pageSize CompleteHandle:(void(^)(id resPonseObj,int code))completeHandle;
+// 平台信息详细 john
++(void)getPlatformMessageDetailForCompleteHandle:(NSString*)index withLang:(NSString *)lang CompleteHandle:(void(^)(id resPonseObj,int code))completeHandle;
 
 //获取更改绑定手机的验证码
 +(void)changePhoneNumCodeForCompleteHandle:(void(^)(id resPonseObj,int code))completeHandle;

@@ -200,7 +200,9 @@
     cell.addresslabel.text = model.address;
     cell.numlabel.text = [ToolUtil judgeStringForDecimalPlaces:model.totalAmount];
     cell.freelabel.text = [ToolUtil judgeStringForDecimalPlaces:model.fee];
-    
+    if ([model.coin.unit isEqualToString:@"JLQ"]){
+        cell.Presentaddress.text = LocalizationKey(@"shopAccount");  //john
+    }
     if (model.status == 0) {
         cell.statuelabel.text = LocalizationKey(@"auditing");
     }else if (model.status == 1){

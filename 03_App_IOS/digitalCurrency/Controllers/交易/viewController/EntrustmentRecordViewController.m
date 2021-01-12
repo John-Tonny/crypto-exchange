@@ -168,7 +168,8 @@
             UIButton *btn = [UIButton buttonWithType:UIButtonTypeCustom];
             btn.frame = CGRectMake(i * 75 + i * 30, 0, 75, 43);
             [btn setTitle:_titles[i] forState:UIControlStateNormal];
-            [btn setTitleColor:RGBOF(0xF0A70A) forState:UIControlStateSelected];
+            //[btn setTitleColor:RGBOF(0xF0A70A) forState:UIControlStateSelected];
+            [btn setTitleColor:RGBOF(0x007AFF) forState:UIControlStateSelected]; //john
             [btn setTitleColor:RGBOF(0x666666) forState:UIControlStateNormal];
             btn.titleLabel.font = [UIFont fontWithName:@"PingFangSC-Medium" size:16];
             [btn addTarget:self action:@selector(recordAction:) forControlEvents:UIControlEventTouchUpInside];
@@ -182,7 +183,8 @@
         
         
         _indicateView = [[UIView alloc] initWithFrame:CGRectMake(0, 0, 70, 1)];
-        _indicateView.backgroundColor = RGBOF(0xF0A70A);
+        //_indicateView.backgroundColor = RGBOF(0xF0A70A);
+        _indicateView.backgroundColor = RGBOF(0x007AFF);
         UIButton *btn = self.btnsArr[0];
         _indicateView.center = CGPointMake(btn.centerX, 43);
         [_labelView addSubview:_indicateView];

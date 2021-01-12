@@ -311,6 +311,16 @@
         completeHandle(resultObject,isSuccessed);
     }];
 }
+//平台消息详细
++(void)getPlatformMessageDetailForCompleteHandle:(NSString*)index withLang:(NSString *)lang CompleteHandle:(void(^)(id resPonseObj,int code))completeHandle{
+    NSString *path = @"uc/announcement/more";
+    NSMutableDictionary *dic = [NSMutableDictionary new];
+    dic[@"id"] = index;
+    dic[@"lang"] = lang;
+    [self ylNonTokenRequestWithGET:path parameters:dic successBlock:^(id resultObject, int isSuccessed) {
+        completeHandle(resultObject,isSuccessed);
+    }];
+}
 //获取更改绑定手机的验证码
 +(void)changePhoneNumCodeForCompleteHandle:(void(^)(id resPonseObj,int code))completeHandle{
     NSString *path = @"uc/mobile/change/code";

@@ -198,6 +198,12 @@
 		53FCE3F4202982DC002EE0C5 /* HWOptionButton.m in Sources */ = {isa = PBXBuildFile; fileRef = 53FCE3EA20297E7A002EE0C5 /* HWOptionButton.m */; };
 		53FCE3F62029834C002EE0C5 /* CalendarView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 53FCE3F52029834C002EE0C5 /* CalendarView.xib */; };
 		6912BBAEC2804081C085E698 /* libPods-digitalCurrencyUITests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 6CC16630A390166F2EC028F9 /* libPods-digitalCurrencyUITests.a */; };
+		8423BE5425A417AC00849C88 /* ChargeJlqViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8423BE5325A417AC00849C88 /* ChargeJlqViewController.m */; };
+		8423BE5625A417BF00849C88 /* ChargeJlqViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8423BE5525A417BF00849C88 /* ChargeJlqViewController.xib */; };
+		84D7444C259F5DA700600F22 /* Empty.xib in Resources */ = {isa = PBXBuildFile; fileRef = 84D7444B259F5DA700600F22 /* Empty.xib */; };
+		84D744D825A1F27C00600F22 /* MentionJlqViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 84D744D725A1F27C00600F22 /* MentionJlqViewController.m */; };
+		84D744DE25A1FD5500600F22 /* TradeModel.xib in Resources */ = {isa = PBXBuildFile; fileRef = 84D744DD25A1FD5500600F22 /* TradeModel.xib */; };
+		84D744E225A2018000600F22 /* MentionJlqViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 84D744E125A2018000600F22 /* MentionJlqViewController.xib */; };
 		B20036E72115AD5300CF9666 /* SettingCenterTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = B20036E52115AD5300CF9666 /* SettingCenterTableViewCell.m */; };
 		B20036E82115AD5300CF9666 /* SettingCenterTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = B20036E62115AD5300CF9666 /* SettingCenterTableViewCell.xib */; };
 		B2039E142128400700716963 /* 启动页.gif in Resources */ = {isa = PBXBuildFile; fileRef = B2039E132128400600716963 /* 启动页.gif */; };
@@ -778,6 +784,14 @@
 		6793FBB3F38C85EC3C639985 /* Pods-digitalCurrencyUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-digitalCurrencyUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-digitalCurrencyUITests/Pods-digitalCurrencyUITests.release.xcconfig"; sourceTree = "<group>"; };
 		6CC16630A390166F2EC028F9 /* libPods-digitalCurrencyUITests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-digitalCurrencyUITests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		6ECA7050A77390A995910D27 /* Pods-digitalCurrencyUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-digitalCurrencyUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-digitalCurrencyUITests/Pods-digitalCurrencyUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		8423BE5325A417AC00849C88 /* ChargeJlqViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ChargeJlqViewController.m; sourceTree = "<group>"; };
+		8423BE5525A417BF00849C88 /* ChargeJlqViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ChargeJlqViewController.xib; sourceTree = "<group>"; };
+		84D7444B259F5DA700600F22 /* Empty.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Empty.xib; path = "../../test/jlw-exchange/Empty.xib"; sourceTree = "<group>"; };
+		84D744D625A1F26600600F22 /* MentionJlqViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MentionJlqViewController.h; sourceTree = "<group>"; };
+		84D744D725A1F27C00600F22 /* MentionJlqViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MentionJlqViewController.m; sourceTree = "<group>"; };
+		84D744DD25A1FD5500600F22 /* TradeModel.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TradeModel.xib; sourceTree = "<group>"; };
+		84D744E125A2018000600F22 /* MentionJlqViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MentionJlqViewController.xib; sourceTree = "<group>"; };
+		84D744E325A2158D00600F22 /* ChargeJlqViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ChargeJlqViewController.h; sourceTree = "<group>"; };
 		B20036E42115AD5300CF9666 /* SettingCenterTableViewCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SettingCenterTableViewCell.h; sourceTree = "<group>"; };
 		B20036E52115AD5300CF9666 /* SettingCenterTableViewCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SettingCenterTableViewCell.m; sourceTree = "<group>"; };
 		B20036E62115AD5300CF9666 /* SettingCenterTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SettingCenterTableViewCell.xib; sourceTree = "<group>"; };
@@ -1436,6 +1450,7 @@
 		530D102A202848460057D368 /* WalletManage */ = {
 			isa = PBXGroup;
 			children = (
+				84D744DD25A1FD5500600F22 /* TradeModel.xib */,
 				530D102B202848650057D368 /* WalletManageViewController.h */,
 				530D102C202848650057D368 /* WalletManageViewController.m */,
 				530D102D202848650057D368 /* WalletManageViewController.xib */,
@@ -1443,14 +1458,20 @@
 				530D103720285BBB0057D368 /* WalletManageDetailViewController.m */,
 				530D103820285BBB0057D368 /* WalletManageDetailViewController.xib */,
 				53F7FF86202A98FE00E081F4 /* MentionMoneyViewController.h */,
+				84D744D625A1F26600600F22 /* MentionJlqViewController.h */,
 				53F7FF87202A98FE00E081F4 /* MentionMoneyViewController.m */,
+				84D744D725A1F27C00600F22 /* MentionJlqViewController.m */,
 				53F7FF88202A98FE00E081F4 /* MentionMoneyViewController.xib */,
+				84D744E125A2018000600F22 /* MentionJlqViewController.xib */,
 				53FC5A1A2050C3F2009CFD5A /* AddMentionCoinAddressViewController.h */,
 				53FC5A1B2050C3F2009CFD5A /* AddMentionCoinAddressViewController.m */,
 				53FC5A1C2050C3F2009CFD5A /* AddMentionCoinAddressViewController.xib */,
 				53F7FF8B202AAE7900E081F4 /* ChargeMoneyViewController.h */,
+				84D744E325A2158D00600F22 /* ChargeJlqViewController.h */,
 				53F7FF8C202AAE7900E081F4 /* ChargeMoneyViewController.m */,
+				8423BE5325A417AC00849C88 /* ChargeJlqViewController.m */,
 				53F7FF8D202AAE7900E081F4 /* ChargeMoneyViewController.xib */,
+				8423BE5525A417BF00849C88 /* ChargeJlqViewController.xib */,
 				BF4DDC1320EC9F7300BF01AD /* TradeModel.h */,
 				BF4DDC1720EC9F7500BF01AD /* TradeModel.m */,
 				BF4DDC1120EC9F7200BF01AD /* TransactionDetailsTableViewCell.h */,
@@ -2248,6 +2269,7 @@
 		D2A7CDA42015775600A63068 = {
 			isa = PBXGroup;
 			children = (
+				84D7444B259F5DA700600F22 /* Empty.xib */,
 				D2A7CDAF2015775600A63068 /* digitalCurrency */,
 				D2A7CDC82015775700A63068 /* digitalCurrencyUITests */,
 				D2A7CDAE2015775600A63068 /* Products */,
@@ -2827,7 +2849,6 @@
 				D2A7CDAA2015775600A63068 /* Frameworks */,
 				D2A7CDAB2015775600A63068 /* Resources */,
 				D5458250C5A06412D76BF804 /* [CP] Copy Pods Resources */,
-				6FDCCEE635B60C8D04FCDB17 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -2846,8 +2867,6 @@
 				D2A7CDC12015775700A63068 /* Sources */,
 				D2A7CDC22015775700A63068 /* Frameworks */,
 				D2A7CDC32015775700A63068 /* Resources */,
-				FCA8D13574462C839CF668C9 /* [CP] Embed Pods Frameworks */,
-				3656EE1A925A4C6F800BDA0B /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -2917,6 +2936,7 @@
 				53F22B842084740F00DDC9EA /* ChatGroupMessageViewController.xib in Resources */,
 				53E0A9C220218CB80082C037 /* AdvertisingBuyViewController.xib in Resources */,
 				D2129471206201F900142D48 /* GT3Captcha.bundle in Resources */,
+				8423BE5625A417BF00849C88 /* ChargeJlqViewController.xib in Resources */,
 				530B1D81204CD1D500CA26FB /* MyAdvertisingViewController.xib in Resources */,
 				D2644FDC20BE8C390041C588 /* KlineCell.xib in Resources */,
 				D2CD95FB201EAE1900A5B539 /* MarketViewController.xib in Resources */,
@@ -3029,13 +3049,16 @@
 				53C55C1420469AC300BA3132 /* ChangeAccountViewController.xib in Resources */,
 				D2449DF020522E8D0008651B /* gesture_indicator_normal@2x.png in Resources */,
 				53F7FF85202A8B9400E081F4 /* IdentityAuthenticationViewController.xib in Resources */,
+				84D744DE25A1FD5500600F22 /* TradeModel.xib in Resources */,
 				D2CD9625201EB01D00A5B539 /* homeCell.xib in Resources */,
 				BF4DDC1A20EC9F7500BF01AD /* TransactionDetailsTableViewCell.xib in Resources */,
 				D2CD9631201F09E400A5B539 /* LoginViewController.xib in Resources */,
 				D24D66E420204638001C7F3F /* ForgetViewController.xib in Resources */,
+				84D7444C259F5DA700600F22 /* Empty.xib in Resources */,
 				B230E9C320F35E4E0010F75F /* AccountSettingTableViewCell.xib in Resources */,
 				53C55C1920469FAA00BA3132 /* ChangeAccountTableViewCell.xib in Resources */,
 				53022766202D4EA100BB0E9A /* SelectCoinTypeTableViewCell.xib in Resources */,
+				84D744E225A2018000600F22 /* MentionJlqViewController.xib in Resources */,
 				53ACAD882022E38B001B3E43 /* BuyCoinsDetail1TableViewCell.xib in Resources */,
 				BF68FF5A210FF8DB003F0532 /* NoticeTableViewCell.xib in Resources */,
 				53DC73C22061EB5600C8BBF6 /* ChangePhoneViewController.xib in Resources */,
@@ -3088,36 +3111,6 @@
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
 			showEnvVarsInLog = 0;
 		};
-		3656EE1A925A4C6F800BDA0B /* [CP] Copy Pods Resources */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			name = "[CP] Copy Pods Resources";
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-digitalCurrencyUITests/Pods-digitalCurrencyUITests-resources.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
-		6FDCCEE635B60C8D04FCDB17 /* [CP] Embed Pods Frameworks */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			name = "[CP] Embed Pods Frameworks";
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-digitalCurrency/Pods-digitalCurrency-frameworks.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
 		7A22D5B5F6ACB1406098C77D /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -3142,7 +3135,7 @@
 			files = (
 			);
 			inputPaths = (
-				"${SRCROOT}/Pods/Target Support Files/Pods-digitalCurrency/Pods-digitalCurrency-resources.sh",
+				"${PODS_ROOT}/Target Support Files/Pods-digitalCurrency/Pods-digitalCurrency-resources.sh",
 				"${PODS_ROOT}/IQKeyboardManager/IQKeyboardManager/Resources/IQKeyboardManager.bundle",
 				"${PODS_ROOT}/MJRefresh/MJRefresh/MJRefresh.bundle",
 				"${PODS_ROOT}/PGDatePicker/PGDatePicker/PGDatePicker.bundle",
@@ -3150,25 +3143,14 @@
 			);
 			name = "[CP] Copy Pods Resources";
 			outputPaths = (
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/IQKeyboardManager.bundle",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/MJRefresh.bundle",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/PGDatePicker.bundle",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/YBImageBrowser.bundle",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-digitalCurrency/Pods-digitalCurrency-resources.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
-		FCA8D13574462C839CF668C9 /* [CP] Embed Pods Frameworks */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			name = "[CP] Embed Pods Frameworks";
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-digitalCurrencyUITests/Pods-digitalCurrencyUITests-frameworks.sh\"\n";
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-digitalCurrency/Pods-digitalCurrency-resources.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 /* End PBXShellScriptBuildPhase section */
@@ -3199,6 +3181,7 @@
 				53C0550D20A02C31008D8004 /* PromoteFriendsModel.m in Sources */,
 				5327A90220932C90001BF1AA /* SelectCountryTableViewCell.m in Sources */,
 				53EB37A92099881300721D8A /* SelectBankNameView.m in Sources */,
+				84D744D825A1F27C00600F22 /* MentionJlqViewController.m in Sources */,
 				53F4A6C3204E7E4B0026D9E6 /* MentionCoinInfoModel.m in Sources */,
 				53047D132042B4EC00EA3713 /* XLBScrollPageController.m in Sources */,
 				B283719E2111A0C500AB0BB2 /* IOSDeviceConfig.m in Sources */,
@@ -3423,6 +3406,7 @@
 				530B1D87204CED6700CA26FB /* MyAdvertisingDetailModel.m in Sources */,
 				53F22B8C208482EB00DDC9EA /* ChatGroupInfoModel.m in Sources */,
 				D2FE02542016D971005A8A4A /* UIView+EasyShowExt.m in Sources */,
+				8423BE5425A417AC00849C88 /* ChargeJlqViewController.m in Sources */,
 				B20EA985211D9A2A0063A6D7 /* BeingauditedBusViewController.m in Sources */,
 				BF4DDC1920EC9F7500BF01AD /* TransactionDetailsTableViewCell.m in Sources */,
 				53F3668A202EC511008394A9 /* BindingPhoneViewController.m in Sources */,
@@ -3654,7 +3638,7 @@
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = A5K5CEY9YQ;
+				DEVELOPMENT_TEAM = K442ZLM998;
 				ENABLE_BITCODE = NO;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
@@ -3703,7 +3687,7 @@
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = A5K5CEY9YQ;
+				DEVELOPMENT_TEAM = K442ZLM998;
 				ENABLE_BITCODE = NO;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",

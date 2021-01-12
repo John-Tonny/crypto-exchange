@@ -11,4 +11,5 @@
 @interface PlatformMessageDetailViewController : BaseViewController
 @property(nonatomic,copy)NSString *content;
 @property(nonatomic,copy)NSString *navtitle;
+@property(nonatomic,copy)NSString *id;  //john
 @end

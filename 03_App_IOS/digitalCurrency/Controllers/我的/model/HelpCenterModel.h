@@ -11,7 +11,7 @@
 
 @interface HelpCenterModel : BaseModel
 @property (nonatomic, strong) NSNumber *cate;
-@property (nonatomic, copy) NSString *title;
+@property (nonatomic, copy) NSString *titleCN;
 @property (nonatomic, strong) NSArray<HelpCenterContentModel *> *content;
 + (instancetype)modelWithDictionary:(NSDictionary *)dic;
 @end

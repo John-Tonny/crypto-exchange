@@ -370,7 +370,8 @@
         _seg.frame = CGRectMake(0, 0, 140, 32);
         _seg.center = CGPointMake(self.view.frame.size.width / 2, 26);
         _seg.selectedSegmentIndex = 0;
-        _seg.tintColor=RGBOF(0xF0A70A);
+        //_seg.tintColor=RGBOF(0xF0A70A);
+        _seg.tintColor=RGBOF(0x007AFF); //john
         NSDictionary *dic = [NSDictionary dictionaryWithObjectsAndKeys:RGBOF(0xF0A70A),NSForegroundColorAttributeName,[UIFont fontWithName:@"AppleGothic"size:17],NSFontAttributeName ,nil];
         NSDictionary *seldic = [NSDictionary dictionaryWithObjectsAndKeys:[UIColor whiteColor],NSForegroundColorAttributeName,[UIFont fontWithName:@"AppleGothic"size:17],NSFontAttributeName ,nil];
         [_seg setTitleTextAttributes:dic forState:UIControlStateNormal];

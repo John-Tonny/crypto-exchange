@@ -1,12 +1,12 @@
 //
 //  PlatformMessageDetailViewController.m
 //  digitalCurrency
-//
-//  Created by iDog on 2018/3/21.
+////  Created by iDog on 2018/3/21.
 //  Copyright © 2018年 XinHuoKeJi. All rights reserved.
 //
 
 #import "PlatformMessageDetailViewController.h"
+#import "MineNetManager.h"
 
 @interface PlatformMessageDetailViewController ()<UIWebViewDelegate>
 @property(nonatomic,strong)UIWebView *webView;
@@ -18,7 +18,8 @@
     [super viewDidLoad];
     self.navigationItem.title = self.navtitle;
 //    self.title = LocalizationKey(@"notice");
-    [self.view addSubview:[self webView]];
+    [self getNoticeDetail];  //john
+    //[self.view addSubview:[self webView]]; //john
     // Do any additional setup after loading the view.
 }
 
@@ -35,7 +36,7 @@
 }
 
 -(void)webViewDidStartLoad:(UIWebView *)webView{
-    [EasyShowLodingView showLodingText:LocalizationKey(@"loading")];
+   
 }
 
 -(void)webViewDidFinishLoad:(UIWebView *)webView{
@@ -69,5 +70,24 @@
     // Dispose of any resources that can be recreated.
 }
 
-
+// john
+-(void)getNoticeDetail{
+    [EasyShowLodingView showLodingText:LocalizationKey(@"loading")];
+    [MineNetManager getPlatformMessageDetailForCompleteHandle:self.id withLang:@"CN" CompleteHandle:^(id resPonseObj, int code) {
+        [EasyShowLodingView hidenLoding];
+        NSLog(@"resPonseObj -- %@",resPonseObj);
+        
+        if (code) {
+            if ([resPonseObj[@"code"] integerValue] == 0) {
+                self.content = resPonseObj[@"data"][@"info"][@"content"];
+                [self.view addSubview:[self webView]];
+            }else{
+                [self.view makeToast:resPonseObj[MESSAGE] duration:1.5 position:CSToastPositionCenter];
+            }
+        }else{
+            [self.view makeToast:LocalizationKey(@"noNetworkStatus") duration:1.5 position:CSToastPositionCenter];
+        }
+    }];
+    
+}
 @end

@@ -60,6 +60,27 @@ DEPENDENCIES:
   - YBImageBrowser (~> 1.1.2)
   - YBPopupMenu (~> 1.1.2)
 
+SPEC REPOS:
+  trunk:
+    - AFNetworking
+    - BaiduMobStat
+    - CocoaAsyncSocket
+    - FLAnimatedImage
+    - FMDB
+    - IQKeyboardManager
+    - Masonry
+    - MJExtension
+    - MJRefresh
+    - PGDatePicker
+    - PGPickerView
+    - SDAutoLayout
+    - SDWebImage
+    - Toast
+    - UMengAnalytics-NO-IDFA
+    - VTMagic
+    - YBImageBrowser
+    - YBPopupMenu
+
 SPEC CHECKSUMS:
   AFNetworking: b6f891fdfaed196b46c7a83cf209e09697b94057
   BaiduMobStat: 486c50871312241be6e1179e365d4a26eb751302
@@ -80,6 +101,6 @@ SPEC CHECKSUMS:
   YBImageBrowser: 3e61edabcb1927ddc095a96465f47fc551b8f9bf
   YBPopupMenu: 6efb286385d95ba5f97c58b8464ec873645e8764
 
-PODFILE CHECKSUM: dd8040a452f85628d1d0a50085126e1522bc826d
+PODFILE CHECKSUM: 00c7c738cf62cf78a82401eb669d29d47ba3642b
 
-COCOAPODS: 1.3.1
+COCOAPODS: 1.10.0

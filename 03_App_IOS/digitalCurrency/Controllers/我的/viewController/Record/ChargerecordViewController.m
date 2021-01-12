@@ -128,6 +128,9 @@
     cell.timelabel.text = model.createTime;
     cell.addresslabel.text = model.address;
     cell.numlabel.text = [ToolUtil judgeStringForDecimalPlaces:model.amount];
+    if ([model.symbol isEqualToString:@"JLQ"]){
+        cell.Chargeaddress.text = LocalizationKey(@"shopAccount");  //john
+    }
     return cell;
     
 }

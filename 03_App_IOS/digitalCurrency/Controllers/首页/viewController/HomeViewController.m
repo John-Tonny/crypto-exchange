@@ -306,9 +306,9 @@
                 NSMutableArray *muArr = [NSMutableArray arrayWithCapacity:0];
                 for (NSDictionary *dic in arr) {
                     if ([[ChangeLanguage userLanguage] isEqualToString:@"en"]) {
-                        if (![self hasChinese:dic[@"title"]]) {
-                            [muArr addObject:dic];
-                        }
+                        //if (![self hasChinese:dic[@"title"]]) {  //john
+                        [muArr addObject:dic];
+                        //}
                     }else{
                         if ([self hasChinese:dic[@"title"]]) {
                             [muArr addObject:dic];
@@ -577,6 +577,7 @@
                 detailVC.hidesBottomBarWhenPushed = YES;
                 detailVC.content = model.content;
                 detailVC.navtitle = model.title;
+                detailVC.id = model.ID; // john
                 [weakSelf.navigationController pushViewController:detailVC animated:YES];
                 
             }];

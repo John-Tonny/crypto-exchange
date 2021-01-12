@@ -99,6 +99,7 @@
     detailVC.hidesBottomBarWhenPushed = YES;
     detailVC.content = model.content;
     detailVC.navtitle = model.title;
+    detailVC.id = model.ID;   //john
     [self.navigationController pushViewController:detailVC animated:YES];
 }
 

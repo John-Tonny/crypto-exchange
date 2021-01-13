@@ -296,6 +296,10 @@ public class ExtractActivity extends BaseActivity implements ExtractContract.Vie
                 WonderfulToastUtils.showToast("该币种需要输入转入地址Memo，请确认！");
                 return;
             }
+            if (Double.valueOf(amount) > Double.valueOf(tvCanUse.getText().toString())) {
+                WonderfulToastUtils.showMyViewToast(WonderfulToastUtils.getString(R.string.lackOfBalance));
+                return;
+            }
             String jyPassword = etPassword.getText().toString();
             String spPassword = shopPassword.getText().toString();
             presenter.extract(SharedPreferenceInstance.getInstance().getTOKEN(), unit, amount, fee, remark, jyPassword, address, code, spPassword);

@@ -172,7 +172,8 @@ public class WalletActivity extends BaseActivity implements WalletContract.View,
             ivSee.setImageDrawable(drawable);
             SharedPreferenceInstance.getInstance().saveMoneyShowtype(2);
         } else {
-            tvAmount.setText(WonderfulMathUtils.getRundNumber(sumUsd, 4, null));
+            // tvAmount.setText(WonderfulMathUtils.getRundNumber(sumUsd, 4, null)); // john
+            tvAmount.setText(WonderfulMathUtils.getRundNumber(sumCny, 2, null) + "CNY");
             tvCnyAmount.setText("≈" + WonderfulMathUtils.getRundNumber(sumCny, 2, null) + "CNY");
             Drawable drawable = getResources().getDrawable(R.drawable.icon_eye_open);
             ivSee.setImageDrawable(drawable);
@@ -330,7 +331,8 @@ public class WalletActivity extends BaseActivity implements WalletContract.View,
             sumCny += ((coin.getBalance() + coin.getFrozenBalance()) * coin.getCoin().getCnyRate());
         }
         if (SharedPreferenceInstance.getInstance().getMoneyShowType() == 1) {
-            tvAmount.setText(WonderfulMathUtils.getRundNumber(sumUsd, 4, null));
+            // tvAmount.setText(WonderfulMathUtils.getRundNumber(sumUsd, 4, null));  // john
+            tvAmount.setText(WonderfulMathUtils.getRundNumber(sumCny, 2, null) + " CNY");
             tvCnyAmount.setText("≈" + WonderfulMathUtils.getRundNumber(sumCny, 2, null) + " CNY");
         } else if (SharedPreferenceInstance.getInstance().getMoneyShowType() == 2) {
             tvAmount.setText("********");

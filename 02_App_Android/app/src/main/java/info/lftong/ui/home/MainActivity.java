@@ -850,9 +850,9 @@ public class MainActivity extends BaseTransFragmentActivity implements MainContr
 
                     @Override
                     public void onResponse(String response) {
-                        // JsonObject object = new JsonParser().parse(response).getAsJsonObject();
-                        // rate = object.getAsJsonPrimitive("data").getAsDouble();
-                        rate = 1.0; // john
+                        JsonObject object = new JsonParser().parse(response).getAsJsonObject();
+                        rate = object.getAsJsonPrimitive("data").getAsDouble();
+                        // rate = 1.0; // john
                         WonderfulLogUtils.logi("miao", rate + "汇率");
                     }
                 });

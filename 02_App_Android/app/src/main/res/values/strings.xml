@@ -254,7 +254,7 @@
     <string name="text_xian_login">请先登录</string>
     <string name="text_login_disabled">登录信息失效，请重新登录！</string>
     <string name="text_pan">盘口</string>
-    <string name="login_entity">请先登录/注册</string>
+    <string name="login_entity">请先登录</string>
     <string name="text_entity">暂无数据</string>
     <string name="text_enter_price">请输入价格</string>
     <string name="text_best_price">以最优价格买入</string>
@@ -738,6 +738,7 @@
         <item name="ctc_sell">CTC卖出</item>
     </string-array>
 
+    <string name="lackOfBalance">可用余额不足</string>
 
 
 </resources>

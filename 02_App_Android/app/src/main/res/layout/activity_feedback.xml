@@ -134,7 +134,7 @@
             android:id="@+id/tvSubmit"
             android:layout_width="match_parent"
             android:layout_height="48dp"
-            android:background="@color/yellowDark"
+            android:background="@color/blueDark"
             android:gravity="center"
             android:text="@string/submit"
             android:textColor="#fff"

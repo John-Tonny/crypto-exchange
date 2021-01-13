@@ -207,7 +207,8 @@ public class OneFragment extends BaseTransFragment implements info.lftong.ui.hom
         try {
             text_loginbtn.setVisibility(View.GONE);
             text_totalassets.setVisibility(View.VISIBLE);
-            text_totalassets.setText("$ " + WonderfulMathUtils.getRundNumber(sumUsd, 4, null));
+            // text_totalassets.setText("$ " + WonderfulMathUtils.getRundNumber(sumUsd, 4, null)); // john
+            text_totalassets.setText("￥ " + WonderfulMathUtils.getRundNumber(sumCny, 4, null)); // john
             text_login.setText(WonderfulToastUtils.getString(R.string.login_assets));
         } catch (Exception e) {
 
